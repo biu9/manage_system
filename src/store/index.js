@@ -9,6 +9,6 @@ export default configureStore({
     queryInfo:formSelectSlice,
     formInfo:formContentSlice,
     remindState:RemindSlice,
-    FormOverview:FormOverviewSlice,
+    formOverview:FormOverviewSlice,
   },
 })

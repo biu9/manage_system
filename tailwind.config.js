@@ -13,6 +13,8 @@ module.exports = {
         'remind':"url('./static/remind.svg')",
         'uploadSuccess':"url('./static/uploadSuccess.svg')",
         'redRemind':"url('./static/redRemind.svg')",
+        "topBarWord":"url('./static/topBarWord.png')",
+        "topBarLogo":"url('./static/topBarLogo.png')",
        },
        boxShadow: {
           sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
