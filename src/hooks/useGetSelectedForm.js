@@ -4,7 +4,6 @@ export default function useGetSelectedForm() {
     const initData = useSelector(state => state.formOverview.initData);
     const selectParams = useSelector(state => state.queryInfo);
     const resData = [];
-
     initData.forEach(item => {
         if(selectParams.queryCompleted && selectParams.queryElder) {
             if(item.isCompleted && item.subject) {

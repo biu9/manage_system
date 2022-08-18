@@ -9,6 +9,7 @@ import { useDispatch } from "react-redux";
 import { setInitData } from "../store/FormOverviewSlice";
 import useGetCurrentType from "../hooks/useGetCurrentType";
 import useGetSelectedForm from "../hooks/useGetSelectedForm";
+import { useNavigate } from "react-router";
 
 import Typography from '@material-ui/core/Typography';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
@@ -80,9 +81,11 @@ const OverviewContent = () => {
 }
 
 const OneList = (data) => {
+    const navigate = useNavigate();
     if(!data.data.wxUser)
         return null;
     let tmpData = processListData(data.data);
+
     return (
         <tr className=" border-purple-200 border-b-2 h-9">
             <td>
@@ -96,7 +99,10 @@ const OneList = (data) => {
             <td>{tmpData.phone}</td>
             <td>
                 <div className="flex space-x-3 text-purple-600 font-semibold">
-                    <div className="cursor-pointer">查看</div>
+                    <div className="cursor-pointer" onClick={() => {
+                        navigate('/form/' + data.data.id);
+                        console.log('navigate to /form/' + data.data.id);
+                    }}>查看</div>
                     <div className="cursor-pointer">编辑</div>
                 </div>
             </td>
