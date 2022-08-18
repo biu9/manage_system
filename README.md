@@ -4,3 +4,4 @@
 
 - tailwind
 - CRA框架
+- redux
