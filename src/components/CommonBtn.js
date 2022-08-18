@@ -8,8 +8,8 @@ const Selected = (props) => {
 
 const UnSelected = (props) => {
     return (
-        <div className="border-2 border-gray-200 w-full bg-white-600 rounded-lg text-black font-semibold px-6 py-2 cursor-pointer text-center h-full flex items-center justify-center whitespace-nowrap">
-            <div className="text-purple-600">{props.text}</div>
+        <div className="border-2 border-gray-200 w-full bg-white-600 rounded-lg font-semibold px-6 py-2 cursor-pointer text-center h-full flex items-center justify-center whitespace-nowrap hover:bg-purple-200 hover:text-white text-purple-600 transform duration-200">
+            <div className="">{props.text}</div>
         </div>
     )
 }

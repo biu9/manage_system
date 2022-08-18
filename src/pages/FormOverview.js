@@ -4,9 +4,11 @@ import FunctionBtn from "../components/FunctionBtn";
 
 import processTime from "../utils/processTime";
 import processListData from "../utils/processListData";
-import { useEffect,useState } from "react";
-import { useSelector,useDispatch } from "react-redux";
-import { setOverViewForm } from "../store/FormOverviewSlice";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { setInitData } from "../store/FormOverviewSlice";
+import useGetCurrentType from "../hooks/useGetCurrentType";
+import useGetSelectedForm from "../hooks/useGetSelectedForm";
 
 import Typography from '@material-ui/core/Typography';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
@@ -25,13 +27,15 @@ function SimpleBreadcrumbs(props) {
     );
   }
 
+
 const OverviewContent = () => {
-    const data = useSelector(state => state.formOverview.overviewForm);
-    console.log('data in overview content : ',data);
+    //const data = useSelector(state => state.formOverview.overviewForm);
+    let currentType = useGetCurrentType();
+    const data = useGetSelectedForm();
     return (
         <div className="bg-purple-50 w-full p-6 space-y-3 px-16">
             <div>
-                <SimpleBreadcrumbs text="123"/>
+                <SimpleBreadcrumbs text={currentType}/>
             </div>
             <div className="flex justify-between">
                 <div>
@@ -136,8 +140,7 @@ export default function FormOverview() {
     useEffect(() => {
         (async() => {
             let res = await fetchData();
-            //console.log('init data : ', res.data);
-            dispatch(setOverViewForm(res.data));
+            dispatch(setInitData(res.data));
         })()
     },[dispatch])
     return (

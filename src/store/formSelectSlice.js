@@ -9,7 +9,7 @@ const formSelectSlice = createSlice({
     "queryCareGiver":false,
   },
   reducers: {
-    setUserInfo(state, action) {
+    setSelectInfo(state, action) {
         for(const i in action.payload) {
             state[i] = action.payload[i];
         }
@@ -18,6 +18,6 @@ const formSelectSlice = createSlice({
   },
 })
 
-export const { setUserInfo } = formSelectSlice.actions
+export const { setSelectInfo } = formSelectSlice.actions
 
 export default formSelectSlice.reducer
