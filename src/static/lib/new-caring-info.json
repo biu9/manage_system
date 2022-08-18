@@ -1,0 +1,26 @@
+{
+  "id": "caring-questionnaire6",
+  "title": "护理员信息材料确认",
+  "questions": [
+    {
+      "id": "questionsF",
+      "title": "个人信息材料确认",
+      "questions": [
+        {
+          "id": "212",
+          "displayId": "N-1",
+          "title": "上传知情同意签名页",
+          "type": "upload",
+          "contentType": "image"
+        },
+        {
+          "id": "213",
+          "displayId": "N-2",
+          "title": "备注",
+          "type": "textarea",
+          "contentType": "text"
+        }
+      ]
+    }
+  ]
+}

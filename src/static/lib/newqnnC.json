@@ -1,0 +1,486 @@
+{
+  "id": "老人问卷C",
+  "title": "C认知能力评估",
+  "questions": [
+    {
+      "id": "questionfroupcontainer",
+      "title": "",
+      "questions": [
+        {
+          "id": "37",
+          "displayId": "C-1",
+          "title": "请问您今年多大岁数？(误差在2岁内为正确)",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "正确",
+              "value": 1
+            },
+            {
+              "id": "2",
+              "title": "错误",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "id": "questiongroupC2",
+          "title": "C2",
+          "questions": [
+            {
+              "id": "38",
+              "displayId": "C-2-1",
+              "title": "请问现在是哪一年?",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "正确",
+                  "value": 1
+                },
+                {
+                  "id": "2",
+                  "title": "错误",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "id": "39",
+              "displayId": "C-2-2",
+              "title": "请问现在是哪一月?",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "正确",
+                  "value": 1
+                },
+                {
+                  "id": "2",
+                  "title": "错误",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "id": "40",
+              "displayId": "C-2-3",
+              "title": "请问现在是哪一日?",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "正确",
+                  "value": 1
+                },
+                {
+                  "id": "2",
+                  "title": "错误",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "id": "41",
+              "displayId": "C-2-4",
+              "title": "请问现在是星期几?",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "正确",
+                  "value": 1
+                },
+                {
+                  "id": "2",
+                  "title": "错误",
+                  "value": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "42",
+          "displayId": "C-3",
+          "title": "请问这里是什么地方?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "自然说出正确答案",
+              "value": 2
+            },
+            {
+              "id": "2",
+              "title": "经提醒或选择说出正确答案",
+              "value": 1
+            },
+            {
+              "id": "3",
+              "title": "错误",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "id": "questiongroupC4",
+          "title": "C4",
+          "questions": [
+            {
+              "id": "43",
+              "displayId": "C-4-1",
+              "title": "请记住并复述我刚刚说的词语(桃花)",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "正确",
+                  "value": 1
+                },
+                {
+                  "id": "2",
+                  "title": "错误",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "id": "44",
+              "displayId": "C-4-2",
+              "title": "请记住并复述我刚刚说的词语(狗)",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "正确",
+                  "value": 1
+                },
+                {
+                  "id": "2",
+                  "title": "错误",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "id": "45",
+              "displayId": "C-4-3",
+              "title": "请记住并复述我刚刚说的词语(汽车)",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "正确",
+                  "value": 1
+                },
+                {
+                  "id": "2",
+                  "title": "错误",
+                  "value": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "questiongroupC5",
+          "title": "C5",
+          "questions": [
+            {
+              "id": "46",
+              "displayId": "C-5-1",
+              "title": "100减7是多少?",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "正确",
+                  "value": 1
+                },
+                {
+                  "id": "2",
+                  "title": "错误",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "id": "47",
+              "displayId": "C-5-2",
+              "title": "100减7,再减7是多少?",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "正确",
+                  "value": 1
+                },
+                {
+                  "id": "2",
+                  "title": "错误",
+                  "value": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "questiongroupC6",
+          "title": "C6",
+          "questions": [
+            {
+              "id": "48",
+              "displayId": "C-6-1",
+              "title": "现在我要念出几个数字(6 - 8 - 2),请倒过来念。(可尝试3次)",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "正确",
+                  "value": 1
+                },
+                {
+                  "id": "2",
+                  "title": "错误",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "id": "49",
+              "displayId": "C-6-2",
+              "title": "现在我要念出几个数字(3 - 5 - 2 - 9),请倒过来念。(可尝试3次)",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "正确",
+                  "value": 1
+                },
+                {
+                  "id": "2",
+                  "title": "错误",
+                  "value": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "questiongroupC7",
+          "title": "C7",
+          "questions": [
+            {
+              "id": "50",
+              "displayId": "C-7-1",
+              "title": "刚才我请您记住的第一个词是什么?(桃花)",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "自然说出正确答案",
+                  "value": 2
+                },
+                {
+                  "id": "2",
+                  "title": "经过提醒(植物)说出正确答案",
+                  "value": 1
+                },
+                {
+                  "id": "3",
+                  "title": "错误",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "id": "51",
+              "displayId": "C-7-2",
+              "title": "刚才我请您记住的第二个词是什么?(狗)",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "自然说出正确答案",
+                  "value": 2
+                },
+                {
+                  "id": "2",
+                  "title": "经过提醒(动物)说出正确答案",
+                  "value": 1
+                },
+                {
+                  "id": "3",
+                  "title": "错误",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "id": "52",
+              "displayId": "C-7-7",
+              "title": "刚才我请您记住的第三个词是什么?(汽车)",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "自然说出正确答案",
+                  "value": 2
+                },
+                {
+                  "id": "2",
+                  "title": "经过提醒(交通工具)说出正确答案",
+                  "value": 1
+                },
+                {
+                  "id": "3",
+                  "title": "错误",
+                  "value": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "53",
+          "displayId": "C-8",
+          "title": "请复述刚刚拿出来的5样东西(表、硬币、笔、钥匙、钱包)",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "正确5样",
+              "value": 5
+            },
+            {
+              "id": "2",
+              "title": "正确4样",
+              "value": 4
+            },
+            {
+              "id": "3",
+              "title": "正确3样",
+              "value": 3
+            },
+            {
+              "id": "4",
+              "title": "正确2样",
+              "value": 2
+            },
+            {
+              "id": "5",
+              "title": "正确1样",
+              "value": 1
+            },
+            {
+              "id": "6",
+              "title": "错误",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "id": "54",
+          "displayId": "C-9",
+          "title": "请告诉我10种动物的名字?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "说出10种",
+              "value": 5
+            },
+            {
+              "id": "2",
+              "title": "说出9种",
+              "value": 4
+            },
+            {
+              "id": "3",
+              "title": "说出8种",
+              "value": 3
+            },
+            {
+              "id": "4",
+              "title": "说出7种",
+              "value": 2
+            },
+            {
+              "id": "5",
+              "title": "说出6种",
+              "value": 1
+            },
+            {
+              "id": "6",
+              "title": "说出0-5种",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "id": "questiongroupC10",
+          "title": "C10",
+          "questions": [
+            {
+              "id": "55",
+              "displayId": "C-10-1",
+              "title": "画出完整圆形",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "正确",
+                  "value": 1
+                },
+                {
+                  "id": "2",
+                  "title": "错误",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "id": "56",
+              "displayId": "C-10-2",
+              "title": "标出钟面数字（数字位置大致正确，没有丢失或重复的数字）",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "正确",
+                  "value": 1
+                },
+                {
+                  "id": "2",
+                  "title": "错误",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "id": "57",
+              "displayId": "C-10-3",
+              "title": "标出时间（指针指向正确，指针长短不计）",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "正确",
+                  "value": 1
+                },
+                {
+                  "id": "2",
+                  "title": "错误",
+                  "value": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

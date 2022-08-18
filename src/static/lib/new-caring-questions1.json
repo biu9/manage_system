@@ -1,0 +1,377 @@
+{
+  "id": "caring-questionnaire1",
+  "title": "养老机构护理员调查问卷",
+  "questions": [
+    {
+      "id": "questionsA",
+      "title": "第一部分 个人信息",
+      "description": "下面询问您的个人信息，请直接填写答案或在最符合您实际情况的答案代码上打“√”",
+      "questions": [
+        {
+          "id": "0",
+          "displayId": "A-1",
+          "title": "您的性别",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "男"
+            },
+            {
+              "id": "2",
+              "title": "女"
+            }
+          ]
+        },
+        {
+          "id": "1",
+          "displayId": "A-2-1",
+          "title": "您的出生年份：(请输入四位数年份，如 1949)",
+          "type": "fill",
+          "contentType": "digit",
+          "range_validation":"true",
+          "range_min":"1900",
+          "range_max":"2022"
+        },
+        {
+          "id": "2",
+          "displayId": "A-2-2",
+          "title": "您的出生月份：",
+          "type": "fill",
+          "contentType": "digit"
+        },
+        {
+          "id": "3",
+          "displayId": "A-3",
+          "title": "您的宗教信仰",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "无"
+            },
+            {
+              "id": "2",
+              "title": "佛教"
+            },
+            {
+              "id": "3",
+              "title": "基督教"
+            },
+            {
+              "id": "4",
+              "title": "道教"
+            },
+            {
+              "id": "5",
+              "title": "天主教"
+            },
+            {
+              "id": "6",
+              "title": "伊斯兰教"
+            },
+            {
+              "id": "7",
+              "title": "其它宗教_",
+              "input": "true"
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "displayId": "A-4",
+          "title": "您的政治面貌",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "党员"
+            },
+            {
+              "id": "2",
+              "title": "群众"
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "displayId": "A-5",
+          "title": "您的户口状况",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "非农业户口"
+            },
+            {
+              "id": "2",
+              "title": "农业户口"
+            },
+            {
+              "id": "3",
+              "title": "统一居民户口"
+            }
+          ]
+        },
+        {
+          "id": "6",
+          "displayId": "A-6",
+          "title": "您的婚姻状况",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "已婚"
+            },
+            {
+              "id": "2",
+              "title": "未婚",
+              "hide_qs": [
+                "7",
+                "8"
+              ]
+            },
+            {
+              "id": "3",
+              "title": "离异或丧偶",
+              "hide_qs": [
+                "7",
+                "8"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "7",
+          "displayId": "A-6-1",
+          "title": "您的配偶主要从事什么工作",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "政府、事业单位工作人员"
+            },
+            {
+              "id": "2",
+              "title": "企业、服务行业工作人员"
+            },
+            {
+              "id": "3",
+              "title": "机构的护理员工"
+            },
+            {
+              "id": "4",
+              "title": "个体户、自由职业者"
+            },
+            {
+              "id": "5",
+              "title": "农民"
+            },
+            {
+              "id": "6",
+              "title": "其它__",
+              "input": "true"
+            }
+          ]
+        },
+        {
+          "id": "8",
+          "displayId": "A-6-2",
+          "title": "您的配偶支持您做护理员工作吗",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "非常不支持"
+            },
+            {
+              "id": "2",
+              "title": "不支持"
+            },
+            {
+              "id": "3",
+              "title": "没有明确意向"
+            },
+            {
+              "id": "4",
+              "title": "支持"
+            },
+            {
+              "id": "5",
+              "title": "非常支持"
+            }
+          ]
+        },
+        {
+          "id": "9",
+          "displayId": "A-7",
+          "title": "您的居住情况是（指已满半年的居住方式）",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "独居",
+              "hide_qs": [
+                "10",
+                "11"
+              ]
+            },
+            {
+              "id": "2",
+              "title": "住在机构中",
+              "hide_qs": [
+                "10",
+                "11"
+              ]
+            },
+            {
+              "id": "3",
+              "title": "与家人同住"
+            }
+          ]
+        },
+        {
+          "id": "10",
+          "displayId": "A-7-1",
+          "title": "与您同住家人的人数（包括您自己） __人",
+          "type": "fill",
+          "contentType": "digit",
+          "range_validation":"true",
+          "range_min":"1",
+          "range_max":"100"
+        },
+        {
+          "id": "11",
+          "displayId": "A-7-2",
+          "title": "与您同住的家人包括（可多选）",
+          "type": "multiple",
+          "max": 6,
+          "min": 1,
+          "choices": [
+            {
+              "id": "1",
+              "title": "配偶"
+            },
+            {
+              "id": "2",
+              "title": "子女或子女配偶"
+            },
+            {
+              "id": "3",
+              "title": "父母或岳父母"
+            },
+            {
+              "id": "4",
+              "title": "孙子女"
+            },
+            {
+              "id": "5",
+              "title": "兄弟姐妹"
+            },
+            {
+              "id": "6",
+              "title": "其他亲戚",
+              "input": "true"
+            }
+          ]
+        },
+        {
+          "id": "12",
+          "displayId": "A-8",
+          "title": "文化程度",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "文盲及半文盲"
+            },
+            {
+              "id": "2",
+              "title": "小学"
+            },
+            {
+              "id": "3",
+              "title": "初中"
+            },
+            {
+              "id": "4",
+              "title": "高中/中专/职高"
+            },
+            {
+              "id": "5",
+              "title": "大学专科"
+            },
+            {
+              "id": "6",
+              "title": "大学本科及以上"
+            }
+          ]
+        },
+        {
+          "id": "13",
+          "displayId": "A-9",
+          "title": "您参加社会医疗保险的类型（可多选）",
+          "type": "multiple",
+          "max": 6,
+          "min": 1,
+          "choices": [
+            {
+              "id": "1",
+              "title": "职工基本医疗保险"
+            },
+            {
+              "id": "2",
+              "title": "城乡居民基本医疗保险（包括原城镇居民基本医疗保险和新型农村合作医疗）"
+            },
+            {
+              "id": "3",
+              "title": "公费医疗"
+            },
+            {
+              "id": "4",
+              "title": "政策性补充医疗保险（如惠民保）"
+            },
+            {
+              "id": "5",
+              "title": "商业医疗保险"
+            },
+            {
+              "id": "6",
+              "title": "其他医疗保险（请注明）",
+              "input": "true"
+            },
+            {
+              "id": "7",
+              "title": "没有保险"
+            }
+          ]
+        },
+        {
+          "id": "14",
+          "displayId": "A-10",
+          "title": "参加社会养老保险的类型",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "职工基本养老保险/机关事业单位养老保险"
+            },
+            {
+              "id": "2",
+              "title": "城乡居民养老保险"
+            },
+            {
+              "id": "3",
+              "title": "未参加养老保险"
+            },
+            {
+              "id": "4",
+              "title": "其他，请注明",
+              "input": "true"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

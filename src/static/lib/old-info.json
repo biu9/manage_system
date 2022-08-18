@@ -1,0 +1,33 @@
+{
+  "id": "qs-personalinfo",
+  "title": "个人信息材料确认",
+  "questions": [
+    {
+      "id": "questionsPS",
+      "title": "个人信息材料确认",
+      "questions": [
+        {
+          "id": "277",
+          "displayId": "H-1",
+          "title": "上传知情同意签名页",
+          "type": "upload",
+          "contentType": "image"
+        },
+        {
+          "id": "278",
+          "displayId": "H-2",
+          "title": "上传钟面测试确认",
+          "type": "upload",
+          "contentType": "image"
+        },
+        {
+          "id": "279",
+          "displayId": "H-3",
+          "title": "备注",
+          "type": "textarea",
+          "contentType": "text"
+        }
+      ]
+    }
+  ]
+}

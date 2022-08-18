@@ -1,0 +1,1068 @@
+{
+  "id": "caring-questionnaire5",
+  "title": "养老机构护理员调查问卷",
+  "questions": [
+    {
+      "id": "questionsE",
+      "title": "第五部分 老年人信息",
+      "description": "请从现阶段您照料的老年人中选择五位老年人回答下列问题，并将答案或者代码填写在后面的括号内。若您所照料老年人不足六人，请按实际照料的人数回答。",
+      "questions": [
+        {
+          "id": "questionsE_partA",
+          "title": "第一位老年人信息",
+          "questions": [
+            {
+              "id": "162",
+              "displayId": "E-1-0",
+              "title": "有没有第一位老年人",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "163",
+                    "164",
+                    "165",
+                    "166",
+                    "167",
+                    "168",
+                    "169",
+                    "170",
+                    "171"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "163",
+              "displayId": "E-1-1",
+              "title": "这个老年人的姓名",
+              "type": "fill",
+              "contentType": "text"
+            },
+            {
+              "id": "164",
+              "displayId": "E-1-2",
+              "title": "性别",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "男"
+                },
+                {
+                  "id": "2",
+                  "title": "女"
+                }
+              ]
+            },
+            {
+              "id": "165",
+              "displayId": "E-1-3",
+              "title": "这个老年人的年龄",
+              "type": "fill",
+              "contentType": "digit"
+            },
+            {
+              "id": "166",
+              "displayId": "E-1-4",
+              "title": "您照料这个老年人多长时间了（年）",
+              "type": "fill",
+              "contentType": "digit",
+              "suffix": "年"
+            },
+            {
+              "id": "167",
+              "displayId": "E-1-5",
+              "title": "据您所知,这个老年人的子女或亲属多久看望或通过电话、视频联系他/她一次?",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "1.几乎没有"
+                },
+                {
+                  "id": "2",
+                  "title": "2.一年一次"
+                },
+                {
+                  "id": "3",
+                  "title": "每月至少一次"
+                },
+                {
+                  "id": "4",
+                  "title": "每周至少一次"
+                },
+                {
+                  "id": "5",
+                  "title": "几乎天天"
+                }
+              ]
+            },
+            {
+              "id": "168",
+              "displayId": "E-1-6",
+              "title": "您觉得您和这个老人在情感上亲近吗?",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "非常不亲近"
+                },
+                {
+                  "id": "2",
+                  "title": "不亲近"
+                },
+                {
+                  "id": "3",
+                  "title": "一般"
+                },
+                {
+                  "id": "4",
+                  "title": "亲近"
+                },
+                {
+                  "id": "5",
+                  "title": "非常亲近"
+                }
+              ]
+            },
+            {
+              "id": "169",
+              "displayId": "E-1-7",
+              "title": "您是否觉得这个老年人要求的服务超过了他/她的实际需要?",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "从未"
+                },
+                {
+                  "id": "2",
+                  "title": "极少"
+                },
+                {
+                  "id": "3",
+                  "title": "有时"
+                },
+                {
+                  "id": "4",
+                  "title": "经常"
+                },
+                {
+                  "id": "5",
+                  "title": "总是"
+                }
+              ]
+            },
+            {
+              "id": "170",
+              "displayId": "E-1-8",
+              "title": "在照料的过程中，这个老年人对您实施攻击性、侮辱性行为的频率？",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "从未"
+                },
+                {
+                  "id": "2",
+                  "title": "每月1、2次"
+                },
+                {
+                  "id": "3",
+                  "title": "每周1、2次"
+                },
+                {
+                  "id": "4",
+                  "title": "每天1、2次"
+                },
+                {
+                  "id": "5",
+                  "title": "每天2次以上"
+                }
+              ]
+            },
+            {
+              "id": "171",
+              "displayId": "E-1-9",
+              "title": "在照料的过程中，这个老年人对您说出攻击性、侮辱性话语的频率？",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "从未"
+                },
+                {
+                  "id": "2",
+                  "title": "每月1、2次"
+                },
+                {
+                  "id": "3",
+                  "title": "每周1、2次"
+                },
+                {
+                  "id": "4",
+                  "title": "每天1、2次"
+                },
+                {
+                  "id": "5",
+                  "title": "每天2次以上"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "questionsE_partB",
+          "title": "第二位老年人信息",
+          "questions": [
+            {
+              "id": "172",
+              "displayId": "E-2-0",
+              "title": "有没有第二位老年人",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "173",
+                    "174",
+                    "175",
+                    "176",
+                    "177",
+                    "178",
+                    "179",
+                    "180",
+                    "181"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "173",
+              "displayId": "E-2-1",
+              "title": "这个老年人的姓名",
+              "type": "fill",
+              "contentType": "text"
+            },
+            {
+              "id": "174",
+              "displayId": "E-2-2",
+              "title": "性别",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "男"
+                },
+                {
+                  "id": "2",
+                  "title": "女"
+                }
+              ]
+            },
+            {
+              "id": "175",
+              "displayId": "E-2-3",
+              "title": "这个老年人的年龄",
+              "type": "fill",
+              "contentType": "digit"
+            },
+            {
+              "id": "176",
+              "displayId": "E-2-4",
+              "title": "您照料这个老年人多长时间了（年）",
+              "type": "fill",
+              "contentType": "digit",
+              "suffix": "年"
+            },
+            {
+              "id": "177",
+              "displayId": "E-2-5",
+              "title": "据您所知，这个老年人的子女或亲属多久看望或通过电话、视频联系他/她一次？",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "1.几乎没有"
+                },
+                {
+                  "id": "2",
+                  "title": "2.一年一次"
+                },
+                {
+                  "id": "3",
+                  "title": "每月至少一次"
+                },
+                {
+                  "id": "4",
+                  "title": "每周至少一次"
+                },
+                {
+                  "id": "5",
+                  "title": "几乎天天"
+                }
+              ]
+            },
+            {
+              "id": "178",
+              "displayId": "E-2-6",
+              "title": "您觉得您和这个老人在情感上亲近吗？",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "非常不亲近"
+                },
+                {
+                  "id": "2",
+                  "title": "不亲近"
+                },
+                {
+                  "id": "3",
+                  "title": "一般"
+                },
+                {
+                  "id": "4",
+                  "title": "亲近"
+                },
+                {
+                  "id": "5",
+                  "title": "非常亲近"
+                }
+              ]
+            },
+            {
+              "id": "179",
+              "displayId": "E-2-7",
+              "title": "您是否觉得这个老年人要求的服务超过了他/她的实际需要?",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "从未"
+                },
+                {
+                  "id": "2",
+                  "title": "极少"
+                },
+                {
+                  "id": "3",
+                  "title": "有时"
+                },
+                {
+                  "id": "4",
+                  "title": "经常"
+                },
+                {
+                  "id": "5",
+                  "title": "总是"
+                }
+              ]
+            },
+            {
+              "id": "180",
+              "displayId": "E-2-8",
+              "title": "在照料的过程中，这个老年人对您实施攻击性、侮辱性行为的频率？",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "从未"
+                },
+                {
+                  "id": "2",
+                  "title": "每月1、2次"
+                },
+                {
+                  "id": "3",
+                  "title": "每周1、2次"
+                },
+                {
+                  "id": "4",
+                  "title": "每天1、2次"
+                },
+                {
+                  "id": "5",
+                  "title": "每天2次以上"
+                }
+              ]
+            },
+            {
+              "id": "181",
+              "displayId": "E-2-9",
+              "title": "在照料的过程中，这个老年人对您说出攻击性、侮辱性话语的频率？",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "从未"
+                },
+                {
+                  "id": "2",
+                  "title": "每月1、2次"
+                },
+                {
+                  "id": "3",
+                  "title": "每周1、2次"
+                },
+                {
+                  "id": "4",
+                  "title": "每天1、2次"
+                },
+                {
+                  "id": "5",
+                  "title": "每天2次以上"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "questionsE_partC",
+          "title": "第三位老年人信息",
+          "questions": [
+            {
+              "id": "182",
+              "displayId": "E-3-0",
+              "title": "有没有第三位老年人",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "183",
+                    "184",
+                    "185",
+                    "186",
+                    "187",
+                    "188",
+                    "189",
+                    "190",
+                    "191"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "183",
+              "displayId": "E-3-1",
+              "title": "这个老年人的姓名",
+              "type": "fill",
+              "contentType": "text"
+            },
+            {
+              "id": "184",
+              "displayId": "E-3-2",
+              "title": "性别",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "男"
+                },
+                {
+                  "id": "2",
+                  "title": "女"
+                }
+              ]
+            },
+            {
+              "id": "185",
+              "displayId": "E-3-3",
+              "title": "这个老年人的年龄",
+              "type": "fill",
+              "contentType": "digit"
+            },
+            {
+              "id": "186",
+              "displayId": "E-3-4",
+              "title": "您照料这个老年人多长时间了（年）",
+              "type": "fill",
+              "contentType": "digit",
+              "suffix": "年"
+            },
+            {
+              "id": "187",
+              "displayId": "E-3-5",
+              "title": "据您所知，这个老年人的子女或亲属多久看望或通过电话、视频联系他/她一次？",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "1.几乎没有"
+                },
+                {
+                  "id": "2",
+                  "title": "2.一年一次"
+                },
+                {
+                  "id": "3",
+                  "title": "每月至少一次"
+                },
+                {
+                  "id": "4",
+                  "title": "每周至少一次"
+                },
+                {
+                  "id": "5",
+                  "title": "几乎天天"
+                }
+              ]
+            },
+            {
+              "id": "188",
+              "displayId": "E-3-6",
+              "title": "您觉得您和这个老人在情感上亲近吗？",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "非常不亲近"
+                },
+                {
+                  "id": "2",
+                  "title": "不亲近"
+                },
+                {
+                  "id": "3",
+                  "title": "一般"
+                },
+                {
+                  "id": "4",
+                  "title": "亲近"
+                },
+                {
+                  "id": "5",
+                  "title": "非常亲近"
+                }
+              ]
+            },
+            {
+              "id": "189",
+              "displayId": "E-3-7",
+              "title": "您是否觉得这个老年人要求的服务超过了他/她的实际需要?",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "从未"
+                },
+                {
+                  "id": "2",
+                  "title": "极少"
+                },
+                {
+                  "id": "3",
+                  "title": "有时"
+                },
+                {
+                  "id": "4",
+                  "title": "经常"
+                },
+                {
+                  "id": "5",
+                  "title": "总是"
+                }
+              ]
+            },
+            {
+              "id": "190",
+              "displayId": "E-3-8",
+              "title": "在照料的过程中，这个老年人对您实施攻击性、侮辱性行为的频率？",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "从未"
+                },
+                {
+                  "id": "2",
+                  "title": "每月1、2次"
+                },
+                {
+                  "id": "3",
+                  "title": "每周1、2次"
+                },
+                {
+                  "id": "4",
+                  "title": "每天1、2次"
+                },
+                {
+                  "id": "5",
+                  "title": "每天2次以上"
+                }
+              ]
+            },
+            {
+              "id": "191",
+              "displayId": "E-3-9",
+              "title": "在照料的过程中，这个老年人对您说出攻击性、侮辱性话语的频率？",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "从未"
+                },
+                {
+                  "id": "2",
+                  "title": "每月1、2次"
+                },
+                {
+                  "id": "3",
+                  "title": "每周1、2次"
+                },
+                {
+                  "id": "4",
+                  "title": "每天1、2次"
+                },
+                {
+                  "id": "5",
+                  "title": "每天2次以上"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "questionsE_partD",
+          "title": "第四位老年人信息",
+          "questions": [
+            {
+              "id": "192",
+              "displayId": "E-4-0",
+              "title": "有没有第四位老年人",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "193",
+                    "194",
+                    "195",
+                    "196",
+                    "197",
+                    "198",
+                    "199",
+                    "200",
+                    "201"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "193",
+              "displayId": "E-4-1",
+              "title": "这个老年人的姓名",
+              "type": "fill",
+              "contentType": "text"
+            },
+            {
+              "id": "194",
+              "displayId": "E-4-2",
+              "title": "性别",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "男"
+                },
+                {
+                  "id": "2",
+                  "title": "女"
+                }
+              ]
+            },
+            {
+              "id": "195",
+              "displayId": "E-4-3",
+              "title": "这个老年人的年龄",
+              "type": "fill",
+              "contentType": "digit"
+            },
+            {
+              "id": "196",
+              "displayId": "E-4-4",
+              "title": "您照料这个老年人多长时间了（年）",
+              "type": "fill",
+              "contentType": "digit",
+              "suffix": "年"
+            },
+            {
+              "id": "197",
+              "displayId": "E-4-5",
+              "title": "据您所知，这个老年人的子女或亲属多久看望或通过电话、视频联系他/她一次？",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "1.几乎没有"
+                },
+                {
+                  "id": "2",
+                  "title": "2.一年一次"
+                },
+                {
+                  "id": "3",
+                  "title": "每月至少一次"
+                },
+                {
+                  "id": "4",
+                  "title": "每周至少一次"
+                },
+                {
+                  "id": "5",
+                  "title": "几乎天天"
+                }
+              ]
+            },
+            {
+              "id": "198",
+              "displayId": "E-4-6",
+              "title": "您觉得您和这个老人在情感上亲近吗？",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "非常不亲近"
+                },
+                {
+                  "id": "2",
+                  "title": "不亲近"
+                },
+                {
+                  "id": "3",
+                  "title": "一般"
+                },
+                {
+                  "id": "4",
+                  "title": "亲近"
+                },
+                {
+                  "id": "5",
+                  "title": "非常亲近"
+                }
+              ]
+            },
+            {
+              "id": "199",
+              "displayId": "E-4-7",
+              "title": "您是否觉得这个老年人要求的服务超过了他/她的实际需要?",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "从未"
+                },
+                {
+                  "id": "2",
+                  "title": "极少"
+                },
+                {
+                  "id": "3",
+                  "title": "有时"
+                },
+                {
+                  "id": "4",
+                  "title": "经常"
+                },
+                {
+                  "id": "5",
+                  "title": "总是"
+                }
+              ]
+            },
+            {
+              "id": "200",
+              "displayId": "E-4-8",
+              "title": "在照料的过程中，这个老年人对您实施攻击性、侮辱性行为的频率？",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "从未"
+                },
+                {
+                  "id": "2",
+                  "title": "每月1、2次"
+                },
+                {
+                  "id": "3",
+                  "title": "每周1、2次"
+                },
+                {
+                  "id": "4",
+                  "title": "每天1、2次"
+                },
+                {
+                  "id": "5",
+                  "title": "每天2次以上"
+                }
+              ]
+            },
+            {
+              "id": "201",
+              "displayId": "E-4-9",
+              "title": "在照料的过程中，这个老年人对您说出攻击性、侮辱性话语的频率？",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "从未"
+                },
+                {
+                  "id": "2",
+                  "title": "每月1、2次"
+                },
+                {
+                  "id": "3",
+                  "title": "每周1、2次"
+                },
+                {
+                  "id": "4",
+                  "title": "每天1、2次"
+                },
+                {
+                  "id": "5",
+                  "title": "每天2次以上"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "questionsE_partE",
+          "title": "第五位老年人信息",
+          "questions": [
+            {
+              "id": "202",
+              "displayId": "E-5-0",
+              "title": "有没有第五位老年人",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "203",
+                    "204",
+                    "205",
+                    "206",
+                    "207",
+                    "208",
+                    "209",
+                    "210",
+                    "211"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "203",
+              "displayId": "E-5-1",
+              "title": "这个老年人的姓名",
+              "type": "fill",
+              "contentType": "text"
+            },
+            {
+              "id": "204",
+              "displayId": "E-5-2",
+              "title": "性别",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "男"
+                },
+                {
+                  "id": "2",
+                  "title": "女"
+                }
+              ]
+            },
+            {
+              "id": "205",
+              "displayId": "E-5-3",
+              "title": "这个老年人的年龄",
+              "type": "fill",
+              "contentType": "digit"
+            },
+            {
+              "id": "206",
+              "displayId": "E-5-4",
+              "title": "您照料这个老年人多长时间了（年）",
+              "type": "fill",
+              "contentType": "digit",
+              "suffix": "年"
+            },
+            {
+              "id": "207",
+              "displayId": "E-5-5",
+              "title": "据您所知，这个老年人的子女或亲属多久看望或通过电话、视频联系他/她一次？",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "1.几乎没有"
+                },
+                {
+                  "id": "2",
+                  "title": "2.一年一次"
+                },
+                {
+                  "id": "3",
+                  "title": "每月至少一次"
+                },
+                {
+                  "id": "4",
+                  "title": "每周至少一次"
+                },
+                {
+                  "id": "5",
+                  "title": "几乎天天"
+                }
+              ]
+            },
+            {
+              "id": "208",
+              "displayId": "E-5-6",
+              "title": "您觉得您和这个老人在情感上亲近吗？",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "非常不亲近"
+                },
+                {
+                  "id": "2",
+                  "title": "不亲近"
+                },
+                {
+                  "id": "3",
+                  "title": "一般"
+                },
+                {
+                  "id": "4",
+                  "title": "亲近"
+                },
+                {
+                  "id": "5",
+                  "title": "非常亲近"
+                }
+              ]
+            },
+            {
+              "id": "209",
+              "displayId": "E-5-7",
+              "title": "您是否觉得这个老年人要求的服务超过了他/她的实际需要?",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "从未"
+                },
+                {
+                  "id": "2",
+                  "title": "极少"
+                },
+                {
+                  "id": "3",
+                  "title": "有时"
+                },
+                {
+                  "id": "4",
+                  "title": "经常"
+                },
+                {
+                  "id": "5",
+                  "title": "总是"
+                }
+              ]
+            },
+            {
+              "id": "210",
+              "displayId": "E-5-8",
+              "title": "在照料的过程中，这个老年人对您实施攻击性、侮辱性行为的频率？",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "从未"
+                },
+                {
+                  "id": "2",
+                  "title": "每月1、2次"
+                },
+                {
+                  "id": "3",
+                  "title": "每周1、2次"
+                },
+                {
+                  "id": "4",
+                  "title": "每天1、2次"
+                },
+                {
+                  "id": "5",
+                  "title": "每天2次以上"
+                }
+              ]
+            },
+            {
+              "id": "211",
+              "displayId": "E-5-9",
+              "title": "在照料的过程中，这个老年人对您说出攻击性、侮辱性话语的频率？",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "从未"
+                },
+                {
+                  "id": "2",
+                  "title": "每月1、2次"
+                },
+                {
+                  "id": "3",
+                  "title": "每周1、2次"
+                },
+                {
+                  "id": "4",
+                  "title": "每天1、2次"
+                },
+                {
+                  "id": "5",
+                  "title": "每天2次以上"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

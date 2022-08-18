@@ -1,0 +1,971 @@
+{
+  "id": "caring-questionnaire1",
+  "title": "养老机构护理员调查问卷",
+  "questions": [
+    {
+      "id": "questionsC",
+      "title": "第三部分 工作信息",
+      "description": "下面询问您的家庭信息，请直接填写答案或在最符合您实际情况的答案代码上打“√”",
+      "questions": [
+        {
+          "id": "questionsC_partA",
+          "title": "基本信息",
+          "questions": [
+            {
+              "id": "50",
+              "displayId": "C-1",
+              "title": "您是从什么时候开始从事护理员这份职业的？  __年__月 （例：2022 7）",
+              "type": "fill",
+              "contentType": "text"
+            },
+            {
+              "id": "51",
+              "displayId": "C-2",
+              "title": "您每天所照料老年人的人数？ __人",
+              "type": "fill",
+              "contentType": "digit"
+            },
+            {
+              "id": "52",
+              "displayId": "C-3",
+              "title": "您每天的工作时长？ __小时",
+              "type": "fill",
+              "contentType": "digit"
+            },
+            {
+              "id": "53",
+              "displayId": "C-3-1",
+              "title": "您每个月休息几天？ __天",
+              "type": "fill",
+              "contentType": "digit"
+            },
+            {
+              "id": "54",
+              "displayId": "C-4",
+              "title": "您每个月的工资是多少？ __元",
+              "type": "fill",
+              "contentType": "digit"
+            },
+            {
+              "id": "55",
+              "displayId": "C-5",
+              "title": "您对当前的工作感到满意吗？",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "非常不满意"
+                },
+                {
+                  "id": "2",
+                  "title": "不满意"
+                },
+                {
+                  "id": "3",
+                  "title": "一般"
+                },
+                {
+                  "id": "4",
+                  "title": "满意"
+                },
+                {
+                  "id": "5",
+                  "title": "非常满意"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "questionsC_partA2",
+          "title": "",
+          "description": "请根据您在工作中的实际情况回答下列问题，并在相应的答案代码上打“√”",
+          "questions": [
+            {
+              "id": "56",
+              "displayId": "C-6",
+              "title": "照料老年人会使自己的时间不够用",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "非常不同意"
+                },
+                {
+                  "id": "2",
+                  "title": "不同意"
+                },
+                {
+                  "id": "3",
+                  "title": "一般"
+                },
+                {
+                  "id": "4",
+                  "title": "同意"
+                },
+                {
+                  "id": "5",
+                  "title": "非常同意"
+                }
+              ]
+            },
+            {
+              "id": "57",
+              "displayId": "C-7",
+              "title": "在照料老年人和做好家庭事务的同时，我会感到压力",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "非常不同意"
+                },
+                {
+                  "id": "2",
+                  "title": "不同意"
+                },
+                {
+                  "id": "3",
+                  "title": "一般"
+                },
+                {
+                  "id": "4",
+                  "title": "同意"
+                },
+                {
+                  "id": "5",
+                  "title": "非常同意"
+                }
+              ]
+            },
+            {
+              "id": "58",
+              "displayId": "C-8",
+              "title": "老年人依赖于我",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "非常不同意"
+                },
+                {
+                  "id": "2",
+                  "title": "不同意"
+                },
+                {
+                  "id": "3",
+                  "title": "一般"
+                },
+                {
+                  "id": "4",
+                  "title": "同意"
+                },
+                {
+                  "id": "5",
+                  "title": "非常同意"
+                }
+              ]
+            },
+            {
+              "id": "59",
+              "displayId": "C-9",
+              "title": "当老年人在我身边时，我会感到紧张",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "非常不同意"
+                },
+                {
+                  "id": "2",
+                  "title": "不同意"
+                },
+                {
+                  "id": "3",
+                  "title": "一般"
+                },
+                {
+                  "id": "4",
+                  "title": "同意"
+                },
+                {
+                  "id": "5",
+                  "title": "非常同意"
+                }
+              ]
+            },
+            {
+              "id": "60",
+              "displayId": "C-10",
+              "title": "由于照料老年人，我的健康受到了影响",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "非常不同意"
+                },
+                {
+                  "id": "2",
+                  "title": "不同意"
+                },
+                {
+                  "id": "3",
+                  "title": "一般"
+                },
+                {
+                  "id": "4",
+                  "title": "同意"
+                },
+                {
+                  "id": "5",
+                  "title": "非常同意"
+                }
+              ]
+            },
+            {
+              "id": "61",
+              "displayId": "C-11",
+              "title": "由于照料老年人，我没有时间干自己的私事",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "非常不同意"
+                },
+                {
+                  "id": "2",
+                  "title": "不同意"
+                },
+                {
+                  "id": "3",
+                  "title": "一般"
+                },
+                {
+                  "id": "4",
+                  "title": "同意"
+                },
+                {
+                  "id": "5",
+                  "title": "非常同意"
+                }
+              ]
+            },
+            {
+              "id": "62",
+              "displayId": "C-12",
+              "title": "由于照料老年人，我的社交受到了影响",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "非常不同意"
+                },
+                {
+                  "id": "2",
+                  "title": "不同意"
+                },
+                {
+                  "id": "3",
+                  "title": "一般"
+                },
+                {
+                  "id": "4",
+                  "title": "同意"
+                },
+                {
+                  "id": "5",
+                  "title": "非常同意"
+                }
+              ]
+            },
+            {
+              "id": "63",
+              "displayId": "C-13",
+              "title": "我还可能花更多的时间来照料老年人",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "非常不同意"
+                },
+                {
+                  "id": "2",
+                  "title": "不同意"
+                },
+                {
+                  "id": "3",
+                  "title": "一般"
+                },
+                {
+                  "id": "4",
+                  "title": "同意"
+                },
+                {
+                  "id": "5",
+                  "title": "非常同意"
+                }
+              ]
+            },
+            {
+              "id": "64",
+              "displayId": "C-14",
+              "title": "照料老年人以来，按照我自己的意愿去生活已经不可能了",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "非常不同意"
+                },
+                {
+                  "id": "2",
+                  "title": "不同意"
+                },
+                {
+                  "id": "3",
+                  "title": "一般"
+                },
+                {
+                  "id": "4",
+                  "title": "同意"
+                },
+                {
+                  "id": "5",
+                  "title": "非常同意"
+                }
+              ]
+            },
+            {
+              "id": "65",
+              "displayId": "C-15",
+              "title": "我希望能把老年人留给别人来照顾",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "非常不同意"
+                },
+                {
+                  "id": "2",
+                  "title": "不同意"
+                },
+                {
+                  "id": "3",
+                  "title": "一般"
+                },
+                {
+                  "id": "4",
+                  "title": "同意"
+                },
+                {
+                  "id": "5",
+                  "title": "非常同意"
+                }
+              ]
+            },
+            {
+              "id": "66",
+              "displayId": "C-16",
+              "title": "在面对老年人时，我有过不知措施的情形",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "非常不同意"
+                },
+                {
+                  "id": "2",
+                  "title": "不同意"
+                },
+                {
+                  "id": "3",
+                  "title": "一般"
+                },
+                {
+                  "id": "4",
+                  "title": "同意"
+                },
+                {
+                  "id": "5",
+                  "title": "非常同意"
+                }
+              ]
+            },
+            {
+              "id": "67",
+              "displayId": "C-17",
+              "title": "综合来看，您如何评估自己在照料上的负担？",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "无"
+                },
+                {
+                  "id": "2",
+                  "title": "轻"
+                },
+                {
+                  "id": "3",
+                  "title": "中"
+                },
+                {
+                  "id": "4",
+                  "title": "重"
+                },
+                {
+                  "id": "5",
+                  "title": "极重"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "questionsC_partB",
+          "title": "工作家庭关系",
+          "description": "请根据您在工作和家庭生活中的实际情况回答下列问题，并在相应的答案代码上打“√”",
+          "questions": [
+            {
+              "id": "68",
+              "displayId": "C-18",
+              "title": "下班了，我也会经常因工作的事情放松不下来",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "非常不同意"
+                },
+                {
+                  "id": "2",
+                  "title": "不同意"
+                },
+                {
+                  "id": "3",
+                  "title": "一般"
+                },
+                {
+                  "id": "4",
+                  "title": "同意"
+                },
+                {
+                  "id": "5",
+                  "title": "非常同意"
+                }
+              ]
+            },
+            {
+              "id": "69",
+              "displayId": "C-19",
+              "title": "工作中产生的紧张和焦虑情绪影响了我的家庭生活",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "非常不同意"
+                },
+                {
+                  "id": "2",
+                  "title": "不同意"
+                },
+                {
+                  "id": "3",
+                  "title": "一般"
+                },
+                {
+                  "id": "4",
+                  "title": "同意"
+                },
+                {
+                  "id": "5",
+                  "title": "非常同意"
+                }
+              ]
+            },
+            {
+              "id": "70",
+              "displayId": "C-20",
+              "title": "为了工作，我对家庭事务总是难以尽心",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "非常不同意"
+                },
+                {
+                  "id": "2",
+                  "title": "不同意"
+                },
+                {
+                  "id": "3",
+                  "title": "一般"
+                },
+                {
+                  "id": "4",
+                  "title": "同意"
+                },
+                {
+                  "id": "5",
+                  "title": "非常同意"
+                }
+              ]
+            },
+            {
+              "id": "71",
+              "displayId": "C-21",
+              "title": "在家中也会总是想着工作的事情",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "非常不同意"
+                },
+                {
+                  "id": "2",
+                  "title": "不同意"
+                },
+                {
+                  "id": "3",
+                  "title": "一般"
+                },
+                {
+                  "id": "4",
+                  "title": "同意"
+                },
+                {
+                  "id": "5",
+                  "title": "非常同意"
+                }
+              ]
+            },
+            {
+              "id": "72",
+              "displayId": "C-22",
+              "title": "由于家庭事务，在工作中经常觉得很累",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "非常不同意"
+                },
+                {
+                  "id": "2",
+                  "title": "不同意"
+                },
+                {
+                  "id": "3",
+                  "title": "一般"
+                },
+                {
+                  "id": "4",
+                  "title": "同意"
+                },
+                {
+                  "id": "5",
+                  "title": "非常同意"
+                }
+              ]
+            },
+            {
+              "id": "73",
+              "displayId": "C-23",
+              "title": "由于家庭压力，在工作中经常想着家里的事",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "非常不同意"
+                },
+                {
+                  "id": "2",
+                  "title": "不同意"
+                },
+                {
+                  "id": "3",
+                  "title": "一般"
+                },
+                {
+                  "id": "4",
+                  "title": "同意"
+                },
+                {
+                  "id": "5",
+                  "title": "非常同意"
+                }
+              ]
+            },
+            {
+              "id": "74",
+              "displayId": "C-24",
+              "title": "为了家庭，工作有所放松",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "非常不同意"
+                },
+                {
+                  "id": "2",
+                  "title": "不同意"
+                },
+                {
+                  "id": "3",
+                  "title": "一般"
+                },
+                {
+                  "id": "4",
+                  "title": "同意"
+                },
+                {
+                  "id": "5",
+                  "title": "非常同意"
+                }
+              ]
+            },
+            {
+              "id": "75",
+              "displayId": "C-25",
+              "title": "来自家庭的压力影响了我的工作",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "非常不同意"
+                },
+                {
+                  "id": "2",
+                  "title": "不同意"
+                },
+                {
+                  "id": "3",
+                  "title": "一般"
+                },
+                {
+                  "id": "4",
+                  "title": "同意"
+                },
+                {
+                  "id": "5",
+                  "title": "非常同意"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "questionsC_partC",
+          "title": "同事和主管支持",
+          "description": "请根据工作中您与同事、领导的实际情况回答下列问题，并在相应的答案代码上打“√”",
+          "questions": [
+            {
+              "id": "76",
+              "displayId": "C-26",
+              "title": "我与同事之间愿意彼此分享专业技能",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "非常不同意"
+                },
+                {
+                  "id": "2",
+                  "title": "不同意"
+                },
+                {
+                  "id": "3",
+                  "title": "一般"
+                },
+                {
+                  "id": "4",
+                  "title": "同意"
+                },
+                {
+                  "id": "5",
+                  "title": "非常同意"
+                }
+              ]
+            },
+            {
+              "id": "77",
+              "displayId": "C-27",
+              "title": "当同事工作进度落后时彼此之间会相互帮助",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "非常不同意"
+                },
+                {
+                  "id": "2",
+                  "title": "不同意"
+                },
+                {
+                  "id": "3",
+                  "title": "一般"
+                },
+                {
+                  "id": "4",
+                  "title": "同意"
+                },
+                {
+                  "id": "5",
+                  "title": "非常同意"
+                }
+              ]
+            },
+            {
+              "id": "78",
+              "displayId": "C-28",
+              "title": "在同事心情低落时，会相互打气鼓励",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "非常不同意"
+                },
+                {
+                  "id": "2",
+                  "title": "不同意"
+                },
+                {
+                  "id": "3",
+                  "title": "一般"
+                },
+                {
+                  "id": "4",
+                  "title": "同意"
+                },
+                {
+                  "id": "5",
+                  "title": "非常同意"
+                }
+              ]
+            },
+            {
+              "id": "79",
+              "displayId": "C-29",
+              "title": "我觉得同事给我的回馈非常有用",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "非常不同意"
+                },
+                {
+                  "id": "2",
+                  "title": "不同意"
+                },
+                {
+                  "id": "3",
+                  "title": "一般"
+                },
+                {
+                  "id": "4",
+                  "title": "同意"
+                },
+                {
+                  "id": "5",
+                  "title": "非常同意"
+                }
+              ]
+            },
+            {
+              "id": "80",
+              "displayId": "C-30",
+              "title": "同事能给我提供有价值的信息，助我改善工作表现",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "非常不同意"
+                },
+                {
+                  "id": "2",
+                  "title": "不同意"
+                },
+                {
+                  "id": "3",
+                  "title": "一般"
+                },
+                {
+                  "id": "4",
+                  "title": "同意"
+                },
+                {
+                  "id": "5",
+                  "title": "非常同意"
+                }
+              ]
+            },
+            {
+              "id": "81",
+              "displayId": "C-31",
+              "title": "我和同事共同讨论并解决工作问题",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "非常不同意"
+                },
+                {
+                  "id": "2",
+                  "title": "不同意"
+                },
+                {
+                  "id": "3",
+                  "title": "一般"
+                },
+                {
+                  "id": "4",
+                  "title": "同意"
+                },
+                {
+                  "id": "5",
+                  "title": "非常同意"
+                }
+              ]
+            },
+            {
+              "id": "82",
+              "displayId": "C-32",
+              "title": "当纷争产生时，同事间往往会有人出面充当和事佬",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "非常不同意"
+                },
+                {
+                  "id": "2",
+                  "title": "不同意"
+                },
+                {
+                  "id": "3",
+                  "title": "一般"
+                },
+                {
+                  "id": "4",
+                  "title": "同意"
+                },
+                {
+                  "id": "5",
+                  "title": "非常同意"
+                }
+              ]
+            },
+            {
+              "id": "83",
+              "displayId": "C-33",
+              "title": "当我陷入困难和危机时，我的主管会给我帮助",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "非常不同意"
+                },
+                {
+                  "id": "2",
+                  "title": "不同意"
+                },
+                {
+                  "id": "3",
+                  "title": "一般"
+                },
+                {
+                  "id": "4",
+                  "title": "同意"
+                },
+                {
+                  "id": "5",
+                  "title": "非常同意"
+                }
+              ]
+            },
+            {
+              "id": "84",
+              "displayId": "C-34",
+              "title": "我的主管乐意倾听我在工作方面的问题",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "非常不同意"
+                },
+                {
+                  "id": "2",
+                  "title": "不同意"
+                },
+                {
+                  "id": "3",
+                  "title": "一般"
+                },
+                {
+                  "id": "4",
+                  "title": "同意"
+                },
+                {
+                  "id": "5",
+                  "title": "非常同意"
+                }
+              ]
+            },
+            {
+              "id": "85",
+              "displayId": "C-35",
+              "title": "我的主管会认可我出色的表现",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "非常不同意"
+                },
+                {
+                  "id": "2",
+                  "title": "不同意"
+                },
+                {
+                  "id": "3",
+                  "title": "一般"
+                },
+                {
+                  "id": "4",
+                  "title": "同意"
+                },
+                {
+                  "id": "5",
+                  "title": "非常同意"
+                }
+              ]
+            },
+            {
+              "id": "86",
+              "displayId": "C-36",
+              "title": "当我犯错时，我的主管会给我提供弥补的机会",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "非常不同意"
+                },
+                {
+                  "id": "2",
+                  "title": "不同意"
+                },
+                {
+                  "id": "3",
+                  "title": "一般"
+                },
+                {
+                  "id": "4",
+                  "title": "同意"
+                },
+                {
+                  "id": "5",
+                  "title": "非常同意"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

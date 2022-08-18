@@ -1,0 +1,269 @@
+{
+    "id": "questionnaire1", 
+    "title": "模块标题",
+    "questions": [
+      {
+        "id": "questions1",
+        "title": "评估对象基本信息",
+        "questions": [
+          {
+            "id": "1",
+            "displayId": "1",
+            "title": "姓名",
+            "type": "fill",
+            "contentType": "text"
+          },
+          {
+            "id": "2",
+            "displayId": "2",
+            "title": "是否经过康复治疗",
+            "type": "multiple",
+            "choices": [
+              {
+                "id": "2_1",
+                "title": "是，治疗月数",
+                "input": true
+              },
+              {
+                "id": "2_2",
+                "title": "否"
+              }
+            ]
+          },
+          {
+            "id": "3",
+            "displayId": "3",
+            "title": "居住地址",
+            "type": "fill",
+            "contentType": "address"
+          }, 
+          {
+            "id": "4",
+            "displayId": "4",
+            "title": "详细地址",
+            "type": "fill",
+            "contentType": "text"
+          }
+        ]
+      },
+      {
+        "id": "questions2",
+        "title": "失能等级自评表",
+        "description": "请在下列各项目中选择 独立(2), 部分独立(需要帮助) (1) 依赖(0)",
+        "questions": [
+          {
+            "id": "5",
+            "displayId": "①",
+            "title": "进食",
+            "type": "multiple",
+            "choices": [
+              {
+                "id": "5_1",
+                "title": "独立,无须帮助",
+                "value": 2
+              },
+              {
+                "id": "5_2",
+                "title": "部分独立,自己能吃,但需辅助",
+                "value": 1
+              },
+              {
+                "id": "5_3",
+                "title": "不能独立完成,部分或全部靠喂食或鼻饲",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "id": "6",
+            "displayId": "②",
+            "title": "穿衣",
+            "type": "multiple",
+            "choices": [
+              {
+                "id": "6_1",
+                "title": "独立,无须帮助,能独立...",
+                "value": 2
+              },
+              {
+                "id": "6_2",
+                "title": "部分独立,能独立...",
+                "value": 1
+              },
+              {
+                "id": "6_3",
+                "title": "不能独立完成...",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "id": "10",
+            "displayId": "综合",
+            "title": "自评等级为",
+            "type": "multiple",
+            "choices": [
+              {
+                "id": "10_1",
+                "title": "A级: a类b类所有项目均独立"
+              }
+            ]
+          },
+          {
+            "id": "11",
+            "title": "评级说明",
+            "type": "text",
+            "content": "xxx为a类, xxx为b类; 此表由评估对象..."
+          }
+        ]
+      },
+      {
+        "id": "questions3",
+        "title": "日常生活活动能力评估表",
+        "dependencies": [
+          {
+            "id": "21",
+            "choice": "^(21_1)|(已婚)$"
+          }
+        ],
+        "questions": [
+          {
+            "id": "12",
+            "displayId": "①",
+            "title": "进食",
+            "type": "multiple",
+            "choices": [
+              {
+                "id": "12_1",
+                "title": "较大或完全依赖(0)",
+                "value": 0
+              },
+              {
+                "id": "12_2",
+                "title": "需部分帮助(5)",
+                "value": 5
+              },
+              {
+                "id": "12_3",
+                "title": "自理(xxx)(10)",
+                "value": 10
+              }
+            ]
+          }, 
+          {
+            "id": "20",
+            "title": "上述评估指标总分为100分, 本次评估得分为",
+            "type": "fill",
+            "contentType": "number",
+            "suffix": "分"
+          }
+        ]
+      },
+      {
+        "id": "questions4",
+        "title": "护理员信息",
+        "questions": [
+          {
+            "id": "21",
+            "displayId": "1",
+            "title": "您的婚姻状况",
+            "type": "multiple",
+            "choices": [
+              {
+                "id": "21_1",
+                "title": "已婚"
+              },
+              {
+                "id": "21_2",
+                "title": "未婚"
+              },
+              {
+                "id": "21_3",
+                "title": "离异或丧偶"
+              }
+            ]
+          },
+          {
+            "id": "22",
+            "displayId": "1.1",
+            "title": "您的配偶主要从事什么工作",
+            "type": "multiple",
+            "dependencies": [
+              {
+                "id": "21",
+                "choice": "^(21_1)|(已婚)$"
+              }
+            ],
+            "choices": [
+              {
+                "id": "22_1",
+                "title": "政府、事业单位工作人员"
+              },
+              {
+                "id": "22_x",
+                "title": "其他",
+                "input": true
+              }
+            ]
+          },
+          {
+            "id": "30",
+            "title": "照料老人的数量",
+            "type": "multiple",
+            "choices": [
+              {
+                "id": "30_1",
+                "title": "1位"
+              },
+              {
+                "id": "30_6",
+                "title": "6位或以上(请选择6位填写下方信息)"
+              }
+            ]
+          },
+          {
+            "id": "the_old_info_4",
+            "title": "老年人信息#4",
+            "dependencies": [
+              {
+                "id": "30",
+                "choice": "[4-6]"
+              }
+            ],
+            "questions": [
+              {
+                "id": "33",
+                "title": "照料老人的数量",
+                "type": "multiple",
+                "choices": [
+                  {
+                    "id": "30_1",
+                    "title": "1位"
+                  },
+                  {
+                    "id": "30_6",
+                    "title": "6位或以上(请选择6位填写下方信息)"
+                  }
+                ]
+              },
+              {
+                "id": "34",
+                "title": "照料老人的数量",
+                "type": "multiple",
+                "choices": [
+                  {
+                    "id": "30_1",
+                    "title": "1位"
+                  },
+                  {
+                    "id": "30_6",
+                    "title": "6位或以上(请选择6位填写下方信息)"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

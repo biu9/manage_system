@@ -1,0 +1,661 @@
+{
+    "id": "old-questionnaire3",
+    "title": "抑郁和认知功能评估",
+    "questions": [
+      {
+        "id": "questionsF",
+        "title": "实际想法选择",
+        "description":"一、下面10道问题是你可能有过或感觉到的情况或想法,请按照过去1周内你的实际情况或感觉进行选择。每道题目的答案都是一样的,包括根本没有或几乎没有(出现这类情况的日子不超过1天)、少有(有1至2天有过这类情况)、常有(有3至4天有过这类情况)、几乎一直有或大多数时间有(有5至7天有过这类情况).",
+        "questions": [
+          {
+            "id": "50",
+            "displayId": "F-1",
+            "title": "我因一些小事而烦恼",
+            "type": "multiple",
+            "choices": [
+              {
+                "id": "F-1_1",
+                "title": "没有或者几乎没有"
+              },
+              {
+                "id": "F-1_2",
+                "title": "少有"
+              },
+              {
+                "id": "F-1_3",
+                "title": "常有"
+              },
+              {
+                "id": "F-1_4",
+                "title": "几乎一直有"
+              }
+            ]
+          },
+          {
+            "id": "51",
+            "displayId": "F-2",
+            "title": "我在做事时很难集中精力。",
+            "type": "multiple",
+            "choices": [
+              {
+                "id": "F-2_1",
+                "title": "没有或者几乎没有"
+              },
+              {
+                "id": "F-2_2",
+                "title": "少有"
+              },
+              {
+                "id": "F-2_3",
+                "title": "常有"
+              },
+              {
+                "id": "F-2_4",
+                "title": "几乎一直有"
+              }
+            ]
+          },
+          {
+            "id": "52",
+            "displayId": "F-3",
+            "title": "我感到情绪低落.",
+            "type": "multiple",
+            "choices": [
+              {
+                "id": "F-3_1",
+                "title": "没有或者几乎没有"
+              },
+              {
+                "id": "F-3_2",
+                "title": "少有"
+              },
+              {
+                "id": "F-3_3",
+                "title": "常有"
+              },
+              {
+                "id": "F-3_4",
+                "title": "几乎一直有"
+              }
+            ]
+          },
+          {
+            "id": "53",
+            "displayId": "F-4",
+            "title": "我觉得做任何事都很费劲。",
+            "type": "multiple",
+            "choices": [
+              {
+                "id": "F-4_1",
+                "title": "没有或者几乎没有"
+              },
+              {
+                "id": "F-4_2",
+                "title": "少有"
+              },
+              {
+                "id": "F-4_3",
+                "title": "常有"
+              },
+              {
+                "id": "F-4_4",
+                "title": "几乎一直有"
+              }
+            ]
+          },
+          {
+            "id": "54",
+            "displayId": "F-5",
+            "title": "我对未来充满希望。",
+            "type": "multiple",
+            "choices": [
+              {
+                "id": "F-5_1",
+                "title": "没有或者几乎没有"
+              },
+              {
+                "id": "F-5_2",
+                "title": "少有"
+              },
+              {
+                "id": "F-5_3",
+                "title": "常有"
+              },
+              {
+                "id": "F-5_4",
+                "title": "几乎一直有"
+              }
+            ]
+          },
+          {
+            "id": "55",
+            "displayId": "F-6",
+            "title": "我感到害怕。",
+            "type": "multiple",
+            "choices": [
+              {
+                "id": "F-6_1",
+                "title": "没有或者几乎没有"
+              },
+              {
+                "id": "F-6_2",
+                "title": "少有"
+              },
+              {
+                "id": "F-6_3",
+                "title": "常有"
+              },
+              {
+                "id": "F-6_4",
+                "title": "几乎一直有"
+              }
+            ]
+          },
+          {
+            "id": "56",
+            "displayId": "F-7",
+            "title": "我的睡眠不好。",
+            "type": "multiple",
+            "choices": [
+              {
+                "id": "F-7_1",
+                "title": "没有或者几乎没有"
+              },
+              {
+                "id": "F-7_2",
+                "title": "少有"
+              },
+              {
+                "id": "F-7_3",
+                "title": "常有"
+              },
+              {
+                "id": "F-7_4",
+                "title": "几乎一直有"
+              }
+            ]
+          },
+          {
+            "id": "57",
+            "displayId": "F-8",
+            "title": "我很愉快。",
+            "type": "multiple",
+            "choices": [
+              {
+                "id": "F-8_1",
+                "title": "没有或者几乎没有"
+              },
+              {
+                "id": "F-8_2",
+                "title": "少有"
+              },
+              {
+                "id": "F-8_3",
+                "title": "常有"
+              },
+              {
+                "id": "F-8_4",
+                "title": "几乎一直有"
+              }
+            ]
+          },
+          {
+            "id": "58",
+            "displayId": "F-9",
+            "title": "我感到孤独。",
+            "type": "multiple",
+            "choices": [
+              {
+                "id": "F-9_1",
+                "title": "没有或者几乎没有"
+              },
+              {
+                "id": "F-9_2",
+                "title": "少有"
+              },
+              {
+                "id": "F-9_3",
+                "title": "常有"
+              },
+              {
+                "id": "F-9_4",
+                "title": "几乎一直有"
+              }
+            ]
+          },
+          {
+            "id": "59",
+            "displayId": "F-10",
+            "title": "我觉得我无法继续我的生活。",
+            "type": "multiple",
+            "choices": [
+              {
+                "id": "F-10_1",
+                "title": "没有或者几乎没有"
+              },
+              {
+                "id": "F-10_2",
+                "title": "少有"
+              },
+              {
+                "id": "F-10_3",
+                "title": "常有"
+              },
+              {
+                "id": "F-10_4",
+                "title": "几乎一直有"
+              }
+            ]
+          }
+        ]
+      },
+      {
+    "id": "questionsG",
+        "title": "注意力记忆力测试",
+        "description":"二、下面我要问你一些简单的问题，测验一下你的注意力和记忆力，请不要紧张尽力完成。",
+        "questions": [
+          {
+            "id": "60",
+            "displayId": "G-1",
+            "title": "请问您今年多大岁数?(误差在2岁内为正确)",
+            "type": "multiple",
+            "choices": [
+                {
+                  "id": "G-1_1",
+                  "title": "正确",
+                  "value":1
+                },
+                {
+                  "id": "G-1_2",
+                  "title": "错误",
+                  "value":0
+                }
+              ]
+          },
+          {
+            "id": "61",
+            "displayId": "G-2",
+            "title": "请问现在是哪一年?",
+            "type": "multiple",
+            "choices": [
+                {
+                  "id": "G-2_1",
+                  "title": "正确",
+                  "value":1
+                },
+                {
+                  "id": "G-2_2",
+                  "title": "错误",
+                  "value":0
+                }
+              ]
+          },
+          {
+            "id": "62",
+            "displayId": "G-3",
+            "title": "请问现在是哪一月?",
+            "type": "multiple",
+            "choices": [
+                {
+                  "id": "G-3_1",
+                  "title": "正确",
+                  "value":1
+                },
+                {
+                  "id": "G-3_2",
+                  "title": "错误",
+                  "value":0
+                }
+              ]
+          },
+          {
+            "id": "63",
+            "displayId": "G-4",
+            "title": "请问现在是哪一日?",
+            "type": "multiple",
+            "choices": [
+                {
+                  "id": "G-4_1",
+                  "title": "正确",
+                  "value":1
+                },
+                {
+                  "id": "G-4_2",
+                  "title": "错误",
+                  "value":0
+                }
+              ]
+          },
+          {
+            "id": "64",
+            "displayId": "G-5",
+            "title": "请问现在是星期几?",
+            "type": "multiple",
+            "choices": [
+                {
+                  "id": "G-5_1",
+                  "title": "正确",
+                  "value":1
+                },
+                {
+                  "id": "G-5_2",
+                  "title": "错误",
+                  "value":0
+                }
+              ]
+          },
+          {
+            "id": "65",
+            "displayId": "G-6",
+            "title": "请问这里是什么地方?",
+            "type": "multiple",
+            "choices": [
+                {
+                  "id": "G-6_1",
+                  "title": "自然说出正确答案",
+                  "value":2
+                },
+                {
+                  "id": "G-6_2",
+                  "title": "经提醒或选择说出正确答案",
+                  "value":1
+                },
+                {
+                  "id": "G-6_3",
+                  "title": "错误",
+                  "value":0
+                }
+              ]
+          },
+          {
+            "id": "66",
+            "displayId": "G-7",
+            "title": "请记住并复述我刚刚说的词语(桃花)",
+            "type": "multiple",
+            "choices": [
+                {
+                  "id": "G-7_1",
+                  "title": "正确",
+                  "value":1
+                },
+                {
+                  "id": "G-7_2",
+                  "title": "错误",
+                  "value":0
+                }
+              ]
+          },
+          {
+            "id": "67",
+            "displayId": "G-8",
+            "title": "请记住并复述我刚刚说的词语(狗)",
+            "type": "multiple",
+            "choices": [
+                {
+                  "id": "G-8_1",
+                  "title": "正确",
+                  "value":1
+                },
+                {
+                  "id": "G-8_2",
+                  "title": "错误",
+                  "value":0
+                }
+              ]
+          },
+          {
+            "id": "68",
+            "displayId": "G-9",
+            "title": "请记住并复述我刚刚说的词语(汽车)",
+            "type": "multiple",
+            "choices": [
+                {
+                  "id": "G-9_1",
+                  "title": "正确",
+                  "value":1
+                },
+                {
+                  "id": "G-9_2",
+                  "title": "错误",
+                  "value":0
+                }
+              ]
+          },
+          {
+            "id": "69",
+            "displayId": "G-10",
+            "title": "100减7是多少?",
+            "type": "multiple",
+            "choices": [
+                {
+                  "id": "G-10_1",
+                  "title": "正确",
+                  "value":1
+                },
+                {
+                  "id": "G-10_2",
+                  "title": "错误",
+                  "value":0
+                }
+              ]
+          },
+          {
+            "id": "70",
+            "displayId": "G-11",
+            "title": "100减7,再减7是多少?",
+            "type": "multiple",
+            "choices": [
+                {
+                  "id": "G-11_1",
+                  "title": "正确",
+                  "value":1
+                },
+                {
+                  "id": "G-11_2",
+                  "title": "错误",
+                  "value":0
+                }
+              ]
+          },
+          {
+            "id": "71",
+            "displayId": "G-12",
+            "title": "现在我要念出几个数字(6 - 8 - 2),请倒过来念。(可尝试3次)",
+            "type": "multiple",
+            "choices": [
+                {
+                  "id": "G-12_1",
+                  "title": "正确",
+                  "value":1
+                },
+                {
+                  "id": "G-12_2",
+                  "title": "错误",
+                  "value":0
+                }
+              ]
+          },
+          {
+            "id": "72",
+            "displayId": "G-13",
+            "title": "现在我要念出几个数字(3 - 5 - 2 - 9),请倒过来念。(可尝试3次)",
+            "type": "multiple",
+            "choices": [
+                {
+                  "id": "G-13_1",
+                  "title": "正确",
+                  "value":1
+                },
+                {
+                  "id": "G-13_2",
+                  "title": "错误",
+                  "value":0
+                }
+              ]
+          },
+          {
+            "id": "73",
+            "displayId": "G-14",
+            "title": "刚才我请您记住的第一个词是什么?(桃花)",
+            "type": "multiple",
+            "choices": [
+                {
+                  "id": "G-14_1",
+                  "title": "自然说出正确答案",
+                  "value":2
+                },
+                {
+                  "id": "G-14_2",
+                  "title": "经过提醒(植物)说出正确答案",
+                  "value":1
+                },
+                {
+                  "id": "G-14_3",
+                  "title": "错误",
+                  "value":0
+                }
+              ]
+          },
+          {
+            "id": "74",
+            "displayId": "G-15",
+            "title": "刚才我请您记住的第二个词是什么?(狗)",
+            "type": "multiple",
+            "choices": [
+                {
+                  "id": "G-15_1",
+                  "title": "自然说出正确答案",
+                  "value":2
+                },
+                {
+                  "id": "G-15_2",
+                  "title": "经过提醒(动物)说出正确答案",
+                  "value":1
+                },
+                {
+                  "id": "G-15_3",
+                  "title": "错误",
+                  "value":0
+                }
+              ]
+          },
+          {
+            "id": "75",
+            "displayId": "G-16",
+            "title": "刚才我请您记住的第三个词是什么?(汽车)",
+            "type": "multiple",
+            "choices": [
+                {
+                  "id": "G-16_1",
+                  "title": "自然说出正确答案",
+                  "value":2
+                },
+                {
+                  "id": "G-16_2",
+                  "title": "经过提醒(交通工具)说出正确答案",
+                  "value":1
+                },
+                {
+                  "id": "G-16_3",
+                  "title": "错误",
+                  "value":0
+                }
+              ]
+          },
+          {
+            "id": "76",
+            "displayId": "G-17",
+            "title": "请复述刚刚拿出来的5样东西(表、硬币、笔、钥匙、钱包)",
+            "type": "multiple",
+            "choices": [
+                {
+                  "id": "G-17_1",
+                  "title": "正确5样",
+                  "value":5
+                },
+                {
+                  "id": "G-17_2",
+                  "title": "正确4样",
+                  "value":4
+                },
+                {
+                  "id": "G-17_3",
+                  "title": "正确3样",
+                  "value":3
+                },
+                {
+                  "id": "G-17_4",
+                  "title": "正确2样",
+                  "value":2
+                },
+                {
+                  "id": "G-17_5",
+                  "title": "正确1样",
+                  "value":1
+                },
+                {
+                  "id": "G-17_6",
+                  "title": "错误",
+                  "value":0
+                }
+              ]
+          },
+          {
+            "id": "77",
+            "displayId": "G-18",
+            "title": "请告诉我10种动物的名字?",
+            "type": "multiple",
+            "choices": [
+                {
+                  "id": "G-18_1",
+                  "title": "说出10种",
+                  "value":5
+                },
+                {
+                  "id": "G-18_2",
+                  "title": "说出9种",
+                  "value":4
+                },
+                {
+                  "id": "G-18_3",
+                  "title": "说出8种",
+                  "value":3
+                },
+                {
+                  "id": "G-18_4",
+                  "title": "说出7种",
+                  "value":2
+                },
+                {
+                  "id": "G-18_5",
+                  "title": "说出6种",
+                  "value":1
+                },
+                {
+                  "id": "G-18_6",
+                  "title": "说出0-5种",
+                  "value":0
+                }
+              ]
+          },
+          {
+            "id": "78",
+            "displayId": "G-19",
+            "title": "是否经过康复治疗",
+            "type": "multiple",
+            "choices": [
+              {
+                "id": "G-19_1",
+                "title": "是，治疗月数",
+                "input": true
+              },
+              {
+                "id": "G-19_2",
+                "title": "否"
+              }
+            ]
+          }   
+        ]
+      }
+    ]
+  }

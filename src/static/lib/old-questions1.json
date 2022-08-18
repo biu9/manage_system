@@ -1,0 +1,338 @@
+{
+    "id": "old-questionnaire1", 
+    "title": "个人信息",
+    "questions": [
+      {
+        "id": "questionsA",
+        "title": "评估对象基本信息",
+        "questions": [
+          {
+            "id": "0",
+            "displayId": "A-1",
+            "title": "姓名",
+            "type": "fill",
+            "contentType": "text"
+          },
+          {
+            "id": "1",
+            "displayId": "A-2",
+            "title": "身份证号",
+            "type": "fill",
+            "contentType": "idcard"
+          },
+          {
+            "id": "2",
+            "displayId": "A-3",
+            "title": "性别",
+            "type": "mutiple",
+            "choices": [
+                {
+                  "id": "A-3_1",
+                  "title": "男"
+                },
+                {
+                  "id": "A-3_2",
+                  "title": "女"
+                }
+            ]
+          },
+          {
+            "id": "3",
+            "displayId": "A-4",
+            "title": "年龄",
+            "type": "fill",
+            "contentType": "number"
+          },
+          {
+            "id": "4",
+            "displayId": "A-5",
+            "title": "民族",
+            "type": "fill",
+            "contentType": "text"
+          },
+          {
+            "id": "5",
+            "displayId": "A-6",
+            "title": "参保地",
+            "type": "fill",
+            "contentType": "text"
+          },
+          {
+            "id": "6",
+            "displayId": "A-7",
+            "title": "失能时间（月）",
+            "type": "fill",
+            "contentType": "number"
+          },
+         {
+            "id": "7",
+            "displayId": "A-8",
+            "title": "是否经过康复治疗",
+            "type": "multiple",
+            "choices": [
+              {
+                "id": "A-8_1",
+                "title": "是，治疗月数",
+                "input": true
+              },
+              {
+                "id": "A-8_2",
+                "title": "否"
+              }
+            ]
+          },
+         {
+            "id": "8",
+            "displayId": "A-9",
+            "title": "是否首次申请",
+            "type": "multiple",
+            "choices": [
+              {
+                "id": "A-9_1",
+                "title": "是"
+              },
+              {
+                "id": "A-9_2",
+                "title": "否"
+              }
+            ]
+          },
+         {
+           "id": "9",
+           "displayId": "A-10",
+           "title": "联系电话",
+           "type": "fill",
+           "contentType": "number"
+         },
+         {
+            "id": "10",
+            "displayId": "A-11",
+            "title": "保障方式",
+            "type": "multiple",
+            "choices": [
+              {
+                "id": "A-11_1",
+                "title": "职工基本医疗保险"
+              },
+              {
+                "id": "A-11_2",
+                "title": "城乡居民基本医疗保险"
+              },
+              {
+                "id": "A-11_3",
+                "title": "特困供养"
+              },
+              {
+                "id": "A-11_4",
+                "title": "最低生活保障"
+              },
+              {
+                "id": "A-11_5",
+                "title": "其他",
+                "input": true
+              }
+            ]
+          },
+         {
+            "id": "11",
+            "displayId": "A-12",
+            "title": "文化程度",
+            "type": "multiple",
+            "choices": [
+              {
+                "id": "A-12_1",
+                "title": "文盲"
+              },
+              {
+                "id": "A-12_2",
+                "title": "小学"
+              },
+              {
+                "id": "A-12_3",
+                "title": "中学（含中专）"
+              },
+              {
+                "id": "A-12_4",
+                "title": "大学（含大专）及以上"
+              }
+            ]
+          },
+         {
+            "id": "12",
+            "displayId": "A-13",
+            "title": "居住状况",
+            "type": "multiple",
+            "choices": [
+              {
+                "id": "A-13_1",
+                "title": "独居"
+              },
+              {
+                "id": "A-13_2",
+                "title": "与配偶/伴侣居住"
+              },
+              {
+                "id": "A-13_3",
+                "title": "与子女居住"
+              },
+              {
+                "id": "A-13_4",
+                "title": "与父母居住"
+              },
+              {
+                "id": "A-13_5",
+                "title": "与兄弟姐妹居住"
+              },
+              {
+                "id": "A-13_6",
+                "title": "与其他亲属居住"
+              },
+              {
+                "id": "A-13_7",
+                "title": "与非亲属关系的人居住"
+              },
+              {
+                "id": "A-13_8",
+                "title": "养老机构"
+              },
+              {
+                "id": "A-13_9",
+                "title": "医院"
+              }
+            ]
+          },
+          {
+            "id": "13",
+            "displayId": "A-14",
+            "title": "居住地址",
+            "type": "mutiple",
+            "contentType": "address"
+          }, 
+          {
+            "id": "14",
+            "displayId": "A-15",
+            "title": "详细地址",
+            "type": "fill",
+            "contentType": "text"
+          },
+          {
+             "id": "15",
+             "displayId": "A-16",
+             "title": "照护者",
+             "description":"当需要帮助（包括患病时），谁能来照顾",
+             "type": "multiple",
+             "choices": [
+               {
+                 "id": "A-16_1",
+                 "title": "配偶"
+               },
+               {
+                 "id": "A-16_2",
+                 "title": "子女"
+               },
+               {
+                 "id": "A-16_3",
+                 "title": "亲友"
+               },
+               {
+                 "id": "A-16_4",
+                 "title": "保姆"
+               },
+               {
+                 "id": "A-16_5",
+                 "title": "护工"
+               },
+               {
+                 "id": "A-16_6",
+                 "title": "医疗人员"
+               },
+               {
+                 "id": "A-16_7",
+                 "title": "没有任何人"
+               },
+               {
+                 "id": "A-16_8",
+                 "title": "其他",
+                 "input":true
+               }
+             ]
+           },
+          {
+            "id": "questionsM",
+            "title": "申请人相关信息",
+            "questions": [
+                {
+                  "id": "16",
+                  "displayId": "M-1",
+                  "title": "姓名",
+                  "type": "fill",
+                  "contentType": "text"
+                },
+                {
+                  "id": "17",
+                  "displayId": "M-2",
+                  "title": "与评估对象关系",
+                  "type": "mutiple",
+                  "choices": [
+                      {
+                        "id": "M-2_1",
+                        "title": "配偶"
+                      },
+                      {
+                        "id": "M-2_2",
+                        "title": "子女"
+                      },
+                      {
+                        "id": "M-2_3",
+                        "title": "其他亲属"
+                      },
+                      {
+                        "id": "M-2_4",
+                        "title": "雇佣照护者"
+                      },
+                      {
+                        "id": "2_5",
+                        "title": "本人"
+                      },
+                      {
+                        "id": "2_6",
+                        "title": "其他",
+                        "input":true
+                      }
+                  ]
+                },
+                {
+                  "id": "18",
+                  "displayId": "M-3",
+                  "title": "联系电话",
+                  "type": "fill",
+                  "contentType": "number"
+                },
+                {
+                  "id": "19",
+                  "displayId": "M-4",
+                  "title": "身份证号",
+                  "type": "fill",
+                  "contentType": "idcard"
+                },
+                {
+                  "id": "20",
+                  "displayId": "M-5",
+                  "title": "联系地址",
+                  "type": "mutiple",
+                  "contentType": "address"
+                },
+                {
+                  "id": "21",
+                  "displayId": "M-6",
+                  "title": "详细地址",
+                  "type": "fill",
+                  "contentType": "text"
+                }
+                ]
+              }
+        ]
+      }
+    ]
+        
+}

@@ -1,0 +1,682 @@
+{
+  "id": "老人问卷A",
+  "title": "A个人信息",
+  "questions": [
+    {
+      "id": "container",
+      "title": "",
+      "questions": [
+        {
+          "id": "A",
+          "title": "1",
+          "questions": [
+            {
+              "id": "0",
+              "displayId": "A-1",
+              "title": "您的性别",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "男"
+                },
+                {
+                  "id": "2",
+                  "title": "女"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "questionsGroupA2",
+          "title": "",
+          "questions": [
+            {
+              "id": "1",
+              "displayId": "A2-1",
+              "title": "您的出生年份：(请输入四位数年份，如 1949)",
+              "type": "fill",
+              "contentType": "digit",
+              "range_validation":"true",
+              "range_min":"1900",
+              "range_max":"1957"
+            },
+            {
+              "id": "2",
+              "displayId": "A2-2",
+              "title": "您的出生月份",
+              "type": "fill",
+              "contentType": "digit"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "displayId": "A-3",
+          "title": "您的民族",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "汉族"
+            },
+            {
+              "id": "2",
+              "title": "其他",
+              "input": "true"
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "displayId": "A-4",
+          "title": "您的文化程度",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "未上过学（包括扫盲班)"
+            },
+            {
+              "id": "2",
+              "title": "小学（包括私塾）"
+            },
+            {
+              "id": "3",
+              "title": "初中"
+            },
+            {
+              "id": "4",
+              "title": "高中/中专/职高"
+            },
+            {
+              "id": "5",
+              "title": "大学专科"
+            },
+            {
+              "id": "6",
+              "title": "大学本科及以上"
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "displayId": "A-5",
+          "title": "您目前是",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "低保户"
+            },
+            {
+              "id": "2",
+              "title": "特困人员"
+            },
+            {
+              "id": "3",
+              "title": "其他"
+            }
+          ]
+        },
+        {
+          "id": "6",
+          "displayId": "A-6",
+          "title": "您目前的婚姻状况是",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "已婚"
+            },
+            {
+              "id": "2",
+              "title": "离婚"
+            },
+            {
+              "id": "3",
+              "title": "丧偶"
+            },
+            {
+              "id": "4",
+              "title": "从未结过婚"
+            }
+          ]
+        },
+        {
+          "id": "7",
+          "displayId": "A-7",
+          "title": "您家现在与您同吃同住在一起的一共有几人(包括您自己)",
+          "type": "fill",
+          "contentType": "digit",
+          "range_validation":"true",
+          "range_min":"1",
+          "range_max":"100"
+        },
+        {
+          "id": "8",
+          "displayId": "A-8",
+          "title": "您的居住状况",
+          "type": "multiple",
+          "max": "9",
+          "choices": [
+            {
+              "id": "1",
+              "title": "独居"
+            },
+            {
+              "id": "2",
+              "title": "与配偶/伴侣居住"
+            },
+            {
+              "id": "3",
+              "title": "与子女居住"
+            },
+            {
+              "id": "4",
+              "title": "与父母居住"
+            },
+            {
+              "id": "5",
+              "title": "与兄弟姐妹居住"
+            },
+            {
+              "id": "6",
+              "title": "与其他亲属居住"
+            },
+            {
+              "id": "7",
+              "title": "与非亲属关系的人居住"
+            },
+            {
+              "id": "8",
+              "title": "养老机构"
+            },
+            {
+              "id": "9",
+              "title": "医院"
+            }
+          ]
+        },
+        {
+          "id": "9",
+          "displayId": "A-9",
+          "title": "当您需要帮助时（患病、日常起居等），谁能来照料您？（可多选）",
+          "type": "multiple",
+          "min": "1",
+          "max": "3",
+          "choices": [
+            {
+              "id": "1",
+              "title": "配偶"
+            },
+            {
+              "id": "2",
+              "title": "子女"
+            },
+            {
+              "id": "3",
+              "title": "亲友"
+            },
+            {
+              "id": "4",
+              "title": "保姆"
+            },
+            {
+              "id": "5",
+              "title": "护工"
+            },
+            {
+              "id": "6",
+              "title": "医疗人员"
+            },
+            {
+              "id": "7",
+              "title": "其他",
+              "input": "true"
+            },
+            {
+              "id": "8",
+              "title": "没有任何人"
+            }
+          ]
+        },
+        {
+          "id": "10",
+          "displayId": "A-10",
+          "title": "您过去一年（退休后）还在工作吗？",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "工作"
+            },
+            {
+              "id": "2",
+              "title": "不工作",
+              "hide_qs": [
+                "11",
+                "12"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "questiongroup10",
+          "title": "",
+          "questions": [
+            {
+              "id": "11",
+              "displayId": "A-10-1",
+              "title": "您在什么行业工作",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "1. 农林牧渔业"
+                },
+                {
+                  "id": "2",
+                  "title": "采矿业"
+                },
+                {
+                  "id": "3",
+                  "title": "建筑业"
+                },
+                {
+                  "id": "4",
+                  "title": "科学研究和技术服务业"
+                },
+                {
+                  "id": "5",
+                  "title": "制造业"
+                },
+                {
+                  "id": "6",
+                  "title": "批发和零售"
+                },
+                {
+                  "id": "7",
+                  "title": "公共管理和社会组织"
+                },
+                {
+                  "id": "8",
+                  "title": "房地产"
+                },
+                {
+                  "id": "9",
+                  "title": "卫生、社会保障和社会工作"
+                },
+                {
+                  "id": "10",
+                  "title": "银行/金融/保险"
+                },
+                {
+                  "id": "11",
+                  "title": "教育"
+                },
+                {
+                  "id": "12",
+                  "title": "信息传输、软件和信息技术服务业"
+                },
+                {
+                  "id": "13",
+                  "title": "住宿和餐饮"
+                },
+                {
+                  "id": "14",
+                  "title": "交通运输、仓储和邮政业"
+                },
+                {
+                  "id": "15",
+                  "title": "水电/热力/燃气生产和供应 "
+                },
+                {
+                  "id": "16",
+                  "title": "租赁和商务服务业"
+                },
+                {
+                  "id": "17",
+                  "title": "居民服务、修理和其他服务业"
+                },
+                {
+                  "id": "18",
+                  "title": "文化、体育和娱乐"
+                },
+                {
+                  "id": "19",
+                  "title": "水利、环境和公共设施管理业"
+                },
+                {
+                  "id": "20",
+                  "title": "国际组织"
+                }
+              ]
+            },
+            {
+              "id": "12",
+              "displayId": "A-10-2",
+              "title": "您现在平均每周工作几小时",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "10小时及以下"
+                },
+                {
+                  "id": "2",
+                  "title": "(10,20]小时"
+                },
+                {
+                  "id": "3",
+                  "title": "(20,30]小时"
+                },
+                {
+                  "id": "4",
+                  "title": "30小时以上"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "questionsGroupA11",
+          "title": "A-11",
+          "questions": [
+            {
+              "id": "13",
+              "displayId": "A-11-1",
+              "title": "现在健在的儿子",
+              "type": "fill",
+              "contentType": "digit"
+            },
+            {
+              "id": "14",
+              "displayId": "A-11-2",
+              "title": "现在健在的女儿",
+              "type": "fill",
+              "contentType": "digit"
+            }
+          ]
+        },
+        {
+          "id": "15",
+          "displayId": "A-12",
+          "title": "您本人去年(2021年)是否享有过以下哪些医疗保障",
+          "type": "multiple",
+          "max": "6",
+          "choices": [
+            {
+              "id": "1",
+              "title": "职工基本医疗保险"
+            },
+            {
+              "id": "2",
+              "title": "城乡居民基本医疗保险（包括原城镇居民基本医疗保险和新型农村合作医疗）"
+            },
+            {
+              "id": "3",
+              "title": "公费医疗"
+            },
+            {
+              "id": "4",
+              "title": "政策性补充医疗保险（如惠民保）"
+            },
+            {
+              "id": "5",
+              "title": "商业医疗保险"
+            },
+            {
+              "id": "6",
+              "title": "其他医疗保险",
+              "input": "true"
+            },
+            {
+              "id": "7",
+              "title": "没有保险"
+            }
+          ]
+        },
+        {
+          "id": "16",
+          "displayId": "A-13",
+          "title": "2021年， 您全家全年（同吃同住的家人）获得的总收入属于哪个范围？（包括工资性收入、经营性收入、财产性收入、转移性收入）",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "没有收入"
+            },
+            {
+              "id": "2",
+              "title": "1-1999"
+            },
+            {
+              "id": "3",
+              "title": "2000-4999"
+            },
+            {
+              "id": "4",
+              "title": "5000-9999"
+            },
+            {
+              "id": "5",
+              "title": "10000-19999"
+            },
+            {
+              "id": "6",
+              "title": "20000-49999"
+            },
+            {
+              "id": "7",
+              "title": "50000-99999"
+            },
+            {
+              "id": "8",
+              "title": "100000-149999"
+            },
+            {
+              "id": "9",
+              "title": "150000-199999"
+            },
+            {
+              "id": "10",
+              "title": "200000-299999"
+            },
+            {
+              "id": "11",
+              "title": "30万及以上"
+            }
+          ]
+        },
+        {
+          "id": "17",
+          "displayId": "A-14",
+          "title": "您最主要的两项生活来源是",
+          "type": "multiple",
+          "max": "6",
+          "choices": [
+            {
+              "id": "1",
+              "title": "自己的离/退休金/养老金"
+            },
+            {
+              "id": "2",
+              "title": "自己的劳动或工作所得"
+            },
+            {
+              "id": "3",
+              "title": "配偶的收入"
+            },
+            {
+              "id": "4",
+              "title": "子女的资助"
+            },
+            {
+              "id": "5",
+              "title": "其它亲属的资助"
+            },
+            {
+              "id": "6",
+              "title": "政府/社团的补贴/资助"
+            },
+            {
+              "id": "7",
+              "title": "以前的积蓄"
+            },
+            {
+              "id": "8",
+              "title": "房屋、土地等租赁收入"
+            },
+            {
+              "id": "9",
+              "title": "其它，请注明",
+              "input": "true"
+            }
+          ]
+        },
+        {
+          "id": "18",
+          "displayId": "A-15",
+          "title": "过去12个月,您家发生了下面哪些重大事件",
+          "type": "multiple",
+          "max": "10",
+          "choices": [
+            {
+              "id": "1",
+              "title": "本人大病"
+            },
+            {
+              "id": "2",
+              "title": "老伴病故"
+            },
+            {
+              "id": "3",
+              "title": "子女病故"
+            },
+            {
+              "id": "4",
+              "title": "本人离异"
+            },
+            {
+              "id": "5",
+              "title": "意外事故"
+            },
+            {
+              "id": "6",
+              "title": "纠纷/官司"
+            },
+            {
+              "id": "7",
+              "title": "征地/拆迁"
+            },
+            {
+              "id": "8",
+              "title": "子女失业"
+            },
+            {
+              "id": "9",
+              "title": "子女婚姻状况变化"
+            },
+            {
+              "id": "10",
+              "title": "其他",
+              "input": "true"
+            },
+            {
+              "id": "11",
+              "title": "无重大事件"
+            }
+          ]
+        },
+        {
+          "id": "19",
+          "displayId": "A-16",
+          "title": "您现在吸烟吗？",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "是"
+            },
+            {
+              "id": "2",
+              "title": "否",
+              "hide_qs": [
+                "20"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "20",
+          "displayId": "A-17",
+          "title": "您现在平均一天抽___支香烟",
+          "type": "fill",
+          "contentType": "digit"
+        },
+        {
+          "id": "21",
+          "displayId": "A-18",
+          "title": "您现在喝酒吗？",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "是"
+            },
+            {
+              "id": "2",
+              "title": "否",
+              "hide_qs": [
+                "22"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "22",
+          "displayId": "A-19",
+          "title": "过去一年您平均一个月喝几次酒",
+          "type": "multiple",
+          "max": "6",
+          "choices": [
+            {
+              "id": "1",
+              "title": "每月一次或更少"
+            },
+            {
+              "id": "2",
+              "title": "每月2-3次"
+            },
+            {
+              "id": "3",
+              "title": "每周一次"
+            },
+            {
+              "id": "4",
+              "title": "每周2-3次"
+            },
+            {
+              "id": "5",
+              "title": "每周4-6次"
+            },
+            {
+              "id": "6",
+              "title": "每天1次"
+            },
+            {
+              "id": "7",
+              "title": "每天2次"
+            },
+            {
+              "id": "8",
+              "title": "一天超过2次"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

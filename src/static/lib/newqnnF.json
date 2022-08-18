@@ -1,0 +1,1250 @@
+{
+  "id": "old-questionnaire1",
+  "title": "个人信息",
+  "questions": [
+    {
+      "id": "questionsF",
+      "title": "医疗与养老服务情况调查",
+      "questions": [
+        {
+          "id": "154",
+          "displayId": "F-1",
+          "title": "过去一个月，您是否去医疗机构看过门诊或者接受过上门医疗服务,(不包括做体检))",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "是"
+            },
+            {
+              "id": "2",
+              "title": "否",
+              "hide_qs": [
+                "155",
+                "156"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "155",
+          "displayId": "F-2",
+          "title": "过去一个月,您看病的门诊费用大概是多少? (包括自付和报销部分的总费用)",
+          "type": "fill",
+          "contentType": "text"
+        },
+        {
+          "id": "156",
+          "displayId": "F-3",
+          "title": "自付费用:其中自己花了多少钱?",
+          "type": "fill",
+          "contentType": "text"
+        },
+        {
+          "id": "157",
+          "displayId": "F4-1-1",
+          "title": "过去12个月,您是否使用过上门护理此类服务?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "是"
+            },
+            {
+              "id": "2",
+              "title": "否",
+              "hide_qs": [
+                "158"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "158",
+          "displayId": "F4-1-2",
+          "title": "您是否满意?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "不满意"
+            },
+            {
+              "id": "2",
+              "title": "一般"
+            },
+            {
+              "id": "3",
+              "title": "满意"
+            }
+          ]
+        },
+        {
+          "id": "159",
+          "displayId": "F4-2-1",
+          "title": "过去12个月,您是否使用过上门看病此类服务?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "是"
+            },
+            {
+              "id": "2",
+              "title": "否",
+              "hide_qs": [
+                "160"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "160",
+          "displayId": "F4-2-2",
+          "title": "您是否满意?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "不满意"
+            },
+            {
+              "id": "2",
+              "title": "一般"
+            },
+            {
+              "id": "3",
+              "title": "满意"
+            }
+          ]
+        },
+        {
+          "id": "161",
+          "displayId": "F4-3-1",
+          "title": "过去12个月,您是否使用过康复训练此类服务?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "是"
+            },
+            {
+              "id": "2",
+              "title": "否",
+              "hide_qs": [
+                "162"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "162",
+          "displayId": "F4-3-2",
+          "title": "您是否满意?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "不满意"
+            },
+            {
+              "id": "2",
+              "title": "一般"
+            },
+            {
+              "id": "3",
+              "title": "满意"
+            }
+          ]
+        },
+        {
+          "id": "163",
+          "displayId": "F4-4-1",
+          "title": "过去12个月,您是否使用过康复辅具租用此类服务?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "是"
+            },
+            {
+              "id": "2",
+              "title": "否",
+              "hide_qs": [
+                "164"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "164",
+          "displayId": "F4-4-2",
+          "title": "您是否满意?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "不满意"
+            },
+            {
+              "id": "2",
+              "title": "一般"
+            },
+            {
+              "id": "3",
+              "title": "满意"
+            }
+          ]
+        },
+        {
+          "id": "165",
+          "displayId": "F4-5-1",
+          "title": "过去12个月,您是否使用过免费体检此类服务?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "是"
+            },
+            {
+              "id": "2",
+              "title": "否",
+              "hide_qs": [
+                "166"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "166",
+          "displayId": "F4-5-2",
+          "title": "您是否满意?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "不满意"
+            },
+            {
+              "id": "2",
+              "title": "一般"
+            },
+            {
+              "id": "3",
+              "title": "满意"
+            }
+          ]
+        },
+        {
+          "id": "167",
+          "displayId": "F4-6-1",
+          "title": "过去12个月,您是否使用过建立健康档案此类服务?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "是"
+            },
+            {
+              "id": "2",
+              "title": "否",
+              "hide_qs": [
+                "168"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "168",
+          "displayId": "F4-6-2",
+          "title": "您是否满意?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "不满意"
+            },
+            {
+              "id": "2",
+              "title": "一般"
+            },
+            {
+              "id": "3",
+              "title": "满意"
+            }
+          ]
+        },
+        {
+          "id": "169",
+          "displayId": "F4-7-1",
+          "title": "过去12个月,您是否使用过健康讲座此类服务?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "是"
+            },
+            {
+              "id": "2",
+              "title": "否",
+              "hide_qs": [
+                "170"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "170",
+          "displayId": "F4-7-2",
+          "title": "您是否满意?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "不满意"
+            },
+            {
+              "id": "2",
+              "title": "一般"
+            },
+            {
+              "id": "3",
+              "title": "满意"
+            }
+          ]
+        },
+        {
+          "id": "171",
+          "displayId": "F-5",
+          "title": "去年（2021年）,您住过院吗?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "是"
+            },
+            {
+              "id": "2",
+              "title": "否",
+              "hide_qs": [
+                "172",
+                "173",
+                "174"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "172",
+          "displayId": "F-6",
+          "title": "去年（2021年）,您接受过几次住院治疗?",
+          "type": "fill",
+          "contentType": "digit"
+        },
+        {
+          "id": "173",
+          "displayId": "F-7",
+          "title": "去年（2021年）,住院的总费用大概是多少? (包括自付和报销部分的总费用。只包括付给医院的费用,不包括陪护的工资、 自己或家人的交通费和住宿费,但包括医院病房费)",
+          "type": "fill",
+          "contentType": "digit"
+        },
+        {
+          "id": "174",
+          "displayId": "F-8",
+          "title": "自付费用:其中自己花了多少钱?",
+          "type": "fill",
+          "contentType": "digit"
+        },
+        {
+          "id": "175",
+          "displayId": "F-9",
+          "title": "您认为您在什么情况下会去养老院?",
+          "type": "multiple",
+          "min": "1",
+          "max": "5",
+          "choices": [
+            {
+              "id": "1",
+              "title": "身体不好,需要人照料"
+            },
+            {
+              "id": "2",
+              "title": "孤独寂寞,需要人陪伴"
+            },
+            {
+              "id": "3",
+              "title": "家中有家庭矛盾"
+            },
+            {
+              "id": "4",
+              "title": "为了换个居住环境"
+            },
+            {
+              "id": "5",
+              "title": "其他，请注明",
+              "input": true
+            },
+            {
+              "id": "6",
+              "title": "无论如何都不会去养老院"
+            }
+          ]
+        },
+        {
+          "id": "176",
+          "displayId": "F-10",
+          "title": "您在选择养老院时最优先考虑的两个因素是?",
+          "type": "multiple",
+          "min": "1",
+          "max": "2",
+          "choices": [
+            {
+              "id": "1",
+              "title": "与子女住所的距离越近越好"
+            },
+            {
+              "id": "2",
+              "title": "与医院的距离越近越好"
+            },
+            {
+              "id": "3",
+              "title": "收费低"
+            },
+            {
+              "id": "4",
+              "title": "服务质量好"
+            },
+            {
+              "id": "5",
+              "title": "居住环境好"
+            },
+            {
+              "id": "6",
+              "title": "无论如何都不会去养老院"
+            }
+          ]
+        },
+        {
+          "id": "177",
+          "displayId": "F-11",
+          "title": "如果需要住养老院，您家一个月能够为此承担多少钱?(不愿意出钱填0)",
+          "type": "fill",
+          "contentType": "digit"
+        },
+        {
+          "id": "178",
+          "displayId": "F-12",
+          "title": "如果需要住养老院，您本人一个月愿意为此承担多少钱?(不愿意出钱填0)",
+          "type": "fill",
+          "contentType": "digit"
+        },
+        {
+          "id": "179",
+          "displayId": "F-13",
+          "title": "家中谁主要照顾您(如:1.打扫屋子 2.做饭 3.洗衣 4.身体照护 5.代购物 6.陪同就医)?",
+          "type": "multiple",
+          "min": "1",
+          "max": "3",
+          "choices": [
+            {
+              "id": "1",
+              "title": "不需要照料/无人照料",
+              "hide_qs": [
+                "180",
+                "181",
+                "182"
+              ]
+            },
+            {
+              "id": "2",
+              "title": "配偶"
+            },
+            {
+              "id": "3",
+              "title": "儿子"
+            },
+            {
+              "id": "4",
+              "title": "女儿"
+            },
+            {
+              "id": "5",
+              "title": "儿媳／女婿"
+            },
+            {
+              "id": "6",
+              "title": "孙子女"
+            },
+            {
+              "id": "7",
+              "title": "其他",
+              "input": true
+            }
+          ]
+        },
+        {
+          "id": "180",
+          "displayId": "F-14",
+          "title": "近一个月,这些照料所支付的费用(人工直接费用)总计是多少元?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "没有费用",
+              "hide_qs": [
+                "181"
+              ]
+            },
+            {
+              "id": "2",
+              "title": "有费用",
+              "input": true
+            }
+          ]
+        },
+        {
+          "id": "181",
+          "displayId": "F-15",
+          "title": "这些费用最主要由谁支付?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "自己"
+            },
+            {
+              "id": "2",
+              "title": "配偶"
+            },
+            {
+              "id": "3",
+              "title": "子女或其配偶"
+            },
+            {
+              "id": "4",
+              "title": "孙子女或其配偶"
+            },
+            {
+              "id": "5",
+              "title": "国家/集体(包括长护险、养老护理补贴、残疾人护理补贴等)"
+            },
+            {
+              "id": "6",
+              "title": "其他人",
+              "input": true
+            }
+          ]
+        },
+        {
+          "id": "182",
+          "displayId": "F-16",
+          "title": "近一个星期以来,您的主要照料者为您提供日常照料帮助的总小时数有多少?",
+          "type": "fill",
+          "contentType": "text"
+        },
+        {
+          "id": "183",
+          "displayId": "F17-1-1",
+          "title": "过去一周您是否使用过村(社区)提供的上门打扫卫生养老服务?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "是"
+            },
+            {
+              "id": "2",
+              "title": "否",
+              "hide_qs": [
+                "184"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "184",
+          "displayId": "F17-1-2",
+          "title": "这些服务多大程度上满足了需求?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "完全可以满足"
+            },
+            {
+              "id": "2",
+              "title": "基本满足"
+            },
+            {
+              "id": "3",
+              "title": "只能满足很少的需要"
+            }
+          ]
+        },
+        {
+          "id": "185",
+          "displayId": "F17-2-1",
+          "title": "上门洗床褥养老服务?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "是"
+            },
+            {
+              "id": "2",
+              "title": "否",
+              "hide_qs": [
+                "186"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "186",
+          "displayId": "F17-2-2",
+          "title": "这些服务多大程度上满足了需求?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "完全可以满足"
+            },
+            {
+              "id": "2",
+              "title": "基本满足"
+            },
+            {
+              "id": "3",
+              "title": "只能满足很少的需要"
+            }
+          ]
+        },
+        {
+          "id": "187",
+          "displayId": "F17-3-1",
+          "title": "上门送餐养老服务?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "是"
+            },
+            {
+              "id": "2",
+              "title": "否",
+              "hide_qs": [
+                "188"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "188",
+          "displayId": "F17-3-2",
+          "title": "这些服务多大程度上满足了需求?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "完全可以满足"
+            },
+            {
+              "id": "2",
+              "title": "基本满足"
+            },
+            {
+              "id": "3",
+              "title": "只能满足很少的需要"
+            }
+          ]
+        },
+        {
+          "id": "189",
+          "displayId": "F17-4-1",
+          "title": "上门维修养老服务?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "是"
+            },
+            {
+              "id": "2",
+              "title": "否",
+              "hide_qs": [
+                "190"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "190",
+          "displayId": "F17-4-2",
+          "title": "这些服务多大程度上满足了需求?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "完全可以满足"
+            },
+            {
+              "id": "2",
+              "title": "基本满足"
+            },
+            {
+              "id": "3",
+              "title": "只能满足很少的需要"
+            }
+          ]
+        },
+        {
+          "id": "191",
+          "displayId": "F17-5-1",
+          "title": "上门助浴养老服务?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "是"
+            },
+            {
+              "id": "2",
+              "title": "否",
+              "hide_qs": [
+                "192"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "192",
+          "displayId": "F17-5-2",
+          "title": "这些服务多大程度上满足了需求?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "完全可以满足"
+            },
+            {
+              "id": "2",
+              "title": "基本满足"
+            },
+            {
+              "id": "3",
+              "title": "只能满足很少的需要"
+            }
+          ]
+        },
+        {
+          "id": "193",
+          "displayId": "F17-6-1",
+          "title": "健康咨询和指导养老服务?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "是"
+            },
+            {
+              "id": "2",
+              "title": "否",
+              "hide_qs": [
+                "194"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "194",
+          "displayId": "F17-6-2",
+          "title": "这些服务多大程度上满足了需求?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "完全可以满足"
+            },
+            {
+              "id": "2",
+              "title": "基本满足"
+            },
+            {
+              "id": "3",
+              "title": "只能满足很少的需要"
+            }
+          ]
+        },
+        {
+          "id": "195",
+          "displayId": "F17-7-1",
+          "title": "健康监测养老服务?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "是"
+            },
+            {
+              "id": "2",
+              "title": "否",
+              "hide_qs": [
+                "196"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "196",
+          "displayId": "F18-7-2",
+          "title": "这些服务多大程度上满足了需求?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "完全可以满足"
+            },
+            {
+              "id": "2",
+              "title": "基本满足"
+            },
+            {
+              "id": "3",
+              "title": "只能满足很少的需要"
+            }
+          ]
+        },
+        {
+          "id": "197",
+          "displayId": "F18-8-1",
+          "title": "康复辅助训练养老服务?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "是"
+            },
+            {
+              "id": "2",
+              "title": "否",
+              "hide_qs": [
+                "198"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "198",
+          "displayId": "F17-8-2",
+          "title": "这些服务多大程度上满足了需求?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "完全可以满足"
+            },
+            {
+              "id": "2",
+              "title": "基本满足"
+            },
+            {
+              "id": "3",
+              "title": "只能满足很少的需要"
+            }
+          ]
+        },
+        {
+          "id": "199",
+          "displayId": "F17-9-1",
+          "title": "药事指导养老服务?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "是"
+            },
+            {
+              "id": "2",
+              "title": "否",
+              "hide_qs": [
+                "200"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "200",
+          "displayId": "F17-9-2",
+          "title": "这些服务多大程度上满足了需求?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "完全可以满足"
+            },
+            {
+              "id": "2",
+              "title": "基本满足"
+            },
+            {
+              "id": "3",
+              "title": "只能满足很少的需要"
+            }
+          ]
+        },
+        {
+          "id": "201",
+          "displayId": "F17-10-1",
+          "title": "日间照料养老服务?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "是"
+            },
+            {
+              "id": "2",
+              "title": "否",
+              "hide_qs": [
+                "202"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "202",
+          "displayId": "F17-10-2",
+          "title": "这些服务多大程度上满足了需求?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "完全可以满足"
+            },
+            {
+              "id": "2",
+              "title": "基本满足"
+            },
+            {
+              "id": "3",
+              "title": "只能满足很少的需要"
+            }
+          ]
+        },
+        {
+          "id": "203",
+          "displayId": "F17-11-1",
+          "title": "站点内助浴养老服务?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "是"
+            },
+            {
+              "id": "2",
+              "title": "否",
+              "hide_qs": [
+                "204"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "204",
+          "displayId": "F17-11-2",
+          "title": "这些服务多大程度上满足了需求?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "完全可以满足"
+            },
+            {
+              "id": "2",
+              "title": "基本满足"
+            },
+            {
+              "id": "3",
+              "title": "只能满足很少的需要"
+            }
+          ]
+        },
+        {
+          "id": "205",
+          "displayId": "F17-12-1",
+          "title": "代办(取药、缴费、寄送快件、购物)养老服务?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "是"
+            },
+            {
+              "id": "2",
+              "title": "否",
+              "hide_qs": [
+                "206"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "206",
+          "displayId": "F17-12-2",
+          "title": "这些服务多大程度上满足了需求?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "完全可以满足"
+            },
+            {
+              "id": "2",
+              "title": "基本满足"
+            },
+            {
+              "id": "3",
+              "title": "只能满足很少的需要"
+            }
+          ]
+        },
+        {
+          "id": "207",
+          "displayId": "F17-13-1",
+          "title": "陪同外出养老服务?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "是"
+            },
+            {
+              "id": "2",
+              "title": "否",
+              "hide_qs": [
+                "208"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "208",
+          "displayId": "F17-13-2",
+          "title": "这些服务多大程度上满足了需求?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "完全可以满足"
+            },
+            {
+              "id": "2",
+              "title": "基本满足"
+            },
+            {
+              "id": "3",
+              "title": "只能满足很少的需要"
+            }
+          ]
+        },
+        {
+          "id": "209",
+          "displayId": "F17-14-1",
+          "title": "陪同就医养老服务?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "是"
+            },
+            {
+              "id": "2",
+              "title": "否",
+              "hide_qs": [
+                "210"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "210",
+          "displayId": "F17-14-2",
+          "title": "这些服务多大程度上满足了需求?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "完全可以满足"
+            },
+            {
+              "id": "2",
+              "title": "基本满足"
+            },
+            {
+              "id": "3",
+              "title": "只能满足很少的需要"
+            }
+          ]
+        },
+        {
+          "id": "211",
+          "displayId": "F17-15-1",
+          "title": "康复辅助器具租赁养老服务?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "是"
+            },
+            {
+              "id": "2",
+              "title": "否",
+              "hide_qs": [
+                "212"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "212",
+          "displayId": "F17-15-2",
+          "title": "这些服务多大程度上满足了需求?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "完全可以满足"
+            },
+            {
+              "id": "2",
+              "title": "基本满足"
+            },
+            {
+              "id": "3",
+              "title": "只能满足很少的需要"
+            }
+          ]
+        },
+        {
+          "id": "213",
+          "displayId": "F17-16-1",
+          "title": "法律援助养老服务?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "是"
+            },
+            {
+              "id": "2",
+              "title": "否",
+              "hide_qs": [
+                "214"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "214",
+          "displayId": "F17-16-2",
+          "title": "这些服务多大程度上满足了需求?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "完全可以满足"
+            },
+            {
+              "id": "2",
+              "title": "基本满足"
+            },
+            {
+              "id": "3",
+              "title": "只能满足很少的需要"
+            }
+          ]
+        },
+        {
+          "id": "215",
+          "displayId": "F17-17-1",
+          "title": "无障碍改造养老服务?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "是"
+            },
+            {
+              "id": "2",
+              "title": "否",
+              "hide_qs": [
+                "216"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "216",
+          "displayId": "F17-17-2",
+          "title": "这些服务多大程度上满足了需求?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "完全可以满足"
+            },
+            {
+              "id": "2",
+              "title": "基本满足"
+            },
+            {
+              "id": "3",
+              "title": "只能满足很少的需要"
+            }
+          ]
+        },
+        {
+          "id": "217",
+          "displayId": "F17-18-1",
+          "title": "紧急求助养老服务?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "是"
+            },
+            {
+              "id": "2",
+              "title": "否",
+              "hide_qs": [
+                "218"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "218",
+          "displayId": "F17-18-2",
+          "title": "这些服务多大程度上满足了需求?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "完全可以满足"
+            },
+            {
+              "id": "2",
+              "title": "基本满足"
+            },
+            {
+              "id": "3",
+              "title": "只能满足很少的需要"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

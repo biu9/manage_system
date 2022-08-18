@@ -1,0 +1,1454 @@
+{
+  "id": "老人问卷E",
+  "title": "E居家护理需求",
+  "questions": [
+    {
+      "id": "questionfroupcontainer",
+      "title": "",
+      "questions": [
+        {
+          "id": "71",
+          "displayId": "E1",
+          "title": "您觉得自己的健康状况如何",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "很好"
+            },
+            {
+              "id": "2",
+              "title": "比较好"
+            },
+            {
+              "id": "3",
+              "title": "一般"
+            },
+            {
+              "id": "4",
+              "title": "比较不好"
+            },
+            {
+              "id": "5",
+              "title": "很不好"
+            }
+          ]
+        },
+        {
+          "id": "72",
+          "displayId": "E2",
+          "title": "目前是否接受其他特殊照护",
+          "type": "multiple",
+          "min": 1,
+          "max": 8,
+          "choices": [
+            {
+              "id": "1",
+              "title": "无"
+            },
+            {
+              "id": "2",
+              "title": "鼻胃管"
+            },
+            {
+              "id": "3",
+              "title": "导尿管"
+            },
+            {
+              "id": "4",
+              "title": "气切管"
+            },
+            {
+              "id": "5",
+              "title": "伤口引流管"
+            },
+            {
+              "id": "6",
+              "title": "造瘘部位"
+            },
+            {
+              "id": "7",
+              "title": "氧气治疗"
+            },
+            {
+              "id": "8",
+              "title": "其他",
+              "input": true
+            }
+          ]
+        },
+        {
+          "id": "73",
+          "displayId": "E3",
+          "title": "您的饮食型态",
+          "type": "multiple",
+          "min": 1,
+          "max": 4,
+          "choices": [
+            {
+              "id": "1",
+              "title": "一般"
+            },
+            {
+              "id": "2",
+              "title": "软质"
+            },
+            {
+              "id": "3",
+              "title": "流质"
+            },
+            {
+              "id": "4",
+              "title": "其他",
+              "input": true
+            }
+          ]
+        },
+        {
+          "id": "74",
+          "displayId": "E4",
+          "title": "进食方式",
+          "type": "multiple",
+          "min": 1,
+          "max": 3,
+          "choices": [
+            {
+              "id": "1",
+              "title": "由口进食"
+            },
+            {
+              "id": "2",
+              "title": "管灌"
+            },
+            {
+              "id": "3",
+              "title": "其他",
+              "input": true
+            }
+          ]
+        },
+        {
+          "id": "75",
+          "displayId": "E5-1",
+          "title": "身高(米)",
+          "type": "fill",
+          "contentType": "digit"
+        },
+        {
+          "id": "76",
+          "displayId": "E5-2",
+          "title": "体重(千克)",
+          "type": "fill",
+          "contentType": "digit"
+        },
+        {
+          "id": "77",
+          "displayId": "E5-3",
+          "title": "BMI",
+          "type": "BMI"
+        },
+        {
+          "id": "questionsgroupE6",
+          "title": "E6",
+          "questions": [
+            {
+              "id": "78",
+              "displayId": "E6-1",
+              "title": "最近三个月是否因食欲不佳、消化问题、咀嚼或吞咽困难置进食量越来越少？",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "严重食欲不佳",
+                  "value": 0
+                },
+                {
+                  "id": "2",
+                  "title": "中度食欲不佳",
+                  "value": 1
+                },
+                {
+                  "id": "3",
+                  "title": "食欲无变化",
+                  "value": 2
+                }
+              ]
+            },
+            {
+              "id": "79",
+              "displayId": "E6-2",
+              "title": "近三个月体重变化？〈减公斤〉",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "体重减轻﹥3公斤",
+                  "value": 0
+                },
+                {
+                  "id": "2",
+                  "title": "不知道",
+                  "value": 1
+                },
+                {
+                  "id": "3",
+                  "title": "体重减轻1-3公斤",
+                  "value": 2
+                },
+                {
+                  "id": "4",
+                  "title": "体重无变化或者体重增加",
+                  "value": 3
+                }
+              ]
+            },
+            {
+              "id": "80",
+              "displayId": "E6-3",
+              "title": "最近三个月的行动力如何？",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "卧床或轮椅",
+                  "value": 0
+                },
+                {
+                  "id": "2",
+                  "title": "可下床活动或离开轮，但无法自由走动",
+                  "value": 1
+                },
+                {
+                  "id": "3",
+                  "title": "可自由走动",
+                  "value": 2
+                }
+              ]
+            },
+            {
+              "id": "81",
+              "displayId": "E6-4",
+              "title": "过去三个月内曾有精神性压力或急性疾病发作？",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是",
+                  "value": 0
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "value": 2
+                }
+              ]
+            },
+            {
+              "id": "82",
+              "displayId": "E6-5",
+              "title": "神经精神问题？",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "严重失智或抑郁",
+                  "value": 0
+                },
+                {
+                  "id": "2",
+                  "title": "轻度失智",
+                  "value": 1
+                },
+                {
+                  "id": "3",
+                  "title": "无精神问题",
+                  "value": 2
+                }
+              ]
+            },
+            {
+              "id": "83",
+              "displayId": "E6-6",
+              "title": "身体质量指数〈BMI〉?",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "≦18.5",
+                  "value": 0
+                },
+                {
+                  "id": "2",
+                  "title": "18.5﹤BMI≦24",
+                  "value": 1
+                },
+                {
+                  "id": "3",
+                  "title": "24﹤BMI≦27",
+                  "value": 2
+                },
+                {
+                  "id": "4",
+                  "title": "BMI﹥27",
+                  "value": 3
+                }
+              ]
+            },
+            {
+              "id": "84",
+              "displayId": "E6-7",
+              "title": "总分",
+              "type": "text",
+              "targetQuestionId": [
+                "77",
+                "78",
+                "79",
+                "80",
+                "81",
+                "82"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "questionsgroupE7",
+          "title": "E7",
+          "questions": [
+            {
+              "id": "85",
+              "displayId": "E-7-1-1",
+              "title": "是否患高血压病",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "86",
+                    "87"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "86",
+              "displayId": "E-7-1-2",
+              "title": "患高血压病是否服药",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "87"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "87",
+              "displayId": "E-7-1-3",
+              "title": "患高血压病服用几种药",
+              "type": "fill",
+              "contentType": "digit"
+            },
+            {
+              "id": "88",
+              "displayId": "E-7-2-1",
+              "title": "是否患心脏病/冠心病",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "89",
+                    "90"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "89",
+              "displayId": "E-7-2-2",
+              "title": "患心脏病/冠心病是否服药",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "90"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "90",
+              "displayId": "E-7-2-3",
+              "title": "患心脏病/冠心病服用几种药",
+              "type": "fill",
+              "contentType": "digit"
+            },
+            {
+              "id": "91",
+              "displayId": "E-7-3-1",
+              "title": "是否患糖尿病",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "92",
+                    "93"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "92",
+              "displayId": "E-7-3-2",
+              "title": "患糖尿病是否服药",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "93"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "93",
+              "displayId": "E-7-3-3",
+              "title": "患糖尿病服用几种药",
+              "type": "fill",
+              "contentType": "digit"
+            },
+            {
+              "id": "94",
+              "displayId": "E-7-4-1",
+              "title": "是否患脑血管病（含中风）",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "95",
+                    "96"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "95",
+              "displayId": "E-7-4-2",
+              "title": "患脑血管病（含中风）是否服药",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "96"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "96",
+              "displayId": "E-7-4-3",
+              "title": "患脑血管病（含中风）服用几种药",
+              "type": "fill",
+              "contentType": "digit"
+            },
+            {
+              "id": "97",
+              "displayId": "E-7-5-1",
+              "title": "是否患肾脏疾病",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "98",
+                    "99"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "98",
+              "displayId": "E-7-5-2",
+              "title": "肾脏疾病是否服药",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "99"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "99",
+              "displayId": "E-7-5-3",
+              "title": "肾脏疾病服用几种药",
+              "type": "fill",
+              "contentType": "digit"
+            },
+            {
+              "id": "100",
+              "displayId": "E-7-6-1",
+              "title": "是否患肝脏疾病",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "101",
+                    "102"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "101",
+              "displayId": "E-7-6-2",
+              "title": "肝脏疾病是否服药",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "102"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "102",
+              "displayId": "E-7-6-3",
+              "title": "肝脏疾病服用几种药",
+              "type": "fill",
+              "contentType": "digit"
+            },
+            {
+              "id": "103",
+              "displayId": "E-7-7-1",
+              "title": "是否患结核病",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "104",
+                    "105"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "104",
+              "displayId": "E-7-7-2",
+              "title": "结核病是否服药",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "105"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "105",
+              "displayId": "E-7-7-3",
+              "title": "结核病服用几种药",
+              "type": "fill",
+              "contentType": "digit"
+            },
+            {
+              "id": "106",
+              "displayId": "E-7-8-1",
+              "title": "是否患类风湿",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "107",
+                    "108"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "107",
+              "displayId": "E-7-8-2",
+              "title": "类风湿是否服药",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "108"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "108",
+              "displayId": "E-7-8-3",
+              "title": "类风湿服用几种药",
+              "type": "fill",
+              "contentType": "digit"
+            },
+            {
+              "id": "109",
+              "displayId": "E-7-9-1",
+              "title": "是否患颈/腰椎病",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "110",
+                    "111"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "110",
+              "displayId": "E-7-9-2",
+              "title": "颈/腰椎病是否服药",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "111"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "111",
+              "displayId": "E-7-9-3",
+              "title": "颈/腰椎病服用几种药",
+              "type": "fill",
+              "contentType": "digit"
+            },
+            {
+              "id": "112",
+              "displayId": "E-7-10-1",
+              "title": "是否患关节炎",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "113",
+                    "114"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "113",
+              "displayId": "E-7-10-2",
+              "title": "关节炎是否服药",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "114"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "114",
+              "displayId": "E-7-10-3",
+              "title": "关节炎服用几种药",
+              "type": "fill",
+              "contentType": "digit"
+            },
+            {
+              "id": "115",
+              "displayId": "E-7-11-1",
+              "title": "是否患乳腺疾病",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "116",
+                    "117"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "116",
+              "displayId": "E-7-11-2",
+              "title": "乳腺疾病是否服药",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "117"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "117",
+              "displayId": "E-7-11-3",
+              "title": "乳腺疾病服用几种药",
+              "type": "fill",
+              "contentType": "digit"
+            },
+            {
+              "id": "118",
+              "displayId": "E-7-12-1",
+              "title": "是否患生殖系统疾病",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "119",
+                    "120"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "119",
+              "displayId": "E-7-12-2",
+              "title": "生殖系统疾病是否服药",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "120"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "120",
+              "displayId": "E-7-12-3",
+              "title": "生殖系统疾病服用几种药",
+              "type": "fill",
+              "contentType": "digit"
+            },
+            {
+              "id": "121",
+              "displayId": "E-7-13-1",
+              "title": "是否患前列腺疾病[仅男性]",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "122",
+                    "123"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "122",
+              "displayId": "E-7-13-2",
+              "title": "前列腺疾病是否服药",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "123"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "123",
+              "displayId": "E-7-13-3",
+              "title": "前列腺疾病服用几种药",
+              "type": "fill",
+              "contentType": "digit"
+            },
+            {
+              "id": "124",
+              "displayId": "E-7-14-1",
+              "title": "是否患泌尿系统疾病",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "125",
+                    "126"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "125",
+              "displayId": "E-7-14-2",
+              "title": "泌尿系统疾病是否服药",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "126"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "126",
+              "displayId": "E-7-14-3",
+              "title": "泌尿系统疾病服用几种药",
+              "type": "fill",
+              "contentType": "digit"
+            },
+            {
+              "id": "127",
+              "displayId": "E-7-15-1",
+              "title": "是否患青光眼/白内障",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "128",
+                    "129"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "128",
+              "displayId": "E-7-15-2",
+              "title": "青光眼/白内障疾病是否服药",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "129"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "129",
+              "displayId": "E-7-15-3",
+              "title": "青光眼/白内障服用几种药",
+              "type": "fill",
+              "contentType": "digit"
+            },
+            {
+              "id": "130",
+              "displayId": "E-7-16-1",
+              "title": "是否患慢性支气管炎/其它呼吸道疾病",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "131",
+                    "132"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "131",
+              "displayId": "E-7-16-2",
+              "title": "慢性支气管炎/其它呼吸道疾病是否服药",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "132"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "132",
+              "displayId": "E-7-16-3",
+              "title": "慢性支气管炎/其它呼吸道疾病服用几种药",
+              "type": "fill",
+              "contentType": "digit"
+            },
+            {
+              "id": "133",
+              "displayId": "E-7-17-1",
+              "title": "是否患神经系统疾病",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "134",
+                    "135"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "134",
+              "displayId": "E-7-17-2",
+              "title": "神经系统疾病是否服药",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "135"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "135",
+              "displayId": "E-7-17-3",
+              "title": "神经系统疾病服用几种药",
+              "type": "fill",
+              "contentType": "digit"
+            },
+            {
+              "id": "136",
+              "displayId": "E-7-18-1",
+              "title": "是否患肠胃炎/其它消化系统疾病",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "137",
+                    "138"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "137",
+              "displayId": "E-7-18-2",
+              "title": "肠胃炎/其它消化系统疾病是否服药",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "138"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "138",
+              "displayId": "E-7-18-3",
+              "title": "肠胃炎/其它消化系统疾病服用几种药",
+              "type": "fill",
+              "contentType": "digit"
+            },
+            {
+              "id": "139",
+              "displayId": "E-7-19-1",
+              "title": "是否患内分泌系统疾病",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "140",
+                    "141"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "140",
+              "displayId": "E-7-19-2",
+              "title": "内分泌系统疾病是否服药",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "141"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "141",
+              "displayId": "E-7-19-3",
+              "title": "内分泌系统疾病服用几种药",
+              "type": "fill",
+              "contentType": "digit"
+            },
+            {
+              "id": "142",
+              "displayId": "E-7-20-1",
+              "title": "是否患恶性肿瘤",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "143",
+                    "144"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "143",
+              "displayId": "E-7-20-2",
+              "title": "恶性肿瘤是否服药",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "144"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "144",
+              "displayId": "E-7-20-3",
+              "title": "恶性肿瘤服用几种药",
+              "type": "fill",
+              "contentType": "digit"
+            },
+            {
+              "id": "145",
+              "displayId": "E-7-21-1",
+              "title": "是否患其他疾病，请注明：_____",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是",
+                  "input": "true"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "146",
+                    "147"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "146",
+              "displayId": "E-7-21-2",
+              "title": "其他疾病是否服药",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": [
+                    "147"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "147",
+              "displayId": "E-7-21-3",
+              "title": "其他疾病服用几种药",
+              "type": "fill",
+              "contentType": "digit"
+            }
+          ]
+        },
+        {
+          "id": "148",
+          "displayId": "E-8",
+          "title": "你是否患有下列精神疾病？",
+          "type": "multiple",
+          "min": 1,
+          "max": 6,
+          "choices": [
+            {
+              "id": "1",
+              "title": "精神分裂症"
+            },
+            {
+              "id": "2",
+              "title": "偏执性精神障碍"
+            },
+            {
+              "id": "3",
+              "title": "癫痫所致精神障碍"
+            },
+            {
+              "id": "4",
+              "title": "双相情感障碍"
+            },
+            {
+              "id": "5",
+              "title": "分裂情感性障碍"
+            },
+            {
+              "id": "6",
+              "title": "精神发育迟滞伴发精神障碍"
+            },
+            {
+              "id": "7",
+              "title": "均无"
+            }
+          ]
+        },
+        {
+          "id": "149",
+          "displayId": "E-9-1",
+          "title": "过去12个月,您有没有跌倒过?(包括摔倒、跌倒、滑倒,即使半途主动或被动中止,也应包括在内)",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "没有",
+              "hide_qs": [
+                "150",
+                "151"
+              ]
+            },
+            {
+              "id": "2",
+              "title": "有,次数",
+              "input": true
+            }
+          ]
+        },
+        {
+          "id": "150",
+          "displayId": "E-9-2",
+          "title": "您上一次跌倒导致的伤害程度如何?",
+          "type": "multiple",
+          "min": 1,
+          "max": 9,
+          "choices": [
+            {
+              "id": "1",
+              "title": "没有受伤——经护士或医生评估,没有证据表明造成伤害;本人表示没有疼痛或受伤;跌倒后没有表现出异常行为"
+            },
+            {
+              "id": "2",
+              "title": "有轻伤——皮肤撕裂，擦伤，割伤，淤青，血肿，感到疼痛"
+            },
+            {
+              "id": "3",
+              "title": "中等程度伤情-如关节脱臼、脱位、扭伤"
+            },
+            {
+              "id": "4",
+              "title": "髋部骨折"
+            },
+            {
+              "id": "5",
+              "title": "前臂（指肘与腕之间的部分）骨折"
+            },
+            {
+              "id": "6",
+              "title": "脊椎骨折"
+            },
+            {
+              "id": "7",
+              "title": "其他部位骨折"
+            },
+            {
+              "id": "8",
+              "title": "严重伤情——如硬脑膜下血肿\\颅内血肿\\闭合性颅脑损伤并意识改变等颅脑损伤"
+            },
+            {
+              "id": "9",
+              "title": "其他，请注明",
+              "input": true
+            }
+          ]
+        },
+        {
+          "id": "151",
+          "displayId": "E-9-3",
+          "title": "您上一次跌倒有去看医生吗？",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "门诊"
+            },
+            {
+              "id": "2",
+              "title": "住院"
+            },
+            {
+              "id": "3",
+              "title": "不需要就诊"
+            }
+          ]
+        },
+        {
+          "id": "152",
+          "displayId": "E-10-1",
+          "title": "过去一个月，您身体的任何一个部位是否发生过疼痛？",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "完全没有",
+              "hide_qs": [
+                "153"
+              ]
+            },
+            {
+              "id": "2",
+              "title": "有"
+            }
+          ]
+        },
+        {
+          "id": "153",
+          "displayId": "E-10-2",
+          "title": "如果有，疼痛的程度如何？",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "轻度疼痛"
+            },
+            {
+              "id": "2",
+              "title": "中度疼痛"
+            },
+            {
+              "id": "3",
+              "title": "重度疼痛"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
