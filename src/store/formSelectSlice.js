@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-const userSlice = createSlice({
+const formSelectSlice = createSlice({
   name: 'user',
   initialState:{
     "queryCompleted":false,
@@ -18,6 +18,6 @@ const userSlice = createSlice({
   },
 })
 
-export const { setUserInfo } = userSlice.actions
+export const { setUserInfo } = formSelectSlice.actions
 
-export default userSlice.reducer
+export default formSelectSlice.reducer

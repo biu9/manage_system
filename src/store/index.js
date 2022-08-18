@@ -1,14 +1,14 @@
 import { configureStore } from '@reduxjs/toolkit'
-import userInfoReducer from '../store/userSlice'
-import FormSlice from './FormSlice'
+import formSelectSlice from './formSelectSlice'
+import formContentSlice from './FormContentSlice'
 import RemindSlice from './RemindSlice'
-import FormStateSlice from './FormStateSlice'
+import  FormOverviewSlice from './FormOverviewSlice'
 
 export default configureStore({
   reducer: {
-    queryInfo:userInfoReducer,
-    formInfo:FormSlice,
-    remindStatus:RemindSlice,
-    formState:FormStateSlice,
+    queryInfo:formSelectSlice,
+    formInfo:formContentSlice,
+    remindState:RemindSlice,
+    FormOverview:FormOverviewSlice,
   },
 })

@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-const FormStateSlice = createSlice({
+const FormOverviewSlice = createSlice({
   name: 'user',
   initialState:{
       "currentFormType":"",
@@ -16,6 +16,6 @@ const FormStateSlice = createSlice({
   },
 })
 
-export const { setFormType,setCompleted } = FormStateSlice.actions
+export const { setFormType,setCompleted } = FormOverviewSlice.actions
 
-export default FormStateSlice.reducer
+export default FormOverviewSlice.reducer

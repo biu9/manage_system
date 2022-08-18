@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-const formSlice = createSlice({
+const formContentSlice = createSlice({
   name: 'form',
   initialState:{},
   reducers: {
@@ -38,6 +38,6 @@ const formSlice = createSlice({
   },
 })
 
-export const { setFormInfo,setSingleFormInfo,setAnswerSheet,setAnswerSheetFill } = formSlice.actions
+export const { setFormInfo,setSingleFormInfo,setAnswerSheet,setAnswerSheetFill } = formContentSlice.actions
 
-export default formSlice.reducer
+export default formContentSlice.reducer
