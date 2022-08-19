@@ -11,8 +11,8 @@ import useGetCurrentType from "../hooks/useGetCurrentType";
 import useGetSelectedForm from "../hooks/useGetSelectedForm";
 import { useNavigate } from "react-router";
 import { setFormInfo } from "../store/FormContentSlice";
-import { pushSelectedFormId,popSelectedFormId } from "../store/RemindSlice";
-
+import { pushSelectedFormId,popSelectedFormId,setDeleteRemindStatus } from "../store/RemindSlice";
+import DeleteRemind from "../components/DeleteRemind";
 
 import Typography from '@material-ui/core/Typography';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
@@ -37,8 +37,10 @@ const OverviewContent = () => {
     let currentType = useGetCurrentType();
     const data = useGetSelectedForm();
     const selectedFormId = useSelector(state => state.remindState.selectedFormId);
+    const dispatch = useDispatch();
     return (
         <div className="bg-purple-50 w-full p-6 space-y-3 px-16 min-h-screen">
+            <DeleteRemind/>
             <div>
                 <SimpleBreadcrumbs text={currentType}/>
             </div>
@@ -52,7 +54,11 @@ const OverviewContent = () => {
                     }}>
                         <FunctionBtn text="导出表格" type="common"/>
                     </div>
-                    <div>
+                    <div onClick={() => {
+                        dispatch(setDeleteRemindStatus({
+                            deleteRemindStatus: true,
+                        }));
+                    }}>
                         <FunctionBtn text="批量删除" type="delete"/>
                     </div>
                 </div>

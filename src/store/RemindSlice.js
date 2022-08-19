@@ -11,7 +11,7 @@ const remindSlice = createSlice({
     setDeleteRemindStatus(state, action) {
         //console.log('set delete remind status recv : ',action.payload);
         state.deleteRemind = action.payload.deleteRemindStatus;
-        state.exportFormId = action.payload.deleteFormId;
+        //state.exportFormId = action.payload.deleteFormId;
     },
     setExportRemindStatus(state, action) {
         //console.log('set export remind status recv : ',action.payload);

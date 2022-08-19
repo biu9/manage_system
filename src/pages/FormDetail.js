@@ -18,6 +18,7 @@ import Link from '@material-ui/core/Link';
 import { setFormInfo } from "../store/FormContentSlice";
 import SelectBtn from "../components/SelectBtn";
 import { setCurrentMoudleIndex } from "../store/FormOverviewSlice";
+import { setDeleteRemindStatus } from "../store/RemindSlice";
 
 const server = "https://cyzz.fun/HealthCareAssessment/";
 
@@ -68,6 +69,7 @@ const FormContent = () => {
     const currentMoudleIndex = useSelector(state => state.formOverview.currentMoudleIndex);
     const currentFormType = useSelector(state => state.formOverview.currentFormType);
     const [replaceSuccess,setReplaceSuccess] = useState(false);
+    const dispatch = useDispatch();
     return (
         <div className="bg-purple-50 min-h-screen w-full p-6 space-y-3 px-16">
             {replaceSuccess ? <SuccessAlert text="修改成功"/> : null}
@@ -91,7 +93,11 @@ const FormContent = () => {
                     }}>
                         <FunctionBtn text="上传" type="common"/>
                     </div>
-                    <div>
+                    <div onClick={() => {
+                        dispatch(setDeleteRemindStatus({
+                            deleteRemindStatus: true,
+                        }));
+                    }}>
                         <FunctionBtn text="删除" type="delete"/>
                     </div>
                 </div>
