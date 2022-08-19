@@ -16,8 +16,8 @@ async function exportExcel(formId,type) {
         })
     });
     const resTmp = await res.text();
-    let blob = new Blob([resTmp],{type:'application/csv'});
-    downFile(blob,'导出.txt');
+    let blob = new Blob(["\ufeff",resTmp],{type:'application/csv'});
+    downFile(blob,'导出.csv');
     console.log('export response : ',resTmp);
 }
 
