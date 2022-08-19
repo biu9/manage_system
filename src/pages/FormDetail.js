@@ -5,7 +5,7 @@ import { useState,useEffect } from "react";
 import useGetCurrentType from "../hooks/useGetCurrentType";
 import FunctionBtn from "../components/FunctionBtn";
 import processListData from "../utils/processListData";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import CommonInput from "../components/CommonInput";
 import QA from "../components/QA";
 import QAFill from "../components/QA_fill";
@@ -13,6 +13,7 @@ import QAFill from "../components/QA_fill";
 import Typography from '@material-ui/core/Typography';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 import Link from '@material-ui/core/Link';
+import { setFormInfo } from "../store/FormContentSlice";
 
 const server = "https://cyzz.fun/HealthCareAssessment/";
 
@@ -25,6 +26,7 @@ async function getDetailById(id) {
             "id": id
         })
     });
+    //console.log('fetch by id res : ',res);
     return await res.json();
 }
 
@@ -45,18 +47,19 @@ function SimpleBreadcrumbs(props) {
 
 
 const FormDetailContainer = (props) => {
+    //console.log('prsop in container : ',props);
     return (
         <div className="flex flex-col">
             <TopBar />
             <div className="flex">
                 <SideBar />
-                <FormContent id={props.id} detail={props.data}/>
+                <FormContent id={props.id}/>
             </div>
         </div>
     )
 }
 
-const FormContent = (props) => {
+const FormContent = () => {
     const formData = useSelector(state => state.formInfo);
     return (
         <div className="bg-purple-50 min-h-screen w-full p-6 space-y-3 px-16">
@@ -85,7 +88,7 @@ const FormContent = (props) => {
                 <div>123</div>
                 <div>234</div>
                 <div>
-                    <FormDetailRight detail={props.detail}/>
+                    <FormDetailRight/>
                 </div>
             </div>
         </div>
@@ -93,8 +96,8 @@ const FormContent = (props) => {
 }
 
 const FormDetailRight = (props) => {
-    const formArray = ['basicInfo.json','new-caring-questions1.json','new-caring-questions2.json','new-caring-questions3-1.json','new-caring-questions3-2.json','new-caring-questions4.json','new-caring-questions5.json'];
-    const [selectState, setSelectState] = useState([true,false,false,false,false,false]);
+    const formArray = ['basicInfo.json','newqnnA.json','newqnnB.json','newqnnC.json','newqnnD.json','newqnnE.json','newqnnF.json','newqnnG.json'];
+    const [selectState, setSelectState] = useState([false,true,false,false,false,false]);
     const modules = ['基本信息','个人信息','家庭信息','工作信息','工作信息','健康信息','老年人信息'];
     return (
         <div>
@@ -102,7 +105,7 @@ const FormDetailRight = (props) => {
             if(item === true && index !== 0)
                 return (
                 <div key={index} className="flex justify-center">
-                    <CommonFormContent detail={props.detail} moduleName={formArray[index]}/>
+                    <CommonFormContent moduleName={formArray[index]}/>
                 </div>
                 )
             else if(item === true && index === 0)
@@ -120,10 +123,11 @@ const FormDetailRight = (props) => {
 
 const CommonFormContent = (props) => {
     const staticForm = require('../static/lib/'+props.moduleName);
+    const answerSheet = useSelector(state => state.formInfo.answerSheet);
     return (
         <div className="w-96 whitespace-normal">
         { 
-            getTotal(staticForm,props.detail.answerSheet)
+            getTotal(staticForm,answerSheet)
         }
         </div>
     )
@@ -131,40 +135,47 @@ const CommonFormContent = (props) => {
 
 function getTotal(questionModule,answerSheet) {
     let res = [];
+    //console.log("questionModule in getTotal : ",questionModule);
+    //console.log("answerSheet in getTotal : ",answerSheet);
     if(questionModule.questions) {
         questionModule.questions.forEach(item => {
             if(item.questions) {
                 res.push(getTotal(item,answerSheet));
             } else {
                 if (item.title !== '总分') {
-                let answer = '未填';
-                let choices = [];
-                if(item.type === 'multiple') {
-                    if(answerSheet[item.id].answer[0]-1 >= 0 && answerSheet[item.id].answer[0]-1 < item.choices.length) {
-                    answer = answerSheet[item.id].answer;
-                    }
-                    else
-                    answer = '未填';
-                    choices = item.choices;
-                    if(answerSheet[item.id].disabled !== true)
-                    res.push(<QA title={item.title} id={item.id} answer={answer} choices={choices}/>);
-                } else if(item.type === 'fill') {
-                    answer = answerSheet[item.id].remark;
-                    if(answerSheet[item.id].disabled !== true)
-                    res.push(<QAFill title={item.title} id={item.id} answer={answer} choices={choices}/>);
-                }              
+                    let answer = '未填';
+                    let choices = [];
+                    //console.log('item : ',item);
+                    if(item.type === 'multiple') {
+                        if(answerSheet[item.id].answer[0]-1 >= 0 && answerSheet[item.id].answer[0]-1 < item.choices.length) {
+                        //answer = item.choices[answerSheet[item.id].answer.toString()-1].id;
+                            answer = answerSheet[item.id].answer;
+                        //console.log("answer : ",answer);
+                        }
+                        else
+                            answer = '未填';
+                        choices = item.choices;
+                        if(answerSheet[item.id].disabled !== true)
+                            res.push(<QA title={item.title} id={item.id} answer={answer} choices={choices}/>);
+                    } else if(item.type === 'fill') {
+                        answer = answerSheet[item.id].remark;
+                        //console.log('answer : ',answer);
+                        if(answerSheet[item.id].disabled !== true)
+                        res.push(<QAFill title={item.title} id={item.id} answer={answer} choices={choices}/>);
+                    }              
+                    //console.log('answer in answerSheet : ',answerSheet[item.id]);
                 }
             }
         });
     }
-return res;
+    return res;
 }
 
 const BasicFormInfo = () => {
     const basicInfo = useSelector(state => state.formInfo);
-    console.log('basic info : ',basicInfo);
+    //console.log('basic info : ',basicInfo);
     let tmpData = processListData(basicInfo);
-    console.log('tmpData : ',tmpData);
+    //console.log('tmpData : ',tmpData);
     return (
       <div className="flex flex-col space-y-6 w-96">
         <CommonInput iconType="name" text={tmpData.name}/>
@@ -188,17 +199,24 @@ const BasicFormInfo = () => {
 
 export default function FormDetail() {
     const id = useParams().id;
-    const [data,setData] = useState({});
+    const [detail,setDetail] = useState({});
+    const dispatch = useDispatch();
     useEffect(() => {
         (async() => {
             let res = await getDetailById(id);
-            setData(res.data);
-        })()
+            setDetail(res.data);
+            dispatch(
+                setFormInfo({
+                    answerSheet:res.data.answerSheet
+                })
+            )
+        })();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     },[id]);
-    console.log('data in form detail',data);
+    //console.log('data in form detail',detail);
     return (
         <div>
-            <FormDetailContainer id={id} data={data}/>
+            <FormDetailContainer id={id}/>
         </div>
     )
 }
