@@ -109,7 +109,10 @@ const FormContent = () => {
 }
 
 const FormDetailMid = () => {
-    const modules = ['基本信息','A.个人信息','B.身体功能能力评论','C.认知能力评估','D.感知觉和沟通能力评估','E.居家护理需求','个人信息','居家照料者信息'];
+    const currentFormType = useSelector(state => state.formOverview.currentFormType);
+    let modules = ['基本信息','个人信息','家庭信息','工作信息','工作信息','健康信息','老年人信息'];
+    if(currentFormType === 'elder')
+        modules = ['基本信息','A.个人信息','B.身体功能能力评论','C.认知能力评估','D.感知觉和沟通能力评估','E.居家护理需求','个人信息','居家照料者信息'];
     const currentMoudleIndex = useSelector(state => state.formOverview.currentMoudleIndex);
     const dispatch = useDispatch();
     return (
@@ -135,7 +138,10 @@ const FormDetailMid = () => {
 }
 
 const FormDetailRight = (props) => {
-    const formArray = ['basicInfo.json','newqnnA.json','newqnnB.json','newqnnC.json','newqnnD.json','newqnnE.json','newqnnF.json','newqnnG.json'];
+    const currentFormType = useSelector(state => state.formOverview.currentFormType);
+    let formArray = ['basicInfo.json','new-caring-questions1.json','new-caring-questions2.json','new-caring-questions3-1.json','new-caring-questions3-2.json','new-caring-questions4.json','new-caring-questions5.json'];
+    if(currentFormType === 'elder')
+        formArray = ['basicInfo.json','newqnnA.json','newqnnB.json','newqnnC.json','newqnnD.json','newqnnE.json','newqnnF.json','newqnnG.json'];
     const [selectState, setSelectState] = useState([false,true,false,false,false,false]);
     //const modules = ['基本信息','A.个人信息','B.身体功能能力评论','C.认知能力评估','D.感知觉和沟通能力评估','E.居家护理需求','个人信息','居家照料者信息'];
     const currentMoudleIndex = useSelector(state => state.formOverview.currentMoudleIndex);

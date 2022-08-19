@@ -4,13 +4,15 @@ import FunctionBtn from "../components/FunctionBtn";
 
 import processTime from "../utils/processTime";
 import processListData from "../utils/processListData";
-import { useEffect } from "react";
-import { useDispatch } from "react-redux";
+import { useEffect,useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { setInitData,setFormType } from "../store/FormOverviewSlice";
 import useGetCurrentType from "../hooks/useGetCurrentType";
 import useGetSelectedForm from "../hooks/useGetSelectedForm";
 import { useNavigate } from "react-router";
 import { setFormInfo } from "../store/FormContentSlice";
+import { pushSelectedFormId,popSelectedFormId } from "../store/RemindSlice";
+
 
 import Typography from '@material-ui/core/Typography';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
@@ -34,6 +36,7 @@ const OverviewContent = () => {
     //const data = useSelector(state => state.formOverview.overviewForm);
     let currentType = useGetCurrentType();
     const data = useGetSelectedForm();
+    const selectedFormId = useSelector(state => state.remindState.selectedFormId);
     return (
         <div className="bg-purple-50 w-full p-6 space-y-3 px-16 min-h-screen">
             <div>
@@ -44,7 +47,9 @@ const OverviewContent = () => {
                     <input placeholder="请输入搜索内容" className="ouline-none rounded-lg p-1 border-2 border-purple-200 px-2"/>
                 </div>
                 <div className="flex space-x-6">
-                    <div>
+                    <div onClick={() => {
+                        console.log('要导出的form id : ',selectedFormId);
+                    }}>
                         <FunctionBtn text="导出表格" type="common"/>
                     </div>
                     <div>
@@ -84,6 +89,7 @@ const OverviewContent = () => {
 const OneList = (data) => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
+    const [ifPush,setIfpush] = useState(true);
     if(!data.data.wxUser)
         return null;
     let tmpData = processListData(data.data);
@@ -91,7 +97,17 @@ const OneList = (data) => {
     return (
         <tr className=" border-purple-200 border-b-2 h-9">
             <td>
-                <input type={'checkbox'} className="w-12  text-center"/>
+                <input type={'checkbox'} className="w-12  text-center" onClick={() => {
+                    if(ifPush)
+                        dispatch(pushSelectedFormId({
+                            selectId:data.data.id
+                        }));
+                    else
+                        dispatch(popSelectedFormId({
+                            selectId:data.data.id
+                        }));
+                    setIfpush(!ifPush);
+                }}/>
             </td>
             <td className="pr-2">{processTime(data.data.submitTime).split(' ')[0]}</td>
             <td>{data.data.wxUser.name}</td>
