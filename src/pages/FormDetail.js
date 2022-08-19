@@ -14,6 +14,8 @@ import Typography from '@material-ui/core/Typography';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 import Link from '@material-ui/core/Link';
 import { setFormInfo } from "../store/FormContentSlice";
+import SelectBtn from "../components/SelectBtn";
+import { setCurrentMoudleIndex } from "../store/FormOverviewSlice";
 
 const server = "https://cyzz.fun/HealthCareAssessment/";
 
@@ -49,7 +51,7 @@ function SimpleBreadcrumbs(props) {
 const FormDetailContainer = (props) => {
     //console.log('prsop in container : ',props);
     return (
-        <div className="flex flex-col">
+        <div className="flex flex-col relative pt-16 pl-64">
             <TopBar />
             <div className="flex">
                 <SideBar />
@@ -84,9 +86,11 @@ const FormContent = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex">
+            <div className="flex justify-between">
                 <div>123</div>
-                <div>234</div>
+                <div>
+                    <FormDetailMid/>
+                </div>
                 <div>
                     <FormDetailRight/>
                 </div>
@@ -95,12 +99,41 @@ const FormContent = () => {
     )
 }
 
+const FormDetailMid = () => {
+    const modules = ['基本信息','A.个人信息','B.身体功能能力评论','C.认知能力评估','D.感知觉和沟通能力评估','E.居家护理需求','个人信息','居家照料者信息'];
+    const currentMoudleIndex = useSelector(state => state.formOverview.currentMoudleIndex);
+    const dispatch = useDispatch();
+    return (
+        <div className="bg-white flex flex-col space-y-3 p-6 rounded-xl border-2 border-purple-200 w-96">
+            {modules.map((item,index) => {
+                if(index === currentMoudleIndex)
+                    return (
+                        <div>
+                            <SelectBtn selected={true} text={item}/>
+                        </div>
+                    )
+                else 
+                    return (
+                        <div onClick={() => {
+                            dispatch(setCurrentMoudleIndex(index));
+                        }}>
+                            <SelectBtn selected={false} text={item}/>
+                        </div>
+                    )
+            })}
+        </div>
+    )
+}
+
 const FormDetailRight = (props) => {
     const formArray = ['basicInfo.json','newqnnA.json','newqnnB.json','newqnnC.json','newqnnD.json','newqnnE.json','newqnnF.json','newqnnG.json'];
     const [selectState, setSelectState] = useState([false,true,false,false,false,false]);
-    const modules = ['基本信息','个人信息','家庭信息','工作信息','工作信息','健康信息','老年人信息'];
+    const modules = ['基本信息','A.个人信息','B.身体功能能力评论','C.认知能力评估','D.感知觉和沟通能力评估','E.居家护理需求','个人信息','居家照料者信息'];
+    const currentMoudleIndex = useSelector(state => state.formOverview.currentMoudleIndex);
+    selectState.fill(false);
+    selectState[currentMoudleIndex] = true;
     return (
-        <div>
+        <div className="bg-white p-6 rounded-xl border-2 border-purple-200">
             {selectState.map((item,index) => {
             if(item === true && index !== 0)
                 return (
@@ -198,24 +231,20 @@ const BasicFormInfo = () => {
 }
 
 export default function FormDetail() {
-    const id = useParams().id;
-    const [detail,setDetail] = useState({});
+    const {id} = useParams();
     const dispatch = useDispatch();
     useEffect(() => {
         (async() => {
             let res = await getDetailById(id);
-            setDetail(res.data);
             dispatch(
                 setFormInfo({
                     answerSheet:res.data.answerSheet
                 })
             )
         })();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    },[id]);
-    //console.log('data in form detail',detail);
+    },[dispatch, id]);
     return (
-        <div>
+        <div className="">
             <FormDetailContainer id={id}/>
         </div>
     )

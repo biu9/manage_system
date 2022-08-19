@@ -7,6 +7,7 @@ const FormOverviewSlice = createSlice({
       "isCompleted":false,
       "overviewForm":[],
       "initData":[],
+      "currentMoudleIndex":0,
   },
   reducers: {
     setFormType(state, action) {
@@ -20,10 +21,13 @@ const FormOverviewSlice = createSlice({
     },
     setInitData(state, action) {
         state.initData = action.payload;
+    },
+    setCurrentMoudleIndex(state, action) {
+        state.currentMoudleIndex = action.payload;
     }
   },
 })
 
-export const { setFormType,setCompleted,setOverViewForm,setInitData } = FormOverviewSlice.actions
+export const { setFormType,setCompleted,setOverViewForm,setInitData,setCurrentMoudleIndex } = FormOverviewSlice.actions
 
 export default FormOverviewSlice.reducer

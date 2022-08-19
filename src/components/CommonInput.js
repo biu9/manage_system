@@ -36,7 +36,7 @@ export default function CommonInput(props) {
                         return null
                 }
             })()}
-            <input className="outline-none ml-1 w-full bg-purple-50" value={value} onChange={(e) => {
+            <input className="outline-none ml-1 w-full " value={value} onChange={(e) => {
                 setValue(e.target.value);                    
             }}/>
         </div>

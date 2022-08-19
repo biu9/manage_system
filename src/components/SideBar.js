@@ -7,7 +7,7 @@ export default function SideBar() {
     const selectInfo = useSelector(state => state.queryInfo);
     console.log('selectInfo in SideBar : ',selectInfo);
     return (
-        <div className=" p-6 z-10 h-full">
+        <div className=" p-6 z-10 h-full fixed bg-white left-0 top-16">
             <div className="text-xl font-semibold py-3">选择对象</div>
             <div className="flex w-full">
                 <div 
