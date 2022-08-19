@@ -10,6 +10,7 @@ import { setInitData } from "../store/FormOverviewSlice";
 import useGetCurrentType from "../hooks/useGetCurrentType";
 import useGetSelectedForm from "../hooks/useGetSelectedForm";
 import { useNavigate } from "react-router";
+import { setFormInfo } from "../store/FormContentSlice";
 
 import Typography from '@material-ui/core/Typography';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
@@ -34,7 +35,7 @@ const OverviewContent = () => {
     let currentType = useGetCurrentType();
     const data = useGetSelectedForm();
     return (
-        <div className="bg-purple-50 w-full p-6 space-y-3 px-16">
+        <div className="bg-purple-50 w-full p-6 space-y-3 px-16 min-h-screen">
             <div>
                 <SimpleBreadcrumbs text={currentType}/>
             </div>
@@ -44,15 +45,15 @@ const OverviewContent = () => {
                 </div>
                 <div className="flex space-x-6">
                     <div>
-                        <FunctionBtn text="导出表格" selected={false}/>
+                        <FunctionBtn text="导出表格" type="common"/>
                     </div>
                     <div>
-                        <FunctionBtn text="批量删除" selected={false}/>
+                        <FunctionBtn text="批量删除" type="delete"/>
                     </div>
                 </div>
             </div>
             <div>
-                <div className="">
+                <div className="min-h-screen">
                     <table className="table-fixed w-full">
                         <thead className="border-b-2 border-purple-200 bg-white h-10">
                             <tr align="left" className="">                                
@@ -82,6 +83,7 @@ const OverviewContent = () => {
 
 const OneList = (data) => {
     const navigate = useNavigate();
+    const dispatch = useDispatch();
     if(!data.data.wxUser)
         return null;
     let tmpData = processListData(data.data);
@@ -100,8 +102,9 @@ const OneList = (data) => {
             <td>
                 <div className="flex space-x-3 text-purple-600 font-semibold">
                     <div className="cursor-pointer" onClick={() => {
+                        dispatch(setFormInfo(data.data));
                         navigate('/form/' + data.data.id);
-                        console.log('navigate to /form/' + data.data.id);
+                        //console.log('navigate to /form/' + data.data.id);
                     }}>查看</div>
                     <div className="cursor-pointer">编辑</div>
                 </div>
