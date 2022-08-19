@@ -6,7 +6,7 @@ import processTime from "../utils/processTime";
 import processListData from "../utils/processListData";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { setInitData } from "../store/FormOverviewSlice";
+import { setInitData,setFormType } from "../store/FormOverviewSlice";
 import useGetCurrentType from "../hooks/useGetCurrentType";
 import useGetSelectedForm from "../hooks/useGetSelectedForm";
 import { useNavigate } from "react-router";
@@ -103,6 +103,7 @@ const OneList = (data) => {
                 <div className="flex space-x-3 text-purple-600 font-semibold">
                     <div className="cursor-pointer" onClick={() => {
                         dispatch(setFormInfo(data.data));
+                        data.data.subject ? dispatch(setFormType('elder')) : dispatch(setFormType('assistant'));
                         navigate('/form/' + data.data.id);
                         //console.log('navigate to /form/' + data.data.id);
                     }}>查看</div>
@@ -115,7 +116,7 @@ const OneList = (data) => {
 
 const OverviewContainer = () => {
     return (
-        <div className="flex flex-col">
+        <div className="flex flex-col relative pt-16 pl-64">
             <TopBar />
             <div className="flex">
                 <SideBar />

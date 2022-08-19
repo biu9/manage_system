@@ -9,6 +9,8 @@ import { useDispatch, useSelector } from "react-redux";
 import CommonInput from "../components/CommonInput";
 import QA from "../components/QA";
 import QAFill from "../components/QA_fill";
+import replaceForm from "../utils/replaceForm";
+import SuccessAlert from "../components/SuccessAlert";
 
 import Typography from '@material-ui/core/Typography';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
@@ -63,8 +65,12 @@ const FormDetailContainer = (props) => {
 
 const FormContent = () => {
     const formData = useSelector(state => state.formInfo);
+    const currentMoudleIndex = useSelector(state => state.formOverview.currentMoudleIndex);
+    const currentFormType = useSelector(state => state.formOverview.currentFormType);
+    const [replaceSuccess,setReplaceSuccess] = useState(false);
     return (
         <div className="bg-purple-50 min-h-screen w-full p-6 space-y-3 px-16">
+            {replaceSuccess ? <SuccessAlert text="修改成功"/> : null}
             <div>
                 <SimpleBreadcrumbs text='1'/>
             </div>
@@ -77,7 +83,11 @@ const FormContent = () => {
                         <FunctionBtn text="保存" type="common"/>
                     </div>
                     <div onClick={() => {
-                        console.log('要上传的form info : ',formData);
+                        //console.log('要上传的form info : ',formData);
+                        setReplaceSuccess(replaceForm(formData,currentMoudleIndex,currentFormType));
+                        setTimeout(() => {
+                            setReplaceSuccess(false);
+                        },1000);
                     }}>
                         <FunctionBtn text="上传" type="common"/>
                     </div>
@@ -87,7 +97,6 @@ const FormContent = () => {
                 </div>
             </div>
             <div className="flex justify-between">
-                <div>123</div>
                 <div>
                     <FormDetailMid/>
                 </div>
@@ -128,7 +137,7 @@ const FormDetailMid = () => {
 const FormDetailRight = (props) => {
     const formArray = ['basicInfo.json','newqnnA.json','newqnnB.json','newqnnC.json','newqnnD.json','newqnnE.json','newqnnF.json','newqnnG.json'];
     const [selectState, setSelectState] = useState([false,true,false,false,false,false]);
-    const modules = ['基本信息','A.个人信息','B.身体功能能力评论','C.认知能力评估','D.感知觉和沟通能力评估','E.居家护理需求','个人信息','居家照料者信息'];
+    //const modules = ['基本信息','A.个人信息','B.身体功能能力评论','C.认知能力评估','D.感知觉和沟通能力评估','E.居家护理需求','个人信息','居家照料者信息'];
     const currentMoudleIndex = useSelector(state => state.formOverview.currentMoudleIndex);
     selectState.fill(false);
     selectState[currentMoudleIndex] = true;
