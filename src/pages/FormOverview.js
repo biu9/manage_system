@@ -11,8 +11,9 @@ import useGetCurrentType from "../hooks/useGetCurrentType";
 import useGetSelectedForm from "../hooks/useGetSelectedForm";
 import { useNavigate } from "react-router";
 import { setFormInfo } from "../store/FormContentSlice";
-import { pushSelectedFormId,popSelectedFormId,setDeleteRemindStatus } from "../store/RemindSlice";
+import { pushSelectedFormId,popSelectedFormId,setDeleteRemindStatus,setExportRemindStatus } from "../store/RemindSlice";
 import DeleteRemind from "../components/DeleteRemind";
+import ExportRemind from "../components/ExportRemind";
 
 import Typography from '@material-ui/core/Typography';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
@@ -40,6 +41,7 @@ const OverviewContent = () => {
     const dispatch = useDispatch();
     return (
         <div className="bg-purple-50 w-full p-6 space-y-3 px-16 min-h-screen">
+            <ExportRemind/>
             <DeleteRemind/>
             <div>
                 <SimpleBreadcrumbs text={currentType}/>
@@ -51,6 +53,9 @@ const OverviewContent = () => {
                 <div className="flex space-x-6">
                     <div onClick={() => {
                         console.log('要导出的form id : ',selectedFormId);
+                        dispatch(setExportRemindStatus({
+                            exportRemind:true
+                        }));
                     }}>
                         <FunctionBtn text="导出表格" type="common"/>
                     </div>
