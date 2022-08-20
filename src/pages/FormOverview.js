@@ -11,7 +11,7 @@ import useGetCurrentType from "../hooks/useGetCurrentType";
 import useGetSelectedForm from "../hooks/useGetSelectedForm";
 import { useNavigate } from "react-router";
 import { setFormInfo } from "../store/FormContentSlice";
-import { pushSelectedFormId,popSelectedFormId,setDeleteRemindStatus,setExportRemindStatus,setAllFormId,popAllFormId } from "../store/RemindSlice";
+import { pushSelectedFormId,popSelectedFormId,setDeleteRemindStatus,setExportRemindStatus,setAllFormId,popAllFormId,setCurrentView } from "../store/RemindSlice";
 import DeleteRemind from "../components/DeleteRemind";
 import ExportRemind from "../components/ExportRemind";
 import useJudgeIfChecked from "../hooks/useJudgeIfChecked";
@@ -149,11 +149,17 @@ const OneList = (data) => {
                 <div className="flex space-x-3 text-purple-600 font-semibold">
                     <div className="cursor-pointer" onClick={() => {
                         dispatch(setFormInfo(data.data));
+                        dispatch(setCurrentView('查看'))
                         data.data.subject ? dispatch(setFormType('elder')) : dispatch(setFormType('assistant'));
                         navigate('/form/' + data.data.id);
-                        //console.log('navigate to /form/' + data.data.id);
                     }}>查看</div>
-                    <div className="cursor-pointer">编辑</div>
+                    <div onClick={() => {
+                        dispatch(setFormInfo(data.data));
+                        dispatch(setCurrentView('编辑'))
+                        data.data.subject ? dispatch(setFormType('elder')) : dispatch(setFormType('assistant'));
+                        navigate('/form/' + data.data.id);
+                    }}
+                    className="cursor-pointer">编辑</div>
                 </div>
             </td>
         </tr>

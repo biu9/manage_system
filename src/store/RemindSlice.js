@@ -6,6 +6,7 @@ const remindSlice = createSlice({
       "deleteRemind":false,
       "exportRemind":false,
       "selectedFormId":[],
+      "currentView":""
   },
   reducers: {
     setDeleteRemindStatus(state, action) {
@@ -27,10 +28,20 @@ const remindSlice = createSlice({
     },
     popAllFormId(state,action) {
         state.selectedFormId = [];
+    },
+    setCurrentView(state,action) {
+        state.currentView = action.payload;
     }
   },
 })
 
-export const { setDeleteRemindStatus,setExportRemindStatus,pushSelectedFormId,popSelectedFormId,setAllFormId,popAllFormId } = remindSlice.actions
+export const { 
+    setDeleteRemindStatus,
+    setExportRemindStatus,
+    pushSelectedFormId,
+    popSelectedFormId,
+    setAllFormId,
+    popAllFormId,
+    setCurrentView } = remindSlice.actions
 
 export default remindSlice.reducer

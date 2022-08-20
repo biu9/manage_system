@@ -70,11 +70,12 @@ const FormContent = () => {
     const currentFormType = useSelector(state => state.formOverview.currentFormType);
     const [replaceSuccess,setReplaceSuccess] = useState(false);
     const dispatch = useDispatch();
+    const currentView = useSelector(state => state.remindState.currentView);
     return (
         <div className="bg-purple-50 min-h-screen w-full p-6 space-y-3 px-16">
             {replaceSuccess ? <SuccessAlert text="修改成功"/> : null}
             <div>
-                <SimpleBreadcrumbs text='1'/>
+                <SimpleBreadcrumbs text={currentView+"视图"}/>
             </div>
             <div className="flex justify-between">
                 <div>
@@ -85,11 +86,12 @@ const FormContent = () => {
                         <FunctionBtn text="保存" type="common"/>
                     </div>
                     <div onClick={() => {
-                        //console.log('要上传的form info : ',formData);
-                        setReplaceSuccess(replaceForm(formData,currentMoudleIndex,currentFormType));
-                        setTimeout(() => {
-                            setReplaceSuccess(false);
-                        },1000);
+                        if(currentView === '编辑') {
+                            setReplaceSuccess(replaceForm(formData,currentMoudleIndex,currentFormType));
+                            setTimeout(() => {
+                                setReplaceSuccess(false);
+                            },1000);                            
+                        }
                     }}>
                         <FunctionBtn text="上传" type="common"/>
                     </div>
