@@ -5,6 +5,7 @@ const remindSlice = createSlice({
   initialState:{
       "deleteRemind":false,
       "exportRemind":false,
+      "saveRemind":false,
       "selectedFormId":[],
       "currentView":""
   },
@@ -31,6 +32,10 @@ const remindSlice = createSlice({
     },
     setCurrentView(state,action) {
         state.currentView = action.payload;
+    },
+    setSaveRemindState(state,action) {
+        console.log('receive : ',action.payload);
+        state.saveRemind = action.payload;
     }
   },
 })
@@ -42,6 +47,7 @@ export const {
     popSelectedFormId,
     setAllFormId,
     popAllFormId,
-    setCurrentView } = remindSlice.actions
+    setCurrentView,
+    setSaveRemindState } = remindSlice.actions
 
 export default remindSlice.reducer

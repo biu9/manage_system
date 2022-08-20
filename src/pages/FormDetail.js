@@ -9,8 +9,9 @@ import { useDispatch, useSelector } from "react-redux";
 import CommonInput from "../components/CommonInput";
 import QA from "../components/QA";
 import QAFill from "../components/QA_fill";
-import replaceForm from "../utils/replaceForm";
-import SuccessAlert from "../components/SuccessAlert";
+//import replaceForm from "../utils/replaceForm";
+//import SuccessAlert from "../components/SuccessAlert";
+//import saveRemind from "../components/SaveRemind";
 
 import Typography from '@material-ui/core/Typography';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
@@ -18,7 +19,8 @@ import Link from '@material-ui/core/Link';
 import { setFormInfo } from "../store/FormContentSlice";
 import SelectBtn from "../components/SelectBtn";
 import { setCurrentMoudleIndex } from "../store/FormOverviewSlice";
-import { setDeleteRemindStatus } from "../store/RemindSlice";
+import { setDeleteRemindStatus,setSaveRemindState } from "../store/RemindSlice";
+import SaveRemind from "../components/SaveRemind";
 
 const server = "https://cyzz.fun/HealthCareAssessment/";
 
@@ -65,15 +67,16 @@ const FormDetailContainer = (props) => {
 }
 
 const FormContent = () => {
-    const formData = useSelector(state => state.formInfo);
-    const currentMoudleIndex = useSelector(state => state.formOverview.currentMoudleIndex);
-    const currentFormType = useSelector(state => state.formOverview.currentFormType);
-    const [replaceSuccess,setReplaceSuccess] = useState(false);
+    //const formData = useSelector(state => state.formInfo);
+    //const currentMoudleIndex = useSelector(state => state.formOverview.currentMoudleIndex);
+    //const currentFormType = useSelector(state => state.formOverview.currentFormType);
+    //const [replaceSuccess,setReplaceSuccess] = useState(false);
     const dispatch = useDispatch();
     const currentView = useSelector(state => state.remindState.currentView);
+    const saveRemindState = useSelector(state => state.remindState.saveRemind);
     return (
         <div className="bg-purple-50 min-h-screen w-full p-6 space-y-3 px-16">
-            {replaceSuccess ? <SuccessAlert text="修改成功"/> : null}
+            {saveRemindState ? <SaveRemind/> : null}
             <div>
                 <SimpleBreadcrumbs text={currentView+"视图"}/>
             </div>
@@ -87,10 +90,13 @@ const FormContent = () => {
                     </div>
                     <div onClick={() => {
                         if(currentView === '编辑') {
+                            /*
                             setReplaceSuccess(replaceForm(formData,currentMoudleIndex,currentFormType));
                             setTimeout(() => {
                                 setReplaceSuccess(false);
-                            },1000);                            
+                            },1000);        
+                            */
+                            dispatch(setSaveRemindState(true));                    
                         }
                     }}>
                         <FunctionBtn text="上传" type="common"/>
@@ -150,9 +156,10 @@ const FormDetailRight = (props) => {
     let formArray = ['basicInfo.json','new-caring-questions1.json','new-caring-questions2.json','new-caring-questions3-1.json','new-caring-questions3-2.json','new-caring-questions4.json','new-caring-questions5.json'];
     if(currentFormType === 'elder')
         formArray = ['basicInfo.json','newqnnA.json','newqnnB.json','newqnnC.json','newqnnD.json','newqnnE.json','newqnnF.json','newqnnG.json'];
-    const [selectState, setSelectState] = useState([false,true,false,false,false,false]);
+    //const [selectState, setSelectState] = useState([false,true,false,false,false,false]);
     //const modules = ['基本信息','A.个人信息','B.身体功能能力评论','C.认知能力评估','D.感知觉和沟通能力评估','E.居家护理需求','个人信息','居家照料者信息'];
     const currentMoudleIndex = useSelector(state => state.formOverview.currentMoudleIndex);
+    const selectState = [false,true,false,false,false,false];
     selectState.fill(false);
     selectState[currentMoudleIndex] = true;
     return (

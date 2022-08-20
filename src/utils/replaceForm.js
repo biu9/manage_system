@@ -19,6 +19,7 @@ async function replaceAnswerSheet(formData) {
     });
     const resTmp = await res.json();
     const resCode = resTmp.code;
+    console.log('replace res in replace form : ',resTmp);
     if(resCode === 0) {
         return true;
     } else {
