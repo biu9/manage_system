@@ -34,7 +34,7 @@ const remindSlice = createSlice({
         state.currentView = action.payload;
     },
     setSaveRemindState(state,action) {
-        console.log('receive : ',action.payload);
+        //console.log('receive : ',action.payload);
         state.saveRemind = action.payload;
     }
   },

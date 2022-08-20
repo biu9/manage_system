@@ -15,7 +15,7 @@ async function deleteForm(deleteFormId) {
         mode: 'cors',
         credentials: 'include',
         body: JSON.stringify({
-            id: deleteFormId,
+            ids: deleteFormId,
         })
     });
     const resTmp = await res.json();
@@ -30,7 +30,7 @@ async function deleteForm(deleteFormId) {
 export default function DeleteRemind(props) {
     const dispatch = useDispatch();
     const deleteRemindStatus = useSelector(state => state.remindState.deleteRemind);
-    const deleteFormId = useSelector(state => state.remindState.deleteFormId);
+    const deleteFormId = useSelector(state => state.remindState.selectedFormId);
     const [inputValue, setInputValue] = useState('');
     const [successDelete, setSuccessDelete] = useState(false);
     const [deleteFail, setDeleteFail] = useState(false);
@@ -44,24 +44,27 @@ export default function DeleteRemind(props) {
                 <div className='text-2xl font-semibold'>
                     删除提醒
                 </div>
-                <div className='flex space-x-6 items-center bg-gray-100 rounded-xl border-2 border-gray-400 p-3'>
-                    <div className="bg-remind w-32 h-11 bg-cover"></div>
-                    <div className='text-sm text-gray-600 font-semibold'>
-                        <p>
-                            每一份问卷信息都十分重要，请确保删除的是测试问卷或无效问卷
-                            为确保不是误触，请完成下列验证后再操作：
-                        </p>
-                        <p>
-                            在下面文本框中输入“晓暮堂评估后台管理系统”
-                        </p>
+                <div className='flex space-y-3 items-center bg-gray-100 rounded-xl border-2 border-gray-400 p-3 whitespace-nowrap flex-col py-6'>
+                    <div className='flex items-center space-x-3'>
+                        <div className="bg-remind w-6 h-6 bg-cover"></div>
+                        <div className='text-sm text-gray-600 font-semibold'>
+                            <div>
+                                为避免误触，请输入如下字符以确认删除︰
+                            </div>
+                            <div className='text-purple-500'>
+                                晓暮堂评估后台管理系统
+                            </div>
+                        </div>   
+                    </div>             
+                    <div className='w-full'>
+                        <input 
+                        placeholder='晓暮堂评估后台管理系统'
+                        value={inputValue}
+                        onChange={(e)=>{setInputValue(e.target.value)}}
+                        className='bg-white w-full p-3 rounded-xl outline-none border-2 border-purple-200'></input>
                     </div>
                 </div>
-                <div>
-                    <input 
-                    value={inputValue}
-                    onChange={(e)=>{setInputValue(e.target.value)}}
-                    className='bg-gray-300 w-full p-3 rounded-xl outline-none'></input>
-                </div>
+
                 <div className='flex space-x-6 pt-0 w-full'>
                         <div 
                         className='w-full'

@@ -10,7 +10,7 @@ import CommonInput from "../components/CommonInput";
 import QA from "../components/QA";
 import QAFill from "../components/QA_fill";
 //import replaceForm from "../utils/replaceForm";
-//import SuccessAlert from "../components/SuccessAlert";
+import SuccessAlert from "../components/SuccessAlert";
 //import saveRemind from "../components/SaveRemind";
 
 import Typography from '@material-ui/core/Typography';
@@ -74,9 +74,11 @@ const FormContent = () => {
     const dispatch = useDispatch();
     const currentView = useSelector(state => state.remindState.currentView);
     const saveRemindState = useSelector(state => state.remindState.saveRemind);
+    const [saveSuccess,setSaveSuccess] = useState(false);
     return (
         <div className="bg-purple-50 min-h-screen w-full p-6 space-y-3 px-16">
             {saveRemindState ? <SaveRemind/> : null}
+            {saveSuccess ? <SuccessAlert text="保存成功"/> : null}
             <div>
                 <SimpleBreadcrumbs text={currentView+"视图"}/>
             </div>
@@ -85,7 +87,12 @@ const FormContent = () => {
                     <input placeholder="请输入搜索内容" className="ouline-none rounded-lg p-1 border-2 border-purple-200 px-2"/>
                 </div>
                 <div className="flex space-x-3">
-                    <div>
+                    <div onClick={() => {
+                        setSaveSuccess(true);
+                        setTimeout(() => {
+                            setSaveSuccess(false);
+                        },1000)
+                    }}>
                         <FunctionBtn text="保存" type="common"/>
                     </div>
                     <div onClick={() => {
