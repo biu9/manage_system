@@ -11,9 +11,11 @@ import useGetCurrentType from "../hooks/useGetCurrentType";
 import useGetSelectedForm from "../hooks/useGetSelectedForm";
 import { useNavigate } from "react-router";
 import { setFormInfo } from "../store/FormContentSlice";
-import { pushSelectedFormId,popSelectedFormId,setDeleteRemindStatus,setExportRemindStatus } from "../store/RemindSlice";
+import { pushSelectedFormId,popSelectedFormId,setDeleteRemindStatus,setExportRemindStatus,setAllFormId,popAllFormId } from "../store/RemindSlice";
 import DeleteRemind from "../components/DeleteRemind";
 import ExportRemind from "../components/ExportRemind";
+import useJudgeIfChecked from "../hooks/useJudgeIfChecked";
+import useGetAllCurrentId from "../hooks/useGetAllCurrentId"; 
 
 import Typography from '@material-ui/core/Typography';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
@@ -34,11 +36,13 @@ function SimpleBreadcrumbs(props) {
 
 
 const OverviewContent = () => {
-    //const data = useSelector(state => state.formOverview.overviewForm);
     let currentType = useGetCurrentType();
     const data = useGetSelectedForm();
     const selectedFormId = useSelector(state => state.remindState.selectedFormId);
     const dispatch = useDispatch();
+    const formIds = useGetAllCurrentId();
+    const [ifPush,setIfPush] = useState(true)
+    //console.log('all selected form ids : ',formIds);
     return (
         <div className="bg-purple-50 w-full p-6 space-y-3 px-16 min-h-screen">
             <ExportRemind/>
@@ -48,7 +52,9 @@ const OverviewContent = () => {
             </div>
             <div className="flex justify-between">
                 <div>
-                    <input placeholder="请输入搜索内容" className="ouline-none rounded-lg p-1 border-2 border-purple-200 px-2"/>
+                    <input 
+                    placeholder="请输入搜索内容" 
+                    className="ouline-none rounded-lg p-1 border-2 border-purple-200 px-2"/>
                 </div>
                 <div className="flex space-x-6">
                     <div onClick={() => {
@@ -74,7 +80,19 @@ const OverviewContent = () => {
                         <thead className="border-b-2 border-purple-200 bg-white h-10">
                             <tr align="left" className="">                                
                                 <th className="w-12  text-center">
-                                    <input type={'checkbox'} className=" "/>
+                                    <input 
+                                    onClick={() => {
+                                        if(ifPush) {
+                                            dispatch(setAllFormId({
+                                                selectIds:formIds
+                                            }));
+                                        } else {
+                                            dispatch(popAllFormId());
+                                        }
+                                        setIfPush(!ifPush);
+                                    }}
+                                    type={'checkbox'} 
+                                    className=" "/>
                                 </th>
                                 <th className="">创建日期</th>
                                 <th className="">访问员</th>
@@ -101,6 +119,7 @@ const OneList = (data) => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
     const [ifPush,setIfpush] = useState(true);
+    const ifChecked = useJudgeIfChecked(data.data.id);
     if(!data.data.wxUser)
         return null;
     let tmpData = processListData(data.data);
@@ -108,7 +127,7 @@ const OneList = (data) => {
     return (
         <tr className=" border-purple-200 border-b-2 h-9">
             <td>
-                <input type={'checkbox'} className="w-12  text-center" onClick={() => {
+                <input type={'checkbox'} className="w-12  text-center" checked={ifChecked}  onClick={() => {
                     if(ifPush)
                         dispatch(pushSelectedFormId({
                             selectId:data.data.id
