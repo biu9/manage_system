@@ -15,6 +15,13 @@ module.exports = {
         'redRemind':"url('./static/redRemind.svg')",
         "topBarWord":"url('./static/topBarWord.png')",
         "topBarLogo":"url('./static/topBarLogo.png')",
+        "draft_selected":"url('./static/icons/draft_selected.svg')",
+        "draft_unselected":"url('./static/icons/draft_unselected.svg')",
+        "finish_selected":"url('./static/icons/finish_selected.svg')",
+        "home":"url('./static/icons/home.svg')",
+        "export":"url('./static/icons/export.svg')",
+        "delete":"url('./static/icons/delete.svg')",
+        "search":"url('./static/icons/search.svg')",
        },
        boxShadow: {
           sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
@@ -32,7 +39,7 @@ module.exports = {
   },
   variants: {
     extend: {
-      backgroundImage: ['hover'],
+      backgroundImage: ['hover','group-hover'],
       boxShadow: ['active']
     },
   },

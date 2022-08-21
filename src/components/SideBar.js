@@ -41,7 +41,7 @@ export default function SideBar() {
                         queryUnCompleted: false,
                     }))
                 }}>
-                    <CommonBtn text="已完成" selected={selectInfo.queryCompleted}/>
+                    <CommonBtn text="已完成" selected={selectInfo.queryCompleted} type="finish"/>
                 </div>
                 <div onClick={() => {
                     dispatch(setSelectInfo({
@@ -49,7 +49,7 @@ export default function SideBar() {
                         queryUnCompleted: true,
                     }))
                 }}>
-                    <CommonBtn text="草稿箱" selected={selectInfo.queryUnCompleted}/>
+                    <CommonBtn text="草稿箱" selected={selectInfo.queryUnCompleted} type="draft"/>
                 </div>
             </div>
         </div>

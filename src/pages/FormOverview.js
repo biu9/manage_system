@@ -27,7 +27,7 @@ function SimpleBreadcrumbs(props) {
     return (
       <Breadcrumbs aria-label="breadcrumb">
         <Link color="inherit" href="/">
-            首页
+            <div className="bg-home w-6 h-6 bg-cover"></div>
         </Link>
         <Typography color="textPrimary">{props.text}</Typography>
       </Breadcrumbs>
@@ -51,10 +51,13 @@ const OverviewContent = () => {
                 <SimpleBreadcrumbs text={currentType}/>
             </div>
             <div className="flex justify-between">
-                <div>
+                <div className="flex items-center">
                     <input 
                     placeholder="请输入搜索内容" 
-                    className="ouline-none rounded-lg p-1 border-2 border-purple-200 px-2"/>
+                    className="ouline-none rounded-l-lg p-1 border-2 border-purple-200 px-2 h-full"/>
+                    <div className="bg-purple-200 h-full w-10 rounded-r-lg p-2 flex">
+                        <div className="bg-search w-5 h-3/4 bg-cover justify-center items-center relative top-0.5"></div>
+                    </div>
                 </div>
                 <div className="flex space-x-6">
                     <div onClick={() => {
@@ -63,7 +66,7 @@ const OverviewContent = () => {
                             exportRemind:true
                         }));
                     }}>
-                        <FunctionBtn text="导出表格" type="common"/>
+                        <FunctionBtn text="导出表格" type="export"/>
                     </div>
                     <div onClick={() => {
                         dispatch(setDeleteRemindStatus({
