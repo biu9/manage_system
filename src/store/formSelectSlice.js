@@ -7,6 +7,7 @@ const formSelectSlice = createSlice({
     "queryUnCompleted":false,
     "queryElder":false,
     "queryCareGiver":false,
+    "queryName":null
   },
   reducers: {
     setSelectInfo(state, action) {

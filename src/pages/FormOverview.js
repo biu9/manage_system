@@ -16,6 +16,7 @@ import DeleteRemind from "../components/DeleteRemind";
 import ExportRemind from "../components/ExportRemind";
 import useJudgeIfChecked from "../hooks/useJudgeIfChecked";
 import useGetAllCurrentId from "../hooks/useGetAllCurrentId"; 
+import { setSelectInfo } from "../store/formSelectSlice";
 
 import Typography from '@material-ui/core/Typography';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
@@ -41,7 +42,8 @@ const OverviewContent = () => {
     const selectedFormId = useSelector(state => state.remindState.selectedFormId);
     const dispatch = useDispatch();
     const formIds = useGetAllCurrentId();
-    const [ifPush,setIfPush] = useState(true)
+    const [ifPush,setIfPush] = useState(true);
+    const [queryName,setQueryName] = useState('');
     //console.log('all selected form ids : ',formIds);
     return (
         <div className="bg-purple-50 w-full p-6 space-y-3 px-16 min-h-screen">
@@ -53,10 +55,19 @@ const OverviewContent = () => {
             <div className="flex justify-between">
                 <div className="flex items-center">
                     <input 
+                    onChange={(e) => {
+                        setQueryName(e.target.value);
+                    }}
                     placeholder="请输入搜索内容" 
-                    className="ouline-none rounded-l-lg p-1 border-2 border-purple-200 px-2 h-full"/>
+                    className="ouline-none rounded-l-lg p-1 border-2 border-purple-200 px-2 h-full outline-none"/>
                     <div className="bg-purple-200 h-full w-10 rounded-r-lg p-2 flex">
-                        <div className="bg-search w-5 h-3/4 bg-cover justify-center items-center relative top-0.5"></div>
+                        <div 
+                        onClick={() => {
+                            dispatch(setSelectInfo({
+                                queryName:queryName,
+                            }));
+                        }}
+                        className="bg-search w-5 h-3/4 bg-cover justify-center items-center relative top-0.5 cursor-pointer"></div>
                     </div>
                 </div>
                 <div className="flex space-x-6">

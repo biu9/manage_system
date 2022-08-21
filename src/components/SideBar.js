@@ -1,6 +1,7 @@
 import CommonBtn from "./CommonBtn"
 import { setSelectInfo } from "../store/formSelectSlice"
 import { useSelector,useDispatch } from "react-redux"
+import { popAllFormId } from "../store/RemindSlice";
 
 export default function SideBar() {
     const dispatch = useDispatch();
@@ -15,7 +16,9 @@ export default function SideBar() {
                     dispatch(setSelectInfo({
                         queryElder: true,
                         queryCareGiver: false,
-                    }))
+                        queryName:null
+                    }));
+                    dispatch(popAllFormId());
                 }}
                 className="w-24 mr-6">
                     <CommonBtn text="老人" selected={selectInfo.queryElder}/>
@@ -25,7 +28,9 @@ export default function SideBar() {
                     dispatch(setSelectInfo({
                         queryElder: false,
                         queryCareGiver: true,
-                    }))
+                        queryName:null
+                    }));
+                    dispatch(popAllFormId());
                 }}
                 className="w-24">
                     <CommonBtn text="护理员" selected={selectInfo.queryCareGiver}/>
@@ -39,7 +44,8 @@ export default function SideBar() {
                     dispatch(setSelectInfo({
                         queryCompleted: true,
                         queryUnCompleted: false,
-                    }))
+                    }));
+                    dispatch(popAllFormId());
                 }}>
                     <CommonBtn text="已完成" selected={selectInfo.queryCompleted} type="finish"/>
                 </div>
@@ -47,7 +53,8 @@ export default function SideBar() {
                     dispatch(setSelectInfo({
                         queryCompleted: false,
                         queryUnCompleted: true,
-                    }))
+                    }));
+                    dispatch(popAllFormId());
                 }}>
                     <CommonBtn text="草稿箱" selected={selectInfo.queryUnCompleted} type="draft"/>
                 </div>
