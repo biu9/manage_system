@@ -13,10 +13,19 @@ const formContentSlice = createSlice({
     setSingleFormInfo(state, action) {
       //console.log('set single form info recv : ',action.payload);
       if(state.assistant != null && action.payload.dataType !== 'default') {
-        state.assistant[action.payload.dataType] = action.payload.value;
+        if(action.payload.dataType === 'location') {
+          state.institution = action.payload.value;
+        } else {
+          state.assistant[action.payload.dataType] = action.payload.value;
+        }
       } else if(state.subject != null && action.payload.dataType !== 'default') {
         if(action.payload.dataType !== 'location' || state.type !== 'home') {
-          state.subject[action.payload.dataType] = action.payload.value;
+          if(state.type === 'institution' && action.payload.dataType === 'location') {
+            //修改机构老人的institution
+            state.institution = action.payload.value;
+          } else {
+            state.subject[action.payload.dataType] = action.payload.value; 
+          }
         } else if(action.payload.locationIndex !== '0') {
           state.subject.location[parseInt(action.payload.locationIndex)] = action.payload.value;
         } else {

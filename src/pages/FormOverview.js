@@ -98,8 +98,9 @@ const OverviewContent = () => {
                                 <th className="">访问员</th>
                                 <th className="">姓名</th>
                                 <th className="w-48">身份证号</th>
-                                <th className="">地址</th>
+                                <th className="w-20">所在机构</th>
                                 <th className="">联系方式</th>
+                                <th className="w-56">地址</th>
                                 <th>
                                     操作
                                 </th>
@@ -143,8 +144,9 @@ const OneList = (data) => {
             <td>{data.data.wxUser.name}</td>
             <td>{tmpData.name}</td>
             <td className="">{tmpData.residentId}</td>
-            <td>{data.data.type === 'home' ? '居家' : tmpData.location}</td>
+            <td>{data.data.type === 'home' ? '居家' : data.data.institution}</td>
             <td>{tmpData.phone}</td>
+            <td>{tmpData.location}</td>
             <td>
                 <div className="flex space-x-3 text-purple-600 font-semibold">
                     <div className="cursor-pointer" onClick={() => {
