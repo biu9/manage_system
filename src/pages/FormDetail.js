@@ -102,14 +102,14 @@ const FormContent = () => {
                             },1000);
                         }
                     }}>
-                        <FunctionBtn text="保存" type="common"/>
+                        <FunctionBtn text="保存" type="export" />
                     </div>
                     <div onClick={() => {
                         if(currentView === '编辑') {
                             dispatch(setSaveRemindState(true));                    
                         }
                     }}>
-                        <FunctionBtn text="上传" type="common"/>
+                        <FunctionBtn text="上传" type="export"/>
                     </div>
                     <div onClick={() => {
                         dispatch(setDeleteRemindStatus({
@@ -173,12 +173,32 @@ const LeftList = (props) => {
     )
 }
 
+const LeftHeaderDraft = () => {
+    return (
+        <div className="p-3">
+            <div className="text-2xl font-semibold py-1">草稿箱</div>
+            <div className="text-gray-400 font-semibold text-sm">包含未完成上传的评估对象</div>
+        </div>
+    )
+}
+
+const LeftHeaderFinished = () => {
+    return (
+        <div className="p-3">
+            <div className="text-2xl font-semibold py-1">已完成</div>
+            <div className="text-gray-400 font-semibold text-sm">包含完成上传的评估对象</div>
+        </div>
+    )
+}
+
 const FormDetailLeft = () => {
     const data = useGetSelectedForm();
     const dispatch = useDispatch();
     const currentFormId = useSelector(state => state.remindState.selectedFormId[0]);
+    const selectParams = useSelector(state => state.queryInfo);
     return (
         <div className="min-w-80  bg-white rounded-lg border-2 border-purple-200 p-3 flex flex-col space-y-3">
+            {selectParams.queryCompleted ? <LeftHeaderFinished/> : <LeftHeaderDraft/>}
             {data.map(item => {
                 const tmpData = processListData(item);
                 if(item.id === currentFormId) 
@@ -209,6 +229,7 @@ const FormDetailMid = () => {
     const dispatch = useDispatch();
     return (
         <div className="bg-white flex flex-col space-y-3 p-6 rounded-xl border-2 border-purple-200 w-80">
+            <div className="text-2xl font-semibold py-3">调查模块</div>
             {modules.map((item,index) => {
                 if(index === currentMoudleIndex)
                     return (
@@ -266,6 +287,7 @@ const CommonFormContent = (props) => {
     const answerSheet = useSelector(state => state.formInfo.answerSheet);
     return (
         <div className="w-80 whitespace-normal">
+            <div className="text-2xl font-semibold py-3">{staticForm.title}</div>
         { 
             getTotal(staticForm,answerSheet)
         }
@@ -318,6 +340,7 @@ const BasicFormInfo = () => {
     //console.log('tmpData : ',tmpData);
     return (
       <div className="flex flex-col space-y-6 w-80">
+        <div className="text-2xl font-semibold py-3">基本信息</div>
         <CommonInput iconType="name" text={tmpData.name}/>
         <CommonInput iconType="residentId" text={tmpData.residentId}/>
         {

@@ -58,7 +58,7 @@ const OverviewContent = () => {
                     onChange={(e) => {
                         setQueryName(e.target.value);
                     }}
-                    placeholder="请输入搜索内容" 
+                    placeholder="请输入姓名搜索" 
                     className="ouline-none rounded-l-lg p-1 border-2 border-purple-200 px-2 h-full outline-none"/>
                     <div className="bg-purple-200 h-full w-10 rounded-r-lg p-2 flex">
                         <div 
