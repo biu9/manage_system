@@ -21,6 +21,8 @@ import SelectBtn from "../components/SelectBtn";
 import { setCurrentMoudleIndex } from "../store/FormOverviewSlice";
 import { setDeleteRemindStatus,setSaveRemindState } from "../store/RemindSlice";
 import SaveRemind from "../components/SaveRemind";
+import { popAllFormId,pushSelectedFormId } from "../store/RemindSlice";
+import DeleteRemind from "../components/DeleteRemind";
 
 const server = "https://cyzz.fun/HealthCareAssessment/";
 
@@ -67,10 +69,6 @@ const FormDetailContainer = (props) => {
 }
 
 const FormContent = () => {
-    //const formData = useSelector(state => state.formInfo);
-    //const currentMoudleIndex = useSelector(state => state.formOverview.currentMoudleIndex);
-    //const currentFormType = useSelector(state => state.formOverview.currentFormType);
-    //const [replaceSuccess,setReplaceSuccess] = useState(false);
     const dispatch = useDispatch();
     const currentView = useSelector(state => state.remindState.currentView);
     const saveRemindState = useSelector(state => state.remindState.saveRemind);
@@ -79,6 +77,7 @@ const FormContent = () => {
         <div className="bg-purple-50 min-h-screen w-full p-6 space-y-3 px-16">
             {saveRemindState ? <SaveRemind/> : null}
             {saveSuccess ? <SuccessAlert text="保存成功"/> : null}
+            <DeleteRemind/>
             <div>
                 <SimpleBreadcrumbs text={currentView+"视图"}/>
             </div>
@@ -273,6 +272,10 @@ const BasicFormInfo = () => {
 export default function FormDetail() {
     const {id} = useParams();
     const dispatch = useDispatch();
+    dispatch(popAllFormId());
+    dispatch(pushSelectedFormId({
+        selectId:id
+    }));
     useEffect(() => {
         (async() => {
             let res = await getDetailById(id);

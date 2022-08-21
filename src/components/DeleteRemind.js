@@ -5,6 +5,7 @@ import FailAlert from './FailAlert';
 import { setDeleteRemindStatus } from '../store/RemindSlice';
 import { useDispatch,useSelector } from 'react-redux';
 import { useState } from 'react';
+import { useNavigate } from 'react-router';
 
 const server = 'https://cyzz.fun/HealthCareAssessment/';
 
@@ -34,6 +35,7 @@ export default function DeleteRemind(props) {
     const [inputValue, setInputValue] = useState('');
     const [successDelete, setSuccessDelete] = useState(false);
     const [deleteFail, setDeleteFail] = useState(false);
+    const navigate = useNavigate();
     //console.log('deleteRemindStatus : ',deleteRemindStatus);
     return (
         <>
@@ -84,6 +86,7 @@ export default function DeleteRemind(props) {
                                         setSuccessDelete(true);
                                         setTimeout(() => {
                                             setSuccessDelete(false);
+                                            navigate('/');
                                         },1000);
                                     } else {
                                         setDeleteFail(true);
@@ -92,6 +95,7 @@ export default function DeleteRemind(props) {
                                     console.log('err : ',err);
                                 });
                             } else {
+                                //alert('删除失败');
                                 setDeleteFail(true);
                                 setTimeout(() => {
                                     setDeleteFail(false);

@@ -28,6 +28,8 @@ function chooseBtn(props) {
         return <UnSelected text={props.text} type="export"/>
     } else if(props.type === 'delete') {
         return <DeleteBtn text={props.text}/>
+    } else if (props.type === 'common') {
+        return <UnSelected text={props.text} type="common"/>
     }
 }
 
