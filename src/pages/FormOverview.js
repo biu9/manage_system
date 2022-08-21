@@ -6,7 +6,7 @@ import processTime from "../utils/processTime";
 import processListData from "../utils/processListData";
 import { useEffect,useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { setInitData,setFormType } from "../store/FormOverviewSlice";
+import { setInitData,setFormType,setCurrentFormId } from "../store/FormOverviewSlice";
 import useGetCurrentType from "../hooks/useGetCurrentType";
 import useGetSelectedForm from "../hooks/useGetSelectedForm";
 import { useNavigate } from "react-router";
@@ -165,13 +165,15 @@ const OneList = (data) => {
                 <div className="flex space-x-3 text-purple-600 font-semibold">
                     <div className="cursor-pointer" onClick={() => {
                         dispatch(setFormInfo(data.data));
-                        dispatch(setCurrentView('查看'))
+                        dispatch(setCurrentView('查看'));
+                        dispatch(setCurrentFormId(data.data.id));
                         data.data.subject ? dispatch(setFormType('elder')) : dispatch(setFormType('assistant'));
                         navigate('/form/' + data.data.id);
                     }}>查看</div>
                     <div onClick={() => {
                         dispatch(setFormInfo(data.data));
-                        dispatch(setCurrentView('编辑'))
+                        dispatch(setCurrentView('编辑'));
+                        dispatch(setCurrentFormId(data.data.id));
                         data.data.subject ? dispatch(setFormType('elder')) : dispatch(setFormType('assistant'));
                         navigate('/form/' + data.data.id);
                     }}

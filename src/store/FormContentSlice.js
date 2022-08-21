@@ -5,7 +5,7 @@ const formContentSlice = createSlice({
   initialState:{},
   reducers: {
     setFormInfo(state, action) {
-      //console.log('set form info recv : ',action.payload);
+      console.log('set form info recv : ',action.payload);
       for(const i in action.payload) {
         state[i] = action.payload[i];
       }

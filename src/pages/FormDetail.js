@@ -1,6 +1,6 @@
 import SideBar from "../components/SideBar"
 import TopBar from "../components/TopBar"
-import { useParams } from "react-router"
+//import { useParams } from "react-router"
 import { useState,useEffect } from "react";
 import useGetCurrentType from "../hooks/useGetCurrentType";
 import FunctionBtn from "../components/FunctionBtn";
@@ -9,8 +9,11 @@ import { useDispatch, useSelector } from "react-redux";
 import CommonInput from "../components/CommonInput";
 import QA from "../components/QA";
 import QAFill from "../components/QA_fill";
+import processTime from "../utils/processTime";
 //import replaceForm from "../utils/replaceForm";
 import SuccessAlert from "../components/SuccessAlert";
+import useGetSelectedForm from "../hooks/useGetSelectedForm";
+import useGetBasicInfoById from "../hooks/useGetBasicInfoById";
 //import saveRemind from "../components/SaveRemind";
 
 import Typography from '@material-ui/core/Typography';
@@ -18,7 +21,7 @@ import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 import Link from '@material-ui/core/Link';
 import { setFormInfo } from "../store/FormContentSlice";
 import SelectBtn from "../components/SelectBtn";
-import { setCurrentMoudleIndex } from "../store/FormOverviewSlice";
+import { setCurrentFormId, setCurrentMoudleIndex } from "../store/FormOverviewSlice";
 import { setDeleteRemindStatus,setSaveRemindState } from "../store/RemindSlice";
 import SaveRemind from "../components/SaveRemind";
 import { popAllFormId,pushSelectedFormId } from "../store/RemindSlice";
@@ -92,10 +95,12 @@ const FormContent = () => {
                 </div>
                 <div className="flex space-x-3">
                     <div onClick={() => {
-                        setSaveSuccess(true);
-                        setTimeout(() => {
-                            setSaveSuccess(false);
-                        },1000)
+                        if(currentView === '编辑') {
+                            setSaveSuccess(true);
+                            setTimeout(() => {
+                                setSaveSuccess(false);
+                            },1000);
+                        }
                     }}>
                         <FunctionBtn text="保存" type="common"/>
                     </div>
@@ -117,12 +122,80 @@ const FormContent = () => {
             </div>
             <div className="flex justify-between">
                 <div>
+                    <FormDetailLeft/>
+                </div>
+                <div>
                     <FormDetailMid/>
                 </div>
                 <div>
                     <FormDetailRight/>
                 </div>
             </div>
+        </div>
+    )
+}
+
+const UnSelectedLeftList = (props) => {
+    return (
+    <div className="border-2 border-purple-200 rounded-lg flex justify-between items-center text-sm p-3 cursor-pointer">
+        <div className="flex flex-col items-start space-y-3">
+            <div>{props.data.name}</div>
+            <div>{props.data.residentId}</div>
+        </div>
+        <div className="flex flex-col items-end space-y-3">
+            <div>{props.institution || "居家"}</div>
+            <div>{processTime(props.time).split(' ')[0]}</div>
+        </div>
+    </div>
+    )
+}
+
+const SelectedLeftList = (props) => {
+    return (
+    <div className="bg-purple-600 text-white  border-2 border-purple-200 rounded-lg h-20 flex justify-between items-center text-sm p-3 cursor-pointer">
+        <div className="flex flex-col items-start space-y-3">
+            <div>{props.data.name}</div>
+            <div>{props.data.residentId}</div>
+        </div>
+        <div className="flex flex-col items-end space-y-3">
+            <div>{props.institution || "居家"}</div>
+            <div>{processTime(props.time).split(' ')[0]}</div>
+        </div>
+    </div>
+    )
+}
+
+const LeftList = (props) => {
+    return (
+        <div>
+            {props.selected ? <SelectedLeftList {...props}/> : <UnSelectedLeftList {...props}/>}
+        </div>
+    )
+}
+
+const FormDetailLeft = () => {
+    const data = useGetSelectedForm();
+    const dispatch = useDispatch();
+    const currentFormId = useSelector(state => state.remindState.selectedFormId[0]);
+    return (
+        <div className="min-w-80  bg-white rounded-lg border-2 border-purple-200 p-3 flex flex-col space-y-3">
+            {data.map(item => {
+                const tmpData = processListData(item);
+                if(item.id === currentFormId) 
+                    return (
+                        <div>
+                            <LeftList data={tmpData} institution={item.institution} time={item.submitTime} selected={true}/>
+                        </div>
+                    )
+                else 
+                    return (
+                        <div onClick={() => {
+                            dispatch(setCurrentFormId(item.id));
+                        }}>
+                            <LeftList data={tmpData} institution={item.institution} time={item.submitTime} selected={false}/>
+                        </div>
+                    )
+            })}
         </div>
     )
 }
@@ -135,7 +208,7 @@ const FormDetailMid = () => {
     const currentMoudleIndex = useSelector(state => state.formOverview.currentMoudleIndex);
     const dispatch = useDispatch();
     return (
-        <div className="bg-white flex flex-col space-y-3 p-6 rounded-xl border-2 border-purple-200 w-96">
+        <div className="bg-white flex flex-col space-y-3 p-6 rounded-xl border-2 border-purple-200 w-80">
             {modules.map((item,index) => {
                 if(index === currentMoudleIndex)
                     return (
@@ -164,7 +237,8 @@ const FormDetailRight = (props) => {
     const currentMoudleIndex = useSelector(state => state.formOverview.currentMoudleIndex);
     const selectState = [false,true,false,false,false,false];
     selectState.fill(false);
-    selectState[currentMoudleIndex] = true;
+    if(currentMoudleIndex !== -1)
+        selectState[currentMoudleIndex] = true;
     return (
         <div className="bg-white p-6 rounded-xl border-2 border-purple-200">
             {selectState.map((item,index) => {
@@ -191,7 +265,7 @@ const CommonFormContent = (props) => {
     const staticForm = require('../static/lib/'+props.moduleName);
     const answerSheet = useSelector(state => state.formInfo.answerSheet);
     return (
-        <div className="w-96 whitespace-normal">
+        <div className="w-80 whitespace-normal">
         { 
             getTotal(staticForm,answerSheet)
         }
@@ -243,7 +317,7 @@ const BasicFormInfo = () => {
     let tmpData = processListData(basicInfo);
     //console.log('tmpData : ',tmpData);
     return (
-      <div className="flex flex-col space-y-6 w-96">
+      <div className="flex flex-col space-y-6 w-80">
         <CommonInput iconType="name" text={tmpData.name}/>
         <CommonInput iconType="residentId" text={tmpData.residentId}/>
         {
@@ -253,7 +327,7 @@ const BasicFormInfo = () => {
         }
         {      
         basicInfo.type === 'home' ? 
-        <div className="flex w-96 space-x-6">
+        <div className="flex w-80 space-x-6">
           <CommonInput iconType="location" text={tmpData.location[3].toString()} locationIndex='3'/>
           <CommonInput iconType="location" text={tmpData.location[4].toString()} locationIndex='4'/>
         </div> : null
@@ -264,15 +338,21 @@ const BasicFormInfo = () => {
 }
 
 export default function FormDetail() {
-    const {id} = useParams();
+    //const {id} = useParams();
+    const id = useSelector(state => state.formOverview.currentFormId);
+    console.log('currentFormId : ',id);
     const dispatch = useDispatch();
     dispatch(popAllFormId());
+    const basicInfo =  useGetBasicInfoById(id);
     dispatch(pushSelectedFormId({
         selectId:id
     }));
+    dispatch(setCurrentMoudleIndex(-1));
     useEffect(() => {
         (async() => {
             let res = await getDetailById(id);
+            console.log('======= current basic info =======',basicInfo);
+            dispatch(setFormInfo(basicInfo));
             dispatch(
                 setFormInfo({
                     answerSheet:res.data.answerSheet
