@@ -24,6 +24,18 @@ import Link from '@material-ui/core/Link';
 
 const server = "https://cyzz.fun/HealthCareAssessment/";
 
+function login() {
+    fetch('https://cyzz.fun/HealthCareAssessment/admin/login', {
+      method: 'POST',
+      mode: 'cors',
+      credentials: 'include',
+      body: JSON.stringify({
+        username: 'admin',
+        password: 'Hca#Aamin'
+      })
+    });
+  }
+
 function SimpleBreadcrumbs(props) {
     return (
       <Breadcrumbs aria-label="breadcrumb">
@@ -216,6 +228,7 @@ async function fetchData() {
   }
 
 export default function FormOverview() {
+    login();
     const dispatch = useDispatch();
     useEffect(() => {
         (async() => {
