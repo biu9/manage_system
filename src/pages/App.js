@@ -10,8 +10,8 @@ export default function App() {
         <Provider store={store}>
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<FormOverview />} />
-                    <Route path="/form/:id" element={<FormDetail />} />
+                    <Route path="/static/HealthCareAssessment/manage/" element={<FormOverview />} />
+                    <Route path="/static/HealthCareAssessment/manage/form/:id" element={<FormDetail />} />
                 </Routes>
             </BrowserRouter>
         </Provider>

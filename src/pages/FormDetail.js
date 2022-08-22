@@ -46,10 +46,10 @@ function SimpleBreadcrumbs(props) {
     const currentType = useGetCurrentType();
     return (
       <Breadcrumbs aria-label="breadcrumb">
-        <Link color="inherit" href="/">
+        <Link color="inherit" href="/static/HealthCareAssessment/manage/">
             <div className="bg-home w-6 h-6 bg-cover"></div>
         </Link>
-        <Link color="inherit" href="/">
+        <Link color="inherit" href="/static/HealthCareAssessment/manage/">
             {currentType}
         </Link>
         <Typography color="textPrimary">{props.text}</Typography>
