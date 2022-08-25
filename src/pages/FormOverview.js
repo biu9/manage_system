@@ -11,12 +11,13 @@ import useGetCurrentType from "../hooks/useGetCurrentType";
 import useGetSelectedForm from "../hooks/useGetSelectedForm";
 import { useNavigate } from "react-router";
 import { setFormInfo } from "../store/FormContentSlice";
-import { pushSelectedFormId,popSelectedFormId,setDeleteRemindStatus,setExportRemindStatus,setAllFormId,popAllFormId,setCurrentView } from "../store/RemindSlice";
+import { pushSelectedFormId,popSelectedFormId,setDeleteRemindStatus,setExportRemindStatus,setAllFormId,popAllFormId,setCurrentView,setOpenSeniorSearchModal } from "../store/RemindSlice";
 import DeleteRemind from "../components/DeleteRemind";
 import ExportRemind from "../components/ExportRemind";
 import useJudgeIfChecked from "../hooks/useJudgeIfChecked";
 import useGetAllCurrentId from "../hooks/useGetAllCurrentId"; 
 import { setSelectInfo } from "../store/formSelectSlice";
+import SeniorSearchModal from "../components/SeniorSearchModal";
 
 import Typography from '@material-ui/core/Typography';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
@@ -49,6 +50,7 @@ const OverviewContent = () => {
         <div className="bg-purple-50 w-full p-6 space-y-3 px-16 min-h-screen">
             <ExportRemind/>
             <DeleteRemind/>
+            <SeniorSearchModal/>
             <div>
                 <SimpleBreadcrumbs text={currentType}/>
             </div>
@@ -68,6 +70,11 @@ const OverviewContent = () => {
                             }));
                         }}
                         className="bg-search w-5 h-3/4 bg-cover justify-center items-center relative top-0.5 cursor-pointer"></div>
+                    </div>
+                    <div className="px-6" onClick={() => {
+                        dispatch(setOpenSeniorSearchModal(true));
+                    }}>
+                        <FunctionBtn type="seniorSearch" text="高级筛选"/>
                     </div>
                 </div>
                 <div className="flex space-x-6">

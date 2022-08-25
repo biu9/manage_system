@@ -7,7 +7,8 @@ const remindSlice = createSlice({
       "exportRemind":false,
       "saveRemind":false,
       "selectedFormId":[],
-      "currentView":""
+      "currentView":"",
+      "openSeniorSearchModal":false,
   },
   reducers: {
     setDeleteRemindStatus(state, action) {
@@ -36,6 +37,9 @@ const remindSlice = createSlice({
     setSaveRemindState(state,action) {
         //console.log('receive : ',action.payload);
         state.saveRemind = action.payload;
+    },
+    setOpenSeniorSearchModal(state,action) {
+        state.openSeniorSearchModal = action.payload;
     }
   },
 })
@@ -48,6 +52,8 @@ export const {
     setAllFormId,
     popAllFormId,
     setCurrentView,
-    setSaveRemindState } = remindSlice.actions
+    setSaveRemindState,
+    setOpenSeniorSearchModal    
+} = remindSlice.actions
 
 export default remindSlice.reducer

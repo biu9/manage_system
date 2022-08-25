@@ -22,6 +22,8 @@ module.exports = {
         "export":"url('./static/icons/export.svg')",
         "delete":"url('./static/icons/delete.svg')",
         "search":"url('./static/icons/search.svg')",
+        "seniorSearch":"url('./static/icons/seniorSearch.svg')",
+        "add":"url('./static/icons/add.svg')",
        },
        boxShadow: {
           sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',

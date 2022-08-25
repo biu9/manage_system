@@ -2,6 +2,7 @@ import CommonBtn from "./CommonBtn"
 import { setSelectInfo } from "../store/formSelectSlice"
 import { useSelector,useDispatch } from "react-redux"
 import { popAllFormId } from "../store/RemindSlice";
+import { setFormType } from "../store/FormOverviewSlice";
 
 export default function SideBar() {
     const dispatch = useDispatch();
@@ -19,6 +20,7 @@ export default function SideBar() {
                         queryName:null
                     }));
                     dispatch(popAllFormId());
+                    dispatch(setFormType('elder'));
                 }}
                 className="w-24 mr-6">
                     <CommonBtn text="老人" selected={selectInfo.queryElder}/>
@@ -31,6 +33,7 @@ export default function SideBar() {
                         queryName:null
                     }));
                     dispatch(popAllFormId());
+                    dispatch(setFormType('assistant'));
                 }}
                 className="w-24">
                     <CommonBtn text="护理员" selected={selectInfo.queryCareGiver}/>
