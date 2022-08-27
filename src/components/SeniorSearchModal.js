@@ -7,14 +7,8 @@ import MenuItem from '@material-ui/core/MenuItem';
 import CommonBtn from './CommonBtn';
 import seniorSearch from '../utils/seniorSearch';
 import { setSeniorSearchRes } from '../store/formSelectSlice';
-
-const SeniorSearchModalHead = () => {
-    return (
-        <div className='text-2xl font-bold'>
-            高级筛选
-        </div>
-    )
-}
+import FailAlert from './FailAlert';
+import SuccessAlert from './SuccessAlert';
 
 const UnSelectedOption = (props) => {
     return (
@@ -55,8 +49,15 @@ const SeniorSearchModalBody = () => {
     const dispatch = useDispatch();
     const [anchorEl2, setAnchorEl2] = useState(null);
     const limitArr = ['包含关键词','不包含关键词'];
+    const [searchFail,setSearchFail] = useState(false);
+    const [searchSuccess,setSearchSuccess] = useState(false);
     return (
         <div>
+            {searchFail ? <FailAlert text="搜索失败"/> : null}
+            {searchSuccess ? <SuccessAlert text="搜索成功"/> : null}
+            <div className='text-2xl font-bold pb-6'>
+                高级筛选
+            </div>
             <div className='flex justify-between'>
                 <div className='flex space-x-3'>
                     <div>条件间的关系</div>
@@ -158,9 +159,23 @@ const SeniorSearchModalBody = () => {
                 <div 
                 onClick={() => {                    
                     seniorSearch(selectOptions,currentSelectOption).then(res => {
-                        console.log('search res : ',res);
-                        dispatch(setSeniorSearchRes(res))
-                        //dispatch(setOpenSeniorSearchModal(false));
+                        //console.log('search res : ',res);
+                        if(res !== false) {
+                            dispatch(setSeniorSearchRes({
+                                seniorSearchRes:res
+                            }));
+                            setSearchSuccess(true);
+                            setTimeout(() => {
+                                setSearchSuccess(false);                            
+                                dispatch(setOpenSeniorSearchModal(false));
+                            },1000);
+                        } else {
+                            setSearchFail(true);
+                            setTimeout(() => {
+                                setSearchFail(false);
+                                dispatch(setOpenSeniorSearchModal(false));  
+                            },1000);
+                        }
                     });
                 }}
                 className='w-full cursor-pointer'>
@@ -178,7 +193,6 @@ export default function SeniorSearchModal(props) {
         <div>
             <Modal open={openSeniorSearchModal}>
                 <div className='bg-white outline-none absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-lg p-6 w-min-96 space-y-6 flex flex-col'>
-                    <SeniorSearchModalHead/>
                     <SeniorSearchModalBody/>
                 </div>
             </Modal>

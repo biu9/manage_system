@@ -3,11 +3,13 @@ import { setSelectInfo } from "../store/formSelectSlice"
 import { useSelector,useDispatch } from "react-redux"
 import { popAllFormId } from "../store/RemindSlice";
 import { setFormType } from "../store/FormOverviewSlice";
+import { clearSeniorSearchRes } from "../store/formSelectSlice";
 
 export default function SideBar() {
     const dispatch = useDispatch();
     const selectInfo = useSelector(state => state.queryInfo);
-    console.log('selectInfo in SideBar : ',selectInfo);
+    //console.log('selectInfo in SideBar : ',selectInfo);
+    //dispatch(clearSeniorSearchRes());
     return (
         <div className=" p-6 z-10 h-full fixed bg-white left-0 top-16">
             <div className="text-xl font-semibold py-3">选择对象</div>
@@ -21,6 +23,7 @@ export default function SideBar() {
                     }));
                     dispatch(popAllFormId());
                     dispatch(setFormType('elder'));
+                    dispatch(clearSeniorSearchRes());
                 }}
                 className="w-24 mr-6">
                     <CommonBtn text="老人" selected={selectInfo.queryElder}/>
@@ -34,6 +37,7 @@ export default function SideBar() {
                     }));
                     dispatch(popAllFormId());
                     dispatch(setFormType('assistant'));
+                    dispatch(clearSeniorSearchRes());
                 }}
                 className="w-24">
                     <CommonBtn text="护理员" selected={selectInfo.queryCareGiver}/>
@@ -49,6 +53,7 @@ export default function SideBar() {
                         queryUnCompleted: false,
                     }));
                     dispatch(popAllFormId());
+                    dispatch(clearSeniorSearchRes());
                 }}>
                     <CommonBtn text="已完成" selected={selectInfo.queryCompleted} type="finish"/>
                 </div>
@@ -58,6 +63,7 @@ export default function SideBar() {
                         queryUnCompleted: true,
                     }));
                     dispatch(popAllFormId());
+                    dispatch(clearSeniorSearchRes());
                 }}>
                     <CommonBtn text="草稿箱" selected={selectInfo.queryUnCompleted} type="draft"/>
                 </div>

@@ -18,10 +18,13 @@ const formSelectSlice = createSlice({
     },
     setSeniorSearchRes(state, action) {
         state.seniorSearchRes = action.payload.seniorSearchRes;
+    },
+    clearSeniorSearchRes(state, action) {
+        state.seniorSearchRes = [];
     }
   },
 })
 
-export const { setSelectInfo,setSeniorSearchRes } = formSelectSlice.actions
+export const { setSelectInfo,setSeniorSearchRes,clearSeniorSearchRes } = formSelectSlice.actions
 
 export default formSelectSlice.reducer

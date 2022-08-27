@@ -1,13 +1,5 @@
 const server = "https://cyzz.fun/HealthCareAssessment/";
 
-const params = [
-    {type: '1', limit: '包含关键词', content: '测试1'},
-    {type: '2', limit: '不包含关键词', content: '测试2'},
-    {type: '0', limit: '包含关键词', content: '男'},
-    {type: '0', limit: '不包含关键词', content: '男'},
-];
-const selectType = {or: true, and: false};
-
 function initResBySelectType(selectType) {
     if(selectType.and === true) {
         return {
@@ -27,7 +19,7 @@ function initResBySelectType(selectType) {
 }
 
 async function fetchBySeniorSearch(filter) {
-    //console.log('search filter : ',filter);
+   // console.log('search filter : ',filter);
     const res = await fetch(server+'form/search',{
         method: 'POST',
         mode: 'cors',
@@ -75,9 +67,9 @@ export default function seniorSearch(params,selectType) {
         if(tmpAns.type === 'fill') {
             let tmpSelect = {};
             if(translateLimit[params[i].limit] === 0) 
-                tmpSelect["AnswerSheet."+tmpAns.id+".Remark"] = {$in:params[i].content};
+                tmpSelect["AnswerSheet."+tmpAns.id+".Remark"] = {$in:[params[i].content]};
             else
-                tmpSelect["AnswerSheet."+tmpAns.id+".Remark"] = {$nin:params[i].content};
+                tmpSelect["AnswerSheet."+tmpAns.id+".Remark"] = {$nin:[params[i].content]};
             res.seniorSearchRes[item].push(tmpSelect);
         } else {
             findChoiceFlag = false;
@@ -94,7 +86,9 @@ export default function seniorSearch(params,selectType) {
                 }
             }
             if(findChoiceFlag === false) {
-                return false;
+                return new Promise((resolve,reject) => {
+                    resolve(false);
+                });
             }
         }
       }
