@@ -15,6 +15,7 @@ module.exports = {
         'redRemind':"url('./static/redRemind.svg')",
         "topBarWord":"url('./static/topBarWord.png')",
         "topBarLogo":"url('./static/topBarLogo.png')",
+        "seniorSelectIcon":"url('./static/seniorSearch.svg')",
         "draft_selected":"url('./static/icons/draft_selected.svg')",
         "draft_unselected":"url('./static/icons/draft_unselected.svg')",
         "finish_selected":"url('./static/icons/finish_selected.svg')",

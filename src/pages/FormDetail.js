@@ -363,7 +363,7 @@ const BasicFormInfo = () => {
 export default function FormDetail() {
     //const {id} = useParams();
     const id = useSelector(state => state.formOverview.currentFormId);
-    console.log('currentFormId : ',id);
+    //console.log('currentFormId : ',id);
     const dispatch = useDispatch();
     dispatch(popAllFormId());
     const basicInfo =  useGetBasicInfoById(id);
@@ -374,7 +374,7 @@ export default function FormDetail() {
     useEffect(() => {
         (async() => {
             let res = await getDetailById(id);
-            console.log('======= current basic info =======',basicInfo);
+            //console.log('======= current basic info =======',basicInfo);
             dispatch(setFormInfo(basicInfo));
             dispatch(
                 setFormInfo({

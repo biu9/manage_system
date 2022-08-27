@@ -7,18 +7,21 @@ const formSelectSlice = createSlice({
     "queryUnCompleted":false,
     "queryElder":false,
     "queryCareGiver":false,
-    "queryName":null
+    "queryName":null,
+    "seniorSearchRes":[]
   },
   reducers: {
     setSelectInfo(state, action) {
         for(const i in action.payload) {
             state[i] = action.payload[i];
         }
-        //state = (action.payload);
     },
+    setSeniorSearchRes(state, action) {
+        state.seniorSearchRes = action.payload.seniorSearchRes;
+    }
   },
 })
 
-export const { setSelectInfo } = formSelectSlice.actions
+export const { setSelectInfo,setSeniorSearchRes } = formSelectSlice.actions
 
 export default formSelectSlice.reducer
