@@ -95,13 +95,3 @@ export default function seniorSearch(params,selectType) {
     }
     return fetchBySeniorSearch(res.seniorSearchRes);
 }
-
-// TODO
-// ~~1. 不包含的mogo的json查询写法怎么写~~
-// ~~2. 子字段为数组的json查询怎么写~~
-// 3. $and / $or 的判断
-// 4. fetch测试
-// 5. modal的关闭 
-// 6. 接上查询失败的alert
-// 7. 非空判断
-//console.log(seniorSearch(params,selectType) ? seniorSearch(params,selectType).seniorSearchRes["$or"] : 'false');
