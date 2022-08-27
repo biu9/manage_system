@@ -5,6 +5,8 @@ const UnSelected = (props) => {
                 switch(props.type) {
                     case 'export':
                         return <div className="bg-export w-5 h-5 mr-1 bg-cover"></div>
+                    case 'seniorSearch':
+                        return <div className="bg-seniorSearch w-5 h-5 mr-1 bg-cover"></div>
                     default:
                         return null
                 }
@@ -30,16 +32,17 @@ function chooseBtn(props) {
         return <DeleteBtn text={props.text}/>
     } else if (props.type === 'common') {
         return <UnSelected text={props.text} type="common"/>
+    } else if (props.type === 'seniorSearch') {
+        return <UnSelected text={props.text} type="seniorSearch"/>
+    } else {
+        return null
     }
 }
 
 export default function FunctionBtn(props) {
     return (
         <div>
-            {/*props.selected ? <Selected text={props.text} /> : <UnSelected text={props.text} />*/}
-            {
-                chooseBtn(props)
-            }
+            {chooseBtn(props)}
         </div>
     )
 }

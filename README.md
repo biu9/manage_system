@@ -18,7 +18,7 @@
 
 ### 文件架构
 
-![20220820004818](https://typora-1309407228.cos.ap-shanghai.myqcloud.com/20220820004818.png)
+![20220822024929](https://typora-1309407228.cos.ap-shanghai.myqcloud.com/20220822024929.png)
 
 - components: 储存在不同页面间使用过的组件或在同一页面中使用多次的组件
 - hooks: 自定义的hook函数
@@ -47,4 +47,5 @@
   - `setExportRemindStatus` : 同上
   - `pushSelectedFormId` : 储存选中的表单的id,用于导出或删除
   - `popSelectedFormId` : 删除某个特定id在该slice中的储存
+
 

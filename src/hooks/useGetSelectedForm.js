@@ -4,6 +4,11 @@ export default function useGetSelectedForm() {
     const initData = useSelector(state => state.formOverview.initData);
     const selectParams = useSelector(state => state.queryInfo);
     const resData = [];
+    //console.log('use get selected form refresh');
+    const seniorSearchData = useSelector(state => state.queryInfo.seniorSearchRes);
+    //console.log('senior search data : ',seniorSearchData);
+    if(seniorSearchData.length > 0) 
+        return seniorSearchData;
     initData.forEach(item => {
         if(selectParams.queryName === null) {
             if(selectParams.queryCompleted && selectParams.queryElder) {
@@ -35,6 +40,6 @@ export default function useGetSelectedForm() {
             }
         }
     })
-
+    //console.log('render data : ',resData);
     return resData
 }

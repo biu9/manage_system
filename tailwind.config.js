@@ -15,6 +15,7 @@ module.exports = {
         'redRemind':"url('./static/redRemind.svg')",
         "topBarWord":"url('./static/topBarWord.png')",
         "topBarLogo":"url('./static/topBarLogo.png')",
+        "seniorSelectIcon":"url('./static/seniorSearch.svg')",
         "draft_selected":"url('./static/icons/draft_selected.svg')",
         "draft_unselected":"url('./static/icons/draft_unselected.svg')",
         "finish_selected":"url('./static/icons/finish_selected.svg')",
@@ -22,6 +23,8 @@ module.exports = {
         "export":"url('./static/icons/export.svg')",
         "delete":"url('./static/icons/delete.svg')",
         "search":"url('./static/icons/search.svg')",
+        "seniorSearch":"url('./static/icons/seniorSearch.svg')",
+        "add":"url('./static/icons/add.svg')",
        },
        boxShadow: {
           sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
