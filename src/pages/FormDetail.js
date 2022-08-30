@@ -222,9 +222,9 @@ const FormDetailLeft = () => {
 
 const FormDetailMid = () => {
     const currentFormType = useSelector(state => state.formOverview.currentFormType);
-    let modules = ['基本信息','个人信息','家庭信息','工作信息','工作信息','健康信息','老年人信息'];
+    let modules = ['基本信息','A.个人信息','B.家庭信息','C1.工作信息1','C2.工作信息2','D.健康信息','E.老年人信息'];
     if(currentFormType === 'elder')
-        modules = ['基本信息','A.个人信息','B.身体功能能力评论','C.认知能力评估','D.感知觉和沟通能力评估','E.居家护理需求','个人信息','居家照料者信息'];
+        modules = ['基本信息','A.个人信息','B.身体功能能力评论','C.认知能力评估','D.感知觉和沟通能力评估','E.居家护理需求','F.医疗与养老服务情况调查','居家照料者信息'];
     const currentMoudleIndex = useSelector(state => state.formOverview.currentMoudleIndex);
     const dispatch = useDispatch();
     return (
