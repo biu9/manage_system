@@ -1,18 +1,36 @@
 const server = "https://cyzz.fun/HealthCareAssessment/";
 
-function initResBySelectType(selectType) {
+function initResBySelectType(selectType,currentType) {
+    //console.log('current type : ',currentType);
+    let queryCompletedAndUncompleted = false;
+    let queryElderAndCareGiver = false;
+    if(currentType.queryCompleted === false && currentType.queryUnCompleted === false) {
+        queryCompletedAndUncompleted = true;
+    } 
+    if(currentType.queryElder === false && currentType.queryCareGiver === false) {
+        queryElderAndCareGiver = true;
+    }
+    const tmpArr = [];
+    if(queryCompletedAndUncompleted === false) {
+        tmpArr.push({"IsCompleted":{"$eq":currentType.queryCompleted}});        
+    }
+    if(queryElderAndCareGiver === false) {
+        if(currentType.queryElder) {
+            tmpArr.push({"SubjectId":{"$ne":""}});
+        } else {
+            tmpArr.push({"AssistantId":{"$ne":""}});
+        }
+    }
     if(selectType.and === true) {
         return {
             "seniorSearchRes":{
-                "$and":[
-                ]
+                "$and":tmpArr
             }
         }
     } else {
         return {
             "seniorSearchRes":{
-                "$or":[
-                ]
+                "$or":tmpArr
             }
         }
     }
@@ -31,7 +49,7 @@ async function fetchBySeniorSearch(filter) {
         })
     });
     const resTmp = await res.json();
-    //console.log(resTmp);
+    console.log(resTmp);
     return resTmp.data;
 }
 
@@ -59,8 +77,8 @@ export default function seniorSearch(params,selectType,currentType) {
         "包含关键词":0,
         "不包含关键词":1,
     }
-    res = initResBySelectType(selectType);
-    console.log('current type : ',currentType);
+    res = initResBySelectType(selectType,currentType);
+    console.log('init res : ',res);
     for(const item in res.seniorSearchRes) {
       for(let i=0;i<params.length;i++) {
         const tmpAns = findForm(params[i].type);
