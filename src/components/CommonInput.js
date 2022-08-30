@@ -1,10 +1,12 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { setSingleFormInfo,setAnswerSheetFill } from "../store/FormContentSlice";
+import { useSelector } from "react-redux";
 
 export default function CommonInput(props) {
     let [value, setValue] = useState(props.text);
     const dispatch = useDispatch();
+    const currentView = useSelector(state => state.remindState.currentView);
     dispatch(setSingleFormInfo({
         value:value,
         dataType:props.iconType,
@@ -37,7 +39,8 @@ export default function CommonInput(props) {
                 }
             })()}
             <input className="outline-none ml-1 w-full " value={value} onChange={(e) => {
-                setValue(e.target.value);                    
+                if(currentView === '编辑') 
+                    setValue(e.target.value);                    
             }}/>
         </div>
     )

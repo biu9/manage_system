@@ -46,6 +46,7 @@ const OverviewContent = () => {
     const [ifPush,setIfPush] = useState(true);
     const [queryName,setQueryName] = useState('');
     //console.log('all selected form ids : ',formIds);
+    //console.log('form data : ',data);
     return (
         <div className="bg-purple-50 w-full p-6 space-y-3 px-16 min-h-screen">
             <ExportRemind/>

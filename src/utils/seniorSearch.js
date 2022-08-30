@@ -53,13 +53,14 @@ function findForm(targetIndex) {
     return false;
 }
 
-export default function seniorSearch(params,selectType) {    
+export default function seniorSearch(params,selectType,currentType) {    
     let res = [];
     const translateLimit = {
         "包含关键词":0,
         "不包含关键词":1,
     }
     res = initResBySelectType(selectType);
+    console.log('current type : ',currentType);
     for(const item in res.seniorSearchRes) {
       for(let i=0;i<params.length;i++) {
         const tmpAns = findForm(params[i].type);

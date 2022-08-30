@@ -5,6 +5,7 @@ import { setAnswerSheet } from "../store/FormContentSlice";
 
 export default function QA(props) {
     const dispatch = useDispatch();
+    const currentView = useSelector(state => state.remindState.currentView);
     let ansFronRedux = useSelector(state => state.formInfo.answerSheet[props.id].answer);
     let tmpArr = ansFronRedux.slice(0);
     return (
@@ -15,22 +16,26 @@ export default function QA(props) {
                     if(ansFronRedux.includes(item.id))
                         return (
                         <div className="" onClick={() => {
-                            tmpArr.splice(tmpArr.indexOf(item.id), 1);
-                            dispatch(setAnswerSheet({
-                                id: props.id,
-                                answer:tmpArr
-                            }));
+                            if(currentView === "编辑") {
+                                tmpArr.splice(tmpArr.indexOf(item.id), 1);
+                                dispatch(setAnswerSheet({
+                                    id: props.id,
+                                    answer:tmpArr
+                                }));                                
+                            }
                         }}>
                             <SelectBtn selected={true} text={item.title} />
                         </div>)
                     else 
                         return (
                         <div onClick={() => {
-                            tmpArr.push(item.id);
-                            dispatch(setAnswerSheet({
-                                id: props.id,
-                                answer:tmpArr
-                            })); 
+                            if(currentView === "编辑") {
+                                tmpArr.push(item.id);
+                                dispatch(setAnswerSheet({
+                                    id: props.id,
+                                    answer:tmpArr
+                                }));                                 
+                            }
                         }}>
                             <SelectBtn selected={false} text={item.title} />
                         </div>)

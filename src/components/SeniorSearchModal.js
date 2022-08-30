@@ -9,6 +9,7 @@ import seniorSearch from '../utils/seniorSearch';
 import { setSeniorSearchRes } from '../store/formSelectSlice';
 import FailAlert from './FailAlert';
 import SuccessAlert from './SuccessAlert';
+import useGetCurrentType from '../hooks/useGetCurrentType';
 
 const UnSelectedOption = (props) => {
     return (
@@ -51,6 +52,7 @@ const SeniorSearchModalBody = () => {
     const limitArr = ['包含关键词','不包含关键词'];
     const [searchFail,setSearchFail] = useState(false);
     const [searchSuccess,setSearchSuccess] = useState(false);
+    const currentType = useGetCurrentType();
     return (
         <div>
             {searchFail ? <FailAlert text="搜索失败"/> : null}
@@ -158,7 +160,7 @@ const SeniorSearchModalBody = () => {
                 </div>
                 <div 
                 onClick={() => {                    
-                    seniorSearch(selectOptions,currentSelectOption).then(res => {
+                    seniorSearch(selectOptions,currentSelectOption,currentType).then(res => {
                         //console.log('search res : ',res);
                         if(res !== false) {
                             dispatch(setSeniorSearchRes({
