@@ -37,7 +37,7 @@ function initResBySelectType(selectType,currentType) {
 }
 
 async function fetchBySeniorSearch(filter) {
-   // console.log('search filter : ',filter);
+    console.log('search filter : ',filter);
     const res = await fetch(server+'form/search',{
         method: 'POST',
         mode: 'cors',
@@ -65,6 +65,8 @@ function findForm(targetIndex) {
                         return tmpArr[j].questions[k];
                     }
                 }
+            } else if(tmpArr[j].id === targetIndex) {
+                return tmpArr[j];
             }
         }
     }
@@ -78,7 +80,7 @@ export default function seniorSearch(params,selectType,currentType) {
         "不包含关键词":1,
     }
     res = initResBySelectType(selectType,currentType);
-    console.log('init res : ',res);
+    //console.log('init res : ',res);
     for(const item in res.seniorSearchRes) {
       for(let i=0;i<params.length;i++) {
         const tmpAns = findForm(params[i].type);
