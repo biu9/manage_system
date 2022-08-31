@@ -53,8 +53,10 @@ async function fetchBySeniorSearch(filter) {
     return resTmp.data;
 }
 
-function findForm(targetIndex) {
-    const formArr = ['newqnnA.json','newqnnB.json','newqnnC.json','newqnnD.json','newqnnE.json','newqnnF.json','newqnnG.json'];
+function findForm(targetIndex,currentFormType) {
+    let formArr = ['newqnnA.json','newqnnB.json','newqnnC.json','newqnnD.json','newqnnE.json','newqnnF.json','newqnnG.json'];
+    if(currentFormType.queryCareGiver)
+        formArr = ['new-caring-questions1.json','new-caring-questions2.json','new-caring-questions3-1.json','new-caring-questions3-2.json','new-caring-questions4.json','new-caring-questions5.json'];
     for(let i=0;i<formArr.length;i++) {
         const staticForm = require('../static/lib/'+formArr[i]);
         const tmpArr = staticForm.questions[0].questions;
@@ -83,7 +85,7 @@ export default function seniorSearch(params,selectType,currentType) {
     //console.log('init res : ',res);
     for(const item in res.seniorSearchRes) {
       for(let i=0;i<params.length;i++) {
-        const tmpAns = findForm(params[i].type);
+        const tmpAns = findForm(params[i].type,currentType);
         let findChoiceFlag = false;
         if(tmpAns.type === 'fill') {
             let tmpSelect = {};
