@@ -6,7 +6,7 @@ import processTime from "../utils/processTime";
 import processListData from "../utils/processListData";
 import { useEffect,useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { setInitData,setFormType,setCurrentFormId,setBirthMonthRight,setBirthYearRight } from "../store/FormOverviewSlice";
+import { setInitData,setFormType,setCurrentFormId,setBirthMonthRight,setBirthYearRight,setGenderRight } from "../store/FormOverviewSlice";
 import useGetCurrentType from "../hooks/useGetCurrentType";
 import useGetSelectedForm from "../hooks/useGetSelectedForm";
 import { useNavigate } from "react-router";
@@ -233,6 +233,7 @@ export default function FormOverview() {
     },[dispatch]);
     dispatch(setBirthMonthRight(false));
     dispatch(setBirthYearRight(false));
+    dispatch(setGenderRight(false));
     return (
         <OverviewContainer/>
     )

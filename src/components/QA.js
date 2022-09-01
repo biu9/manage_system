@@ -24,7 +24,7 @@ export default function QA(props) {
                                 }));                                
                             }
                         }}>
-                            <SelectBtn selected={true} text={item.title} />
+                            <SelectBtn selected={true} text={item.title} id={props.id}/>
                         </div>)
                     else 
                         return (
@@ -37,7 +37,7 @@ export default function QA(props) {
                                 }));                                 
                             }
                         }}>
-                            <SelectBtn selected={false} text={item.title} />
+                            <SelectBtn selected={false} text={item.title} id={props.id}/>
                         </div>)
                 })}
             </div>
