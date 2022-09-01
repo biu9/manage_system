@@ -22,7 +22,7 @@ import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 import Link from '@material-ui/core/Link';
 import { setFormInfo } from "../store/FormContentSlice";
 import SelectBtn from "../components/SelectBtn";
-import { setCurrentFormId, setCurrentMoudleIndex } from "../store/FormOverviewSlice";
+import { setCurrentFormId, setCurrentMoudleIndex,setBirthMonthRight,setBirthYearRight,setGenderRight } from "../store/FormOverviewSlice";
 import { setDeleteRemindStatus,setSaveRemindState } from "../store/RemindSlice";
 import SaveRemind from "../components/SaveRemind";
 import { popAllFormId,pushSelectedFormId } from "../store/RemindSlice";
@@ -391,6 +391,9 @@ export default function FormDetail() {
         })();
     // eslint-disable-next-line react-hooks/exhaustive-deps
     },[dispatch, id]);
+    dispatch(setBirthMonthRight(false));
+    dispatch(setBirthYearRight(false));
+    dispatch(setGenderRight(false)); 
     useJudgeResidentId();
     return (
         <div className="">
