@@ -25,7 +25,7 @@ const remindSlice = createSlice({
         state.selectedFormId.splice(index,1);
     },
     setAllFormId(state,action) {
-        console.log('receive in set all form id : ',action.payload);
+        //console.log('receive in set all form id : ',action.payload);
         state.selectedFormId = action.payload.selectIds;
     },
     popAllFormId(state,action) {

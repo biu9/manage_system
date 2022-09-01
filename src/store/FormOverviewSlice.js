@@ -9,6 +9,8 @@ const FormOverviewSlice = createSlice({
       "initData":[],
       "currentMoudleIndex":0,
       "currentFormId":"",
+      "birthYearRight":false,
+      "birthMonthRight":false,
   },
   reducers: {
     setFormType(state, action) {
@@ -29,9 +31,24 @@ const FormOverviewSlice = createSlice({
     setCurrentFormId(state, action) {
         state.currentFormId = action.payload;
     },
+    setBirthYearRight(state, action) {
+        state.birthYearRight = action.payload;
+    },
+    setBirthMonthRight(state, action) {
+        state.birthMonthRight = action.payload;
+    }
   },
 })
 
-export const { setFormType,setCompleted,setOverViewForm,setInitData,setCurrentMoudleIndex,setCurrentFormId } = FormOverviewSlice.actions
+export const { 
+    setFormType,
+    setCompleted,
+    setOverViewForm,
+    setInitData,
+    setCurrentMoudleIndex,
+    setCurrentFormId,
+    setBirthMonthRight,
+    setBirthYearRight
+} = FormOverviewSlice.actions
 
 export default FormOverviewSlice.reducer

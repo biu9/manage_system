@@ -15,6 +15,7 @@ import SuccessAlert from "../components/SuccessAlert";
 import useGetSelectedForm from "../hooks/useGetSelectedForm";
 import useGetBasicInfoById from "../hooks/useGetBasicInfoById";
 //import saveRemind from "../components/SaveRemind";
+import useJudgeResidentId from "../hooks/useJudgeResidentId";
 
 import Typography from '@material-ui/core/Typography';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
@@ -341,7 +342,7 @@ function getTotal(questionModule,answerSheet) {
 
 const BasicFormInfo = () => {
     const basicInfo = useSelector(state => state.formInfo);
-    console.log('basic info : ',basicInfo);
+    //console.log('basic info : ',basicInfo);
     let tmpData = processListData(basicInfo);
     //console.log('tmpData : ',tmpData);
     return (
@@ -388,7 +389,9 @@ export default function FormDetail() {
                 })
             )
         })();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     },[dispatch, id]);
+    useJudgeResidentId();
     return (
         <div className="">
             <FormDetailContainer id={id}/>
