@@ -24,13 +24,14 @@ function initResBySelectType(selectType,currentType) {
     if(selectType.and === true) {
         return {
             "seniorSearchRes":{
-                "$and":tmpArr
+                "$and":tmpArr,
+                "$or":[]
             }
         }
     } else {
         return {
             "seniorSearchRes":{
-                "$or":tmpArr
+                "$or":tmpArr,
             }
         }
     }
@@ -50,7 +51,10 @@ async function fetchBySeniorSearch(filter) {
     });
     const resTmp = await res.json();
     console.log(resTmp);
-    return resTmp.data;
+    if(resTmp.data)
+        return resTmp.data;
+    else
+        return false;
 }
 
 function findForm(targetIndex,currentFormType) {
@@ -74,45 +78,102 @@ function findForm(targetIndex,currentFormType) {
     }
     return false;
 }
+/**
+ * 
+ * @param {String} targetStr 搜索的key 
+ * @param {Number} selectType 包含关键词或不包含关键词
+ * @param {String} content 搜索的内容
+ * @returns {false|Array<Object>} 搜索结果
+ */
+function translateFindBasicInfo(targetStr,selectType,content) {
+    const res = [];
+     const translateType = {
+        "姓名":"Name",
+        "身份证号":"ResidentId",
+        "电话号码":"Phone",
+        "位置":"Location",
+    };
+    if(!translateType[targetStr]) {
+        return false;
+    } else {
+        if(selectType === 0) {
+            /** 包含关键词 */
+            let tmp = {};
+            const keySubject = "Subject."+translateType[targetStr];
+            const keyAssistant = "Assistant."+translateType[targetStr];
+            tmp[keySubject] = {$in:[content]};
+            res.push(tmp);
+            tmp = {};
+            tmp[keyAssistant] = {$in:[content]};
+            res.push(tmp);
+            //{Subject.Id:{$eq:content}}
+        } else {
+            /** 不包含关键词 */
+            let tmp = {};
+            const keySubject = "Subject."+translateType[targetStr];
+            const keyAssistant = "Assistant."+translateType[targetStr];
+            tmp[keySubject] = {$nin:[content]};
+            res.push(tmp);
+            tmp = {};
+            tmp[keyAssistant] = {$nin:[content]};
+            res.push(tmp);
+        }
+        return res;
+    }
+}
 
 export default function seniorSearch(params,selectType,currentType) {    
     let res = [];
     const translateLimit = {
         "包含关键词":0,
         "不包含关键词":1,
-    }
+    };
     res = initResBySelectType(selectType,currentType);
-    //console.log('init res : ',res);
+    console.log('init res : ',res);
     for(const item in res.seniorSearchRes) {
       for(let i=0;i<params.length;i++) {
-        const tmpAns = findForm(params[i].type,currentType);
-        let findChoiceFlag = false;
-        if(tmpAns.type === 'fill') {
-            let tmpSelect = {};
-            if(translateLimit[params[i].limit] === 0) 
-                tmpSelect["AnswerSheet."+tmpAns.id+".Remark"] = {$in:[params[i].content]};
-            else
-                tmpSelect["AnswerSheet."+tmpAns.id+".Remark"] = {$nin:[params[i].content]};
-            res.seniorSearchRes[item].push(tmpSelect);
-        } else {
-            findChoiceFlag = false;
-            for(let j=0;j<tmpAns.choices.length;j++) {
-                if(tmpAns.choices[j].title === params[i].content) {
-                    let tmpSelect = {};
-                    if(translateLimit[params[i].limit] === 0)
-                        tmpSelect["AnswerSheet."+tmpAns.id+".Answer"] = {$all:[tmpAns.choices[j].id]};
-                    else
-                        tmpSelect["AnswerSheet."+tmpAns.id+".Answer"] = {$nin:[tmpAns.choices[j].id]};
-                    res.seniorSearchRes[item].push(tmpSelect);
-                    findChoiceFlag = true;
-                    break;
-                }
-            }
-            if(findChoiceFlag === false) {
+        //console.log('params : ',params[i]);
+        if((params[i].type).charCodeAt() > 58) {
+            const selectBasic = translateFindBasicInfo(params[i].type,translateLimit[params[i].limit],params[i].content);
+            if(selectBasic === false)
                 return new Promise((resolve,reject) => {
                     resolve(false);
                 });
+            else {
+                selectBasic.forEach(tmpBasicSelect => {
+                    res.seniorSearchRes["$or"].push(tmpBasicSelect);
+                })
             }
+        } else {
+            const tmpAns = findForm(params[i].type,currentType);
+            let findChoiceFlag = false;
+            if(tmpAns.type === 'fill') {
+                let tmpSelect = {};
+                if(translateLimit[params[i].limit] === 0) 
+                    tmpSelect["AnswerSheet."+tmpAns.id+".Remark"] = {$in:[params[i].content]};
+                else
+                    tmpSelect["AnswerSheet."+tmpAns.id+".Remark"] = {$nin:[params[i].content]};
+                res.seniorSearchRes[item].push(tmpSelect);
+            } else {
+                findChoiceFlag = false;
+                for(let j=0;j<tmpAns.choices.length;j++) {
+                    if(tmpAns.choices[j].title === params[i].content) {
+                        let tmpSelect = {};
+                        if(translateLimit[params[i].limit] === 0)
+                            tmpSelect["AnswerSheet."+tmpAns.id+".Answer"] = {$all:[tmpAns.choices[j].id]};
+                        else
+                            tmpSelect["AnswerSheet."+tmpAns.id+".Answer"] = {$nin:[tmpAns.choices[j].id]};
+                        res.seniorSearchRes[item].push(tmpSelect);
+                        findChoiceFlag = true;
+                        break;
+                    }
+                }
+                if(findChoiceFlag === false) {
+                    return new Promise((resolve,reject) => {
+                        resolve(false);
+                    });
+                }
+            }            
         }
       }
     }
