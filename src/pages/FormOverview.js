@@ -6,7 +6,7 @@ import processTime from "../utils/processTime";
 import processListData from "../utils/processListData";
 import { useEffect,useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { setInitData,setFormType,setCurrentFormId } from "../store/FormOverviewSlice";
+import { setInitData,setFormType,setCurrentFormId,setBirthMonthRight,setBirthYearRight,setGenderRight } from "../store/FormOverviewSlice";
 import useGetCurrentType from "../hooks/useGetCurrentType";
 import useGetSelectedForm from "../hooks/useGetSelectedForm";
 import { useNavigate } from "react-router";
@@ -58,6 +58,7 @@ const OverviewContent = () => {
     const [ifPush,setIfPush] = useState(true);
     const [queryName,setQueryName] = useState('');
     //console.log('all selected form ids : ',formIds);
+    //console.log('form data : ',data);
     return (
         <div className="bg-purple-50 w-full p-6 space-y-3 px-16 min-h-screen">
             <ExportRemind/>
@@ -242,7 +243,10 @@ export default function FormOverview() {
             let res = await fetchData();
             dispatch(setInitData(res.data));
         })()
-    },[dispatch])
+    },[dispatch]);
+    dispatch(setBirthMonthRight(false));
+    dispatch(setBirthYearRight(false));
+    dispatch(setGenderRight(false));
     return (
         <OverviewContainer/>
     )
