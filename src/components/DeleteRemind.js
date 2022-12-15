@@ -86,7 +86,7 @@ export default function DeleteRemind(props) {
                                         setSuccessDelete(true);
                                         setTimeout(() => {
                                             setSuccessDelete(false);
-                                            navigate('/static/HealthCareAssessment/manage/');
+                                            navigate('/');
                                         },1000);
                                     } else {
                                         setDeleteFail(true);

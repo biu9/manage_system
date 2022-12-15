@@ -40,7 +40,7 @@ function login() {
 function SimpleBreadcrumbs(props) {
     return (
       <Breadcrumbs aria-label="breadcrumb">
-        <Link color="inherit" href="/static/HealthCareAssessment/manage/">
+        <Link color="inherit" href="/">
             <div className="bg-home w-6 h-6 bg-cover"></div>
         </Link>
         <Typography color="textPrimary">{props.text}</Typography>
@@ -188,14 +188,14 @@ const OneList = (data) => {
                         dispatch(setCurrentView('查看'));
                         dispatch(setCurrentFormId(data.data.id));
                         data.data.subject ? dispatch(setFormType('elder')) : dispatch(setFormType('assistant'));
-                        navigate('/static/HealthCareAssessment/manage/form/' + data.data.id);
+                        navigate('/form/' + data.data.id);
                     }}>查看</div>
                     <div onClick={() => {
                         dispatch(setFormInfo(data.data));
                         dispatch(setCurrentView('编辑'));
                         dispatch(setCurrentFormId(data.data.id));
                         data.data.subject ? dispatch(setFormType('elder')) : dispatch(setFormType('assistant'));
-                        navigate('/static/HealthCareAssessment/manage/form/' + data.data.id);
+                        navigate('/form/' + data.data.id);
                     }}
                     className="cursor-pointer">编辑</div>
                 </div>

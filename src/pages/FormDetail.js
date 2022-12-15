@@ -48,7 +48,7 @@ function SimpleBreadcrumbs(props) {
     const dispatch = useDispatch();
     return (
       <Breadcrumbs aria-label="breadcrumb">
-        <Link color="inherit" href="/static/HealthCareAssessment/manage/">
+        <Link color="inherit" href="/">
             <div className="bg-home w-6 h-6 bg-cover"></div>
         </Link>
         <div 
