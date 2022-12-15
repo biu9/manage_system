@@ -188,14 +188,14 @@ const OneList = (data) => {
                         dispatch(setCurrentView('查看'));
                         dispatch(setCurrentFormId(data.data.id));
                         data.data.subject ? dispatch(setFormType('elder')) : dispatch(setFormType('assistant'));
-                        navigate('/form/' + data.data.id);
+                        navigate('https://cyzz.fun/static/hca-admin/form/' + data.data.id);
                     }}>查看</div>
                     <div onClick={() => {
                         dispatch(setFormInfo(data.data));
                         dispatch(setCurrentView('编辑'));
                         dispatch(setCurrentFormId(data.data.id));
                         data.data.subject ? dispatch(setFormType('elder')) : dispatch(setFormType('assistant'));
-                        navigate('/form/' + data.data.id);
+                        navigate('https://cyzz.fun/static/hca-admin/form/' + data.data.id);
                     }}
                     className="cursor-pointer">编辑</div>
                 </div>

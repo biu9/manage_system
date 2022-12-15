@@ -10,8 +10,8 @@ export default function App() {
         <Provider store={store}>
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<FormOverview />} />
-                    <Route path="/form/:id" element={<FormDetail />} />
+                    <Route path="https://cyzz.fun/static/hca-admin/" element={<FormOverview />} />
+                    <Route path="https://cyzz.fun/static/hca-admin/form/:id" element={<FormDetail />} />
                 </Routes>
             </BrowserRouter>
         </Provider>
