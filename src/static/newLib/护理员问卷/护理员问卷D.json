@@ -1,0 +1,53 @@
+{
+  "id": "caring-questionnaire4",
+  "title": "养老机构护理员调查问卷",
+  "questions": [
+    {
+      "id": "questionsD",
+      "title": "D知情书上传",
+      "questions": [
+        {
+          "id": "179",
+          "displayId": "D-1",
+          "title": "上传知情同意签名页",
+          "type": "upload",
+          "contentType": "image"
+        },
+        {
+          "id": "180",
+          "displayId": "D-2",
+          "title": "访问中题目备注或其他事项记录",
+          "type": "fill",
+          "contentType": "text"
+        },
+        {
+          "id": "181",
+          "displayId": "B-14",
+          "title": "每天总的睡眠时间：_________小时（包括午睡）",
+          "type": "fill",
+          "contentType": "digit"
+        },
+        {
+          "id": "182",
+          "displayId": "B-15",
+          "title": "您睡觉时是否会打呼噜",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "是，经常打呼噜"
+            },
+            {
+              "id": "2",
+              "title": "是，偶尔打呼噜 "
+            },
+            {
+              "id": "3",
+              "title": "不打呼噜或不知道 "
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

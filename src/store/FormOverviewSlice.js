@@ -12,10 +12,14 @@ const FormOverviewSlice = createSlice({
       "birthYearRight":false,
       "birthMonthRight":false,
       "genderRight":false,
+      "formTypeDetail":"" // 用于区分是居家老人还是机构老人
   },
   reducers: {
     setFormType(state, action) {
         state.currentFormType = action.payload;
+    },
+    setDetailFormType(state, action) {
+        state.formTypeDetail = action.payload;
     },
     setCompleted(state, action) {
         state.isCompleted = action.payload;
@@ -53,7 +57,8 @@ export const {
     setCurrentFormId,
     setBirthMonthRight,
     setBirthYearRight,
-    setGenderRight
+    setGenderRight,
+    setDetailFormType
 } = FormOverviewSlice.actions
 
 export default FormOverviewSlice.reducer

@@ -1,0 +1,119 @@
+{
+  "id": "老人问卷I",
+  "title": "I访员观察",
+  "questions": [
+    {
+      "id": "containers",
+      "title": "",
+      "questions": [
+        {
+          "id": "286",
+          "displayId": "I1",
+          "title": "受访者的沟通能力",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "1"
+            },
+            {
+              "id": "2",
+              "title": "2"
+            },
+            {
+              "id": "3",
+              "title": "3"
+            },
+            {
+              "id": "4",
+              "title": "4"
+            },
+            {
+              "id": "5",
+              "title": "5"
+            },
+            {
+              "id": "6",
+              "title": "6"
+            },
+            {
+              "id": "7",
+              "title": "7"
+            }
+          ]
+        },
+        {
+          "id": "287",
+          "displayId": "I2",
+          "title": "受访者的健康状况",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "1"
+            },
+            {
+              "id": "2",
+              "title": "2"
+            },
+            {
+              "id": "3",
+              "title": "3"
+            },
+            {
+              "id": "4",
+              "title": "4"
+            },
+            {
+              "id": "5",
+              "title": "5"
+            },
+            {
+              "id": "6",
+              "title": "6"
+            },
+            {
+              "id": "7",
+              "title": "7"
+            }
+          ]
+        },
+        {
+          "id": "288",
+          "displayId": "I3",
+          "title": "访问中题目备注或其他事项记录",
+          "type": "textarea",
+          "contentType": "text"
+        },
+        {
+          "id": "289",
+          "displayId": "I4-1",
+          "title": "请记录结束时间：______月",
+          "type": "fill",
+          "contentType": "digit"
+        },
+        {
+          "id": "290",
+          "displayId": "I4-2",
+          "title": "请记录结束时间：______日",
+          "type": "fill",
+          "contentType": "digit"
+        },
+        {
+          "id": "291",
+          "displayId": "I4-3",
+          "title": "请记录结束时间：________时",
+          "type": "fill",
+          "contentType": "digit"
+        },
+        {
+          "id": "292",
+          "displayId": "I4-4",
+          "title": "请记录结束时间：_______分",
+          "type": "fill",
+          "contentType": "digit"
+        }
+      ]
+    }
+  ]
+}

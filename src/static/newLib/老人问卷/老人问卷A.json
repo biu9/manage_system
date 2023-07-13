@@ -1,0 +1,407 @@
+{
+  "id": "老人问卷A",
+  "title": "A个人信息",
+  "questions": [
+    {
+      "id": "container",
+      "title": "",
+      "questions": [
+        {
+          "id": "0",
+          "displayId": "1",
+          "title": "访员编号",
+          "type": "fill",
+          "contentType": "digit"
+        },
+        {
+          "id": "1",
+          "displayId": "2",
+          "title": "访员姓名",
+          "type": "fill",
+          "contentType": "text"
+        },
+        {
+          "id": "2",
+          "displayId": "3",
+          "title": "问卷编号",
+          "type": "fill",
+          "contentType": "digit"
+        },
+        {
+          "id": "3",
+          "displayId": "4",
+          "title": "亲属联系方式",
+          "type": "fill",
+          "contentType": "digit"
+        },
+        {
+          "id": "4",
+          "displayId": "5.1",
+          "title": "请记录访问开始时间：______月",
+          "type": "fill",
+          "contentType": "digit"
+        },
+        {
+          "id": "5",
+          "displayId": "5.2",
+          "title": "请记录访问开始时间：______日",
+          "type": "fill",
+          "contentType": "digit"
+        },
+        {
+          "id": "6",
+          "displayId": "5.3",
+          "title": "请记录访问开始时间：______时",
+          "type": "fill",
+          "contentType": "digit"
+        },
+        {
+          "id": "7",
+          "displayId": "5.4",
+          "title": "请记录访问开始时间：______分",
+          "type": "fill",
+          "contentType": "digit"
+        },
+        {
+          "id": "8",
+          "displayId": "A1",
+          "title": "您的性别",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "男"
+            },
+            {
+              "id": "2",
+              "title": "女"
+            }
+          ]
+        },
+        {
+          "id": "questionsGroupA2",
+          "title": "",
+          "questions": [
+            {
+              "id": "9",
+              "displayId": "A2-1",
+              "title": "您的出生年份：(请输入四位数年份，如 1949)",
+              "type": "fill",
+              "contentType": "digit",
+              "range_validation": "true",
+              "range_min": "1900",
+              "range_max": "1963"
+            },
+            {
+              "id": "10",
+              "displayId": "A2-2",
+              "title": "您的出生月份",
+              "type": "fill",
+              "contentType": "digit"
+            }
+          ]
+        },
+        {
+          "id": "11",
+          "displayId": "A3",
+          "title": "您的民族",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "汉族"
+            },
+            {
+              "id": "2",
+              "title": "其他",
+              "input": "true"
+            }
+          ]
+        },
+        {
+          "id": "12",
+          "displayId": "A4",
+          "title": "您的文化程度",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "未上过学（包括扫盲班)"
+            },
+            {
+              "id": "2",
+              "title": "小学（包括私塾）"
+            },
+            {
+              "id": "3",
+              "title": "初中"
+            },
+            {
+              "id": "4",
+              "title": "高中/中专/职高"
+            },
+            {
+              "id": "5",
+              "title": "大学专科"
+            },
+            {
+              "id": "6",
+              "title": "大学本科及以上"
+            }
+          ]
+        },
+        {
+          "id": "13",
+          "displayId": "A5",
+          "title": "您目前是否是",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "低保户"
+            },
+            {
+              "id": "2",
+              "title": "特困人员"
+            },
+            {
+              "id": "3",
+              "title": "均不是"
+            }
+          ]
+        },
+        {
+          "id": "14",
+          "displayId": "A6",
+          "title": "您目前是否有残疾证",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "是"
+            },
+            {
+              "id": "2",
+              "title": "否",
+              "hide_qs": [
+                "15"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "15",
+          "displayId": "A6-1",
+          "title": "您的残疾证是什么类别",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "视力残疾"
+            },
+            {
+              "id": "2",
+              "title": "听力残疾"
+            },
+            {
+              "id": "3",
+              "title": "言语残疾"
+            },
+            {
+              "id": "4",
+              "title": "肢体残疾"
+            },
+            {
+              "id": "5",
+              "title": "智力残疾"
+            },
+            {
+              "id": "6",
+              "title": "精神残疾"
+            },
+            {
+              "id": "7",
+              "title": "多重残疾"
+            }
+          ]
+        },
+        {
+          "id": "16",
+          "displayId": "A7",
+          "title": "您的户口是",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "非农业)"
+            },
+            {
+              "id": "2",
+              "title": "农业"
+            },
+            {
+              "id": "3",
+              "title": "统一居民（以前是农业）"
+            },
+            {
+              "id": "4",
+              "title": "统一居民（以前是非农业）"
+            }
+          ]
+        },
+        {
+          "id": "17",
+          "displayId": "A8",
+          "title": "您目前的婚姻状况",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "已婚"
+            },
+            {
+              "id": "2",
+              "title": "离婚",
+              "hide_qs": [
+                "18"
+              ]
+            },
+            {
+              "id": "3",
+              "title": "丧偶",
+              "hide_qs": [
+                "18"
+              ]
+            },
+            {
+              "id": "4",
+              "title": "从未结过婚",
+              "hide_qs": [
+                "18"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "18",
+          "displayId": "A9",
+          "title": "您的配偶现在居住在哪里",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "本养老机构"
+            },
+            {
+              "id": "2",
+              "title": "其他机构"
+            },
+            {
+              "id": "3",
+              "title": "医院"
+            },
+            {
+              "id": "4",
+              "title": "在家中"
+            }
+          ]
+        },
+        {
+          "id": "questionsGroupA10",
+          "title": "A-10",
+          "questions": [
+            {
+              "id": "19",
+              "displayId": "A-10-1",
+              "title": "现在健在的儿子",
+              "type": "fill",
+              "contentType": "digit"
+            },
+            {
+              "id": "20",
+              "displayId": "A-10-2",
+              "title": "现在健在的女儿",
+              "type": "fill",
+              "contentType": "digit"
+            }
+          ]
+        },
+        {
+          "id": "21",
+          "displayId": "A11",
+          "title": "您本人去年享有过一下哪些健康保障",
+          "type": "multiple",
+          "min": "1",
+          "max": "7",
+          "choices": [
+            {
+              "id": "1",
+              "title": "职工基本医疗保险"
+            },
+            {
+              "id": "2",
+              "title": "城乡居民基本医疗保险（包括原城镇居民基本医疗保险和新型农村合作医疗）"
+            },
+            {
+              "id": "3",
+              "title": "公费医疗"
+            },
+            {
+              "id": "4",
+              "title": "政策性补充医疗保险（如惠民保）"
+            },
+            {
+              "id": "5",
+              "title": "商业健康保险（如重疾险、百万医疗险）"
+            },
+            {
+              "id": "6",
+              "title": "其他健康保险（请注明__________）",
+              "input": "true"
+            },
+            {
+              "id": "7",
+              "title": "长期护理保险"
+            },
+            {
+              "id": "8",
+              "title": "没有健康保险"
+            }
+          ]
+        },
+        {
+          "id": "22",
+          "displayId": "A12",
+          "title": "您参加的社会养老保险的类型",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "职工基本医疗保险/机关事业单位养老保险"
+            },
+            {
+              "id": "2",
+              "title": "城乡居民养老保险"
+            },
+            {
+              "id": "3",
+              "title": "未参加养老保险跳过"
+            },
+            {
+              "id": "4",
+              "title": "其他健康保险（请注明__________）",
+              "input": "true"
+            }
+          ]
+        },
+        {
+          "id": "23",
+          "displayId": "A13",
+          "title": "您每月的养老金收入是多少___元（如果没有填“0”）",
+          "type": "fill",
+          "contentType": "digit"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1247 @@
+{
+  "id": "老人问卷H",
+  "title": "H体检",
+  "questions": [
+    {
+      "id": "containers",
+      "title": "",
+      "questions": [
+        {
+          "id": "229",
+          "displayId": "H0-1",
+          "title": "体检编号",
+          "type": "fill",
+          "contentType": "digit"
+        },
+        {
+          "id": "230",
+          "displayId": "H0-2",
+          "title": "体检访员编号",
+          "type": "fill",
+          "contentType": "digit"
+        },
+        {
+          "id": "231",
+          "displayId": "H0-3",
+          "title": "体检访员姓名",
+          "type": "fill",
+          "contentType": "text"
+        },
+        {
+          "id": "232",
+          "displayId": "H0-4",
+          "title": "是否有体检",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "是"
+            },
+            {
+              "id": "2",
+              "title": "否",
+              "hide_qs": [
+                "233",
+                "234",
+                "235",
+                "236",
+                "237",
+                "238",
+                "239",
+                "240",
+                "241",
+                "242",
+                "243",
+                "244",
+                "245",
+                "246",
+                "247",
+                "248",
+                "249",
+                "250",
+                "251",
+                "252",
+                "253",
+                "254",
+                "255",
+                "256",
+                "257",
+                "258",
+                "259",
+                "260",
+                "261",
+                "262",
+                "263",
+                "264",
+                "265",
+                "266",
+                "267",
+                "268",
+                "269",
+                "270",
+                "271",
+                "272",
+                "273",
+                "274",
+                "275",
+                "276",
+                "277",
+                "278",
+                "279",
+                "280",
+                "281",
+                "282",
+                "283",
+                "284",
+                "285"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "questionsGroupH1",
+          "displayId": "H1",
+          "title": "身体状态",
+          "questions": [
+            {
+              "id": "233",
+              "displayId": "H1.1",
+              "title": "在问卷调查前观察员1观察受访者的面部，您觉得受访者的年龄在哪个范围？",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "15-19岁"
+                },
+                {
+                  "id": "2",
+                  "title": "20-24岁"
+                },
+                {
+                  "id": "3",
+                  "title": "25-29岁"
+                },
+                {
+                  "id": "4",
+                  "title": "30-34岁"
+                },
+                {
+                  "id": "5",
+                  "title": "35-39岁"
+                },
+                {
+                  "id": "6",
+                  "title": "40-44岁"
+                },
+                {
+                  "id": "7",
+                  "title": "45-49岁"
+                },
+                {
+                  "id": "8",
+                  "title": "50-54岁"
+                },
+                {
+                  "id": "9",
+                  "title": "55-59岁"
+                },
+                {
+                  "id": "10",
+                  "title": "60-64岁"
+                },
+                {
+                  "id": "11",
+                  "title": "65-69岁"
+                },
+                {
+                  "id": "12",
+                  "title": "70-74岁"
+                },
+                {
+                  "id": "13",
+                  "title": "75-79岁"
+                },
+                {
+                  "id": "14",
+                  "title": "80-84岁"
+                },
+                {
+                  "id": "15",
+                  "title": "85-9岁"
+                },
+                {
+                  "id": "16",
+                  "title": "≥90岁"
+                }
+              ]
+            },
+            {
+              "id": "234",
+              "displayId": "H1.1",
+              "title": "在问卷调查前观察员2观察受访者的面部，您觉得受访者的年龄在哪个范围？",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "15-19岁"
+                },
+                {
+                  "id": "2",
+                  "title": "20-24岁"
+                },
+                {
+                  "id": "3",
+                  "title": "25-29岁"
+                },
+                {
+                  "id": "4",
+                  "title": "30-34岁"
+                },
+                {
+                  "id": "5",
+                  "title": "35-39岁"
+                },
+                {
+                  "id": "6",
+                  "title": "40-44岁"
+                },
+                {
+                  "id": "7",
+                  "title": "45-49岁"
+                },
+                {
+                  "id": "8",
+                  "title": "50-54岁"
+                },
+                {
+                  "id": "9",
+                  "title": "55-59岁"
+                },
+                {
+                  "id": "10",
+                  "title": "60-64岁"
+                },
+                {
+                  "id": "11",
+                  "title": "65-69岁"
+                },
+                {
+                  "id": "12",
+                  "title": "70-74岁"
+                },
+                {
+                  "id": "13",
+                  "title": "75-79岁"
+                },
+                {
+                  "id": "14",
+                  "title": "80-84岁"
+                },
+                {
+                  "id": "15",
+                  "title": "85-9岁"
+                },
+                {
+                  "id": "16",
+                  "title": "≥90岁"
+                }
+              ]
+            },
+            {
+              "id": "235",
+              "displayId": "H1.1",
+              "title": "在问卷调查前观察员3观察受访者的面部，您觉得受访者的年龄在哪个范围？",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "15-19岁"
+                },
+                {
+                  "id": "2",
+                  "title": "20-24岁"
+                },
+                {
+                  "id": "3",
+                  "title": "25-29岁"
+                },
+                {
+                  "id": "4",
+                  "title": "30-34岁"
+                },
+                {
+                  "id": "5",
+                  "title": "35-39岁"
+                },
+                {
+                  "id": "6",
+                  "title": "40-44岁"
+                },
+                {
+                  "id": "7",
+                  "title": "45-49岁"
+                },
+                {
+                  "id": "8",
+                  "title": "50-54岁"
+                },
+                {
+                  "id": "9",
+                  "title": "55-59岁"
+                },
+                {
+                  "id": "10",
+                  "title": "60-64岁"
+                },
+                {
+                  "id": "11",
+                  "title": "65-69岁"
+                },
+                {
+                  "id": "12",
+                  "title": "70-74岁"
+                },
+                {
+                  "id": "13",
+                  "title": "75-79岁"
+                },
+                {
+                  "id": "14",
+                  "title": "80-84岁"
+                },
+                {
+                  "id": "15",
+                  "title": "85-9岁"
+                },
+                {
+                  "id": "16",
+                  "title": "≥90岁"
+                }
+              ]
+            },
+            {
+              "id": "236",
+              "displayId": "H1.2",
+              "title": "您认为您的健康状况怎样",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "很好"
+                },
+                {
+                  "id": "2",
+                  "title": "好"
+                },
+                {
+                  "id": "3",
+                  "title": "一般"
+                },
+                {
+                  "id": "4",
+                  "title": "不好"
+                },
+                {
+                  "id": "5",
+                  "title": "很不好"
+                }
+              ]
+            },
+            {
+              "id": "237",
+              "displayId": "H1.3",
+              "title": "您是否能拿起或提起10斤重的物体（如一小袋米）",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "无困难"
+                },
+                {
+                  "id": "2",
+                  "title": "偶尔困难"
+                },
+                {
+                  "id": "3",
+                  "title": "难度较大，无法独立完成"
+                }
+              ]
+            },
+            {
+              "id": "238",
+              "displayId": "H1.4",
+              "title": "您目前不用任何辅助工具或他人帮助，独立行走约400米的距离是否困难",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "无困难"
+                },
+                {
+                  "id": "2",
+                  "title": "偶尔困难"
+                },
+                {
+                  "id": "3",
+                  "title": "难度较大，无法独立完成"
+                }
+              ]
+            },
+            {
+              "id": "239",
+              "displayId": "H1.5",
+              "title": "您目前走出房间是否困难",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "无困难"
+                },
+                {
+                  "id": "2",
+                  "title": "偶尔困难"
+                },
+                {
+                  "id": "3",
+                  "title": "难度较大，无法独立完成"
+                }
+              ]
+            },
+            {
+              "id": "240",
+              "displayId": "H1.6",
+              "title": "您目前从床上或椅子上站起是否困难",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "无困难"
+                },
+                {
+                  "id": "2",
+                  "title": "偶尔困难"
+                },
+                {
+                  "id": "3",
+                  "title": "难度较大，无法独立完成"
+                }
+              ]
+            },
+            {
+              "id": "241",
+              "displayId": "H1.7",
+              "title": "您目前爬10个楼梯台阶是否困难",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "无困难"
+                },
+                {
+                  "id": "2",
+                  "title": "偶尔困难"
+                },
+                {
+                  "id": "3",
+                  "title": "难度较大，无法独立完成"
+                }
+              ]
+            },
+            {
+              "id": "242",
+              "displayId": "H1.8",
+              "title": "过去一周内，您有几天进行重体力活动(重体力活动是指需要花费大力气完成，呼吸较平常明显增强的运动，如搬举重物，跑步，游泳，跳绳，踢足球，打篮球，打网球等）(只计算那些每次超过 10 分钟的活动)",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "有： ____天/周，平均____分钟/天",
+                  "input": "true"
+                },
+                {
+                  "id": "2",
+                  "title": "没有"
+                }
+              ]
+            },
+            {
+              "id": "243",
+              "displayId": "H1.9",
+              "title": "过去一周内，您有几天进行中等强度体力活动(中等强度体力活动是指需要您花费中等大力气完成，呼吸较平常稍微增强的运动，如搬举轻物，骑自行车，打太极拳,乒乓/羽毛球，家务等）(只计算那些每次超过 10 分钟的活动)",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "有： ____天/周，平均____分钟/天",
+                  "input": "true"
+                },
+                {
+                  "id": "2",
+                  "title": "没有"
+                }
+              ]
+            },
+            {
+              "id": "244",
+              "displayId": "H1.10",
+              "title": "过去一周内，您有几天每次步行超过10分钟?这里的步行包括您工作时和在家中的步行，交通行程的步行以及为了锻炼身体进行的步行等？",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "有： ____天/周，平均____分钟/天",
+                  "input": "true"
+                },
+                {
+                  "id": "2",
+                  "title": "没有"
+                }
+              ]
+            },
+            {
+              "id": "245",
+              "displayId": "H1.11",
+              "title": "过去一周内，您每天处于静坐的时间大约为多少时间?(包括您在工作单位和家中，坐在办公桌前，电脑前，坐着或躺着看电视，拜访朋友，看书，乘车等的时间)",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "有： ____天/周，平均____分钟/天",
+                  "input": "true"
+                },
+                {
+                  "id": "2",
+                  "title": "没有"
+                }
+              ]
+            },
+            {
+              "id": "246",
+              "displayId": "H1.12",
+              "title": "过去一周内，您觉得做任何事情都很费劲",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "基本没有（少于1天）"
+                },
+                {
+                  "id": "2",
+                  "title": "有时（1-2天）"
+                },
+                {
+                  "id": "3",
+                  "title": "经常（3-4天）"
+                },
+                {
+                  "id": "4",
+                  "title": "经常（3-4天）"
+                }
+              ]
+            },
+            {
+              "id": "247",
+              "displayId": "H1.13",
+              "title": "过去一周内，您觉得您不能进入状态，提不起劲做任何事",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "基本没有（少于1天）"
+                },
+                {
+                  "id": "2",
+                  "title": "有时（1-2天）"
+                },
+                {
+                  "id": "3",
+                  "title": "经常（3-4天）"
+                },
+                {
+                  "id": "4",
+                  "title": "经常（3-4天）"
+                }
+              ]
+            },
+            {
+              "id": "248",
+              "displayId": "H1.14",
+              "title": "过去一年，在非有意减肥的情况下，您是否体重减轻超过9斤或降低超过自身的5%",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否"
+                }
+              ]
+            },
+            {
+              "id": "249",
+              "displayId": "H1.15",
+              "title": "过去一年，您有没有跌倒过？（包括摔倒、跌倒、滑倒，即使半途主动或被动中止也应包括在内）",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "没有"
+                },
+                {
+                  "id": "2",
+                  "title": "发生过1 ~3次"
+                },
+                {
+                  "id": "3",
+                  "title": "发生过4次及以上"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "questionsGroupH2",
+          "displayId": "H2",
+          "title": "衰老态度",
+          "questions": [
+            {
+              "id": "250",
+              "displayId": "H2.1",
+              "title": "您感觉现在自己多少岁了呢 (不考虑自己的实际年龄)？ ______岁",
+              "type": "fill",
+              "contentType": "digit"
+            },
+            {
+              "id": "251",
+              "displayId": "H2.2",
+              "title": "与您的同龄人相比，大多数人认为您",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "年轻得多"
+                },
+                {
+                  "id": "2",
+                  "title": "年轻得多"
+                },
+                {
+                  "id": "3",
+                  "title": "差不多"
+                },
+                {
+                  "id": "4",
+                  "title": "老一些 "
+                },
+                {
+                  "id": "5",
+                  "title": "老很多"
+                }
+              ]
+            },
+            {
+              "id": "252",
+              "displayId": "H2.3",
+              "title": "与您的同龄人相比，您认为自己",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "年轻得多"
+                },
+                {
+                  "id": "2",
+                  "title": "年轻得多"
+                },
+                {
+                  "id": "3",
+                  "title": "差不多"
+                },
+                {
+                  "id": "4",
+                  "title": "老一些"
+                },
+                {
+                  "id": "5",
+                  "title": "老很多"
+                }
+              ]
+            },
+            {
+              "id": "253",
+              "displayId": "H2.4",
+              "title": "您认为自己能活到多少岁呢？ （根据受访者年龄作答）",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "60-64岁"
+                },
+                {
+                  "id": "2",
+                  "title": "65-69岁"
+                },
+                {
+                  "id": "3",
+                  "title": "70-74岁"
+                },
+                {
+                  "id": "4",
+                  "title": "75-79岁"
+                },
+                {
+                  "id": "5",
+                  "title": "80-84岁"
+                },
+                {
+                  "id": "6",
+                  "title": "85-89岁"
+                },
+                {
+                  "id": "7",
+                  "title": "90-94岁"
+                },
+                {
+                  "id": "8",
+                  "title": "95-99岁"
+                },
+                {
+                  "id": "9",
+                  "title": "100-104岁"
+                },
+                {
+                  "id": "10",
+                  "title": "105-109岁"
+                },
+                {
+                  "id": "11",
+                  "title": "110-114岁"
+                },
+                {
+                  "id": "12",
+                  "title": "≥115岁"
+                }
+              ]
+            },
+            {
+              "id": "254",
+              "displayId": "H2.5",
+              "title": "您是否同意“随着我年纪变大事情越来越糟”",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否"
+                }
+              ]
+            },
+            {
+              "id": "255",
+              "displayId": "H2.6",
+              "title": "您是否同意“我的精力和去年一样旺盛”",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否"
+                }
+              ]
+            },
+            {
+              "id": "256",
+              "displayId": "H2.7",
+              "title": "您是否同意“人老了自然不中用”",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否"
+                }
+              ]
+            },
+            {
+              "id": "257",
+              "displayId": "H2.8",
+              "title": "您是否同意“随着年龄增长,我发现事情比原先想象的好”",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否"
+                }
+              ]
+            },
+            {
+              "id": "258",
+              "displayId": "H2.9",
+              "title": "您是否同意“我现在和过去一样幸福”",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否"
+                }
+              ]
+            },
+            {
+              "id": "259",
+              "displayId": "H2.10",
+              "title": "（调查员1评估）结合受访者的年龄和面部，你觉得该受访者______",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "1年轻得多"
+                },
+                {
+                  "id": "2",
+                  "title": "2"
+                },
+                {
+                  "id": "3",
+                  "title": "3"
+                },
+                {
+                  "id": "4",
+                  "title": "4"
+                },
+                {
+                  "id": "5",
+                  "title": "5"
+                },
+                {
+                  "id": "6",
+                  "title": "6"
+                },
+                {
+                  "id": "7",
+                  "title": "老很多"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "questionsGroupH3",
+          "displayId": "H3",
+          "title": "身体测量",
+          "questions": [
+            {
+              "id": "questionsGroupH3.1",
+              "displayId": "H3.1",
+              "title": "握力测试",
+              "questions": [
+                {
+                  "id": "260",
+                  "displayId": "H3.1.1",
+                  "title": "能否完成握力测试",
+                  "type": "multiple",
+                  "choices": [
+                    {
+                      "id": "1",
+                      "title": "能"
+                    },
+                    {
+                      "id": "2",
+                      "title": "不能（原因是____）",
+                      "input": "true"
+                    }
+                  ]
+                },
+                {
+                  "id": "questionsGroupH3.1.2",
+                  "displayId": "H3.1.2",
+                  "title": "结果（精确到小数点后一位；不能测量请填写 99.9）",
+                  "questions": [
+                    {
+                      "id": "261",
+                      "displayId": "H3.1.2",
+                      "title": "第一次左手__kg",
+                      "type": "fill",
+                      "contentType": "digit"
+                    },
+                    {
+                      "id": "262",
+                      "displayId": "H3.1.2",
+                      "title": "第一次右手__kg",
+                      "type": "fill",
+                      "contentType": "digit"
+                    },
+                    {
+                      "id": "263",
+                      "displayId": "H3.1.2",
+                      "title": "第二次左手__kg",
+                      "type": "fill",
+                      "contentType": "digit"
+                    },
+                    {
+                      "id": "264",
+                      "displayId": "H3.1.2",
+                      "title": "第二次右手__kg",
+                      "type": "fill",
+                      "contentType": "digit"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "questionsGroupH3.2",
+              "displayId": "H3.2",
+              "title": "小腿围",
+              "questions": [
+                {
+                  "id": "265",
+                  "displayId": "H3.2.1",
+                  "title": "能否完成小腿围测量",
+                  "type": "multiple",
+                  "choices": [
+                    {
+                      "id": "1",
+                      "title": "能"
+                    },
+                    {
+                      "id": "2",
+                      "title": "不能（原因是____）",
+                      "input": "true"
+                    }
+                  ]
+                },
+                {
+                  "id": "questionsGroupH3.2.2",
+                  "displayId": "H3.2.2",
+                  "title": "结果（精确到小数点后一位；不能测量请填写 99.9）",
+                  "questions": [
+                    {
+                      "id": "266",
+                      "displayId": "H3.2.2",
+                      "title": "左腿__cm",
+                      "type": "fill",
+                      "contentType": "digit"
+                    },
+                    {
+                      "id": "267",
+                      "displayId": "H3.2.2",
+                      "title": "右腿__cm",
+                      "type": "fill",
+                      "contentType": "digit"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "268",
+              "displayId": "H3.3",
+              "title": "腰围",
+              "type": "fill",
+              "contentType": "digit"
+            },
+            {
+              "id": "269",
+              "displayId": "H3.4",
+              "title": "臀围",
+              "type": "fill",
+              "contentType": "digit"
+            },
+            {
+              "id": "270",
+              "displayId": "H3.5",
+              "title": "身高",
+              "type": "fill",
+              "contentType": "digit"
+            },
+            {
+              "id": "271",
+              "displayId": "H3.6",
+              "title": "体重",
+              "type": "fill",
+              "contentType": "digit"
+            },
+            {
+              "id": "272",
+              "displayId": "H3.7",
+              "title": "体成分测量是否完成",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "能"
+                },
+                {
+                  "id": "2",
+                  "title": "不能（原因是____）",
+                  "input": "true"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "questionsGroupH4",
+          "displayId": "H4",
+          "title": "步速测量（6米）",
+          "questions": [
+            {
+              "id": "273",
+              "displayId": "H4.1",
+              "title": " 能否行走",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "能"
+                },
+                {
+                  "id": "2",
+                  "title": "不能（原因是____）",
+                  "input": "true"
+                }
+              ]
+            },
+            {
+              "id": "274",
+              "displayId": "H4.2",
+              "title": "有没有使用拐杖或其他辅助用品",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "有"
+                },
+                {
+                  "id": "2",
+                  "title": "没有"
+                }
+              ]
+            },
+            {
+              "id": "275",
+              "displayId": "H4.3",
+              "title": "正常步速时间：___秒____分秒（不能行走请填写 99.9 秒）",
+              "type": "fill",
+              "contentType": "digit"
+            }
+          ]
+        },
+        {
+          "id": "questionsGroupH5",
+          "displayId": "H5",
+          "title": "平衡能力测试",
+          "questions": [
+            {
+              "id": "276",
+              "displayId": "H5.1",
+              "title": "双脚并排站立",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "不能进行该动作（原因：___)",
+                  "input": "true"
+                },
+                {
+                  "id": "2",
+                  "title": "小于 10 秒，具体时间__秒__分秒",
+                  "input": "true"
+                },
+                {
+                  "id": "3",
+                  "title": "大于等于 10 秒"
+                }
+              ]
+            },
+            {
+              "id": "277",
+              "displayId": "H5.2",
+              "title": "半前后脚站立，一足跟对准另一足部大脚趾侧面",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "不能进行该动作（原因：___)",
+                  "input": "true"
+                },
+                {
+                  "id": "2",
+                  "title": "小于 10 秒，具体时间__秒__分秒",
+                  "input": "true"
+                },
+                {
+                  "id": "3",
+                  "title": "大于等于 10 秒"
+                }
+              ]
+            },
+            {
+              "id": "278",
+              "displayId": "H5.3",
+              "title": "前后脚站立，足跟对脚尖站立",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "不能进行该动作（原因：___)",
+                  "input": "true"
+                },
+                {
+                  "id": "2",
+                  "title": "小于 10 秒，具体时间__秒__分秒",
+                  "input": "true"
+                },
+                {
+                  "id": "3",
+                  "title": "大于等于 10 秒"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "questionsGroupH6",
+          "displayId": "H6",
+          "title": "起立测试",
+          "questions": [
+            {
+              "id": "279",
+              "displayId": "H6.1",
+              "title": "测试准备，受访者双手胸前交叉并尝试一次从椅子上站起",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "不能完成（原因：___)",
+                  "input": "true"
+                },
+                {
+                  "id": "2",
+                  "title": "能完成，进行下一步"
+                }
+              ]
+            },
+            {
+              "id": "280",
+              "displayId": "H6.2",
+              "title": "正式测试，受访者双手胸前交叉从椅子上站起，连续重复 5次,并记录时间__秒__分秒",
+              "type": "fill",
+              "contentType": "digit"
+            }
+          ]
+        },
+        {
+          "id": "questionsGroupH7",
+          "displayId": "H7",
+          "title": "起立-行走测试",
+          "description": "嘱受访者从椅子上站起，站稳后，按照正常步态，向前走3米，然后转身走回椅子前，再转身坐下，靠到椅背上(可练习1-2次)",
+          "questions": [
+            {
+              "id": "281",
+              "displayId": "H7.1",
+              "title": "能否完成",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "不能完成（原因：___)",
+                  "input": "true"
+                },
+                {
+                  "id": "2",
+                  "title": "能完成，进行下一步",
+                  "input": "true"
+                }
+              ]
+            },
+            {
+              "id": "282",
+              "displayId": "H7.2",
+              "title": "若选择可以完成，步态是否稳定",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否"
+                }
+              ]
+            },
+            {
+              "id": "283",
+              "displayId": "H7.3",
+              "title": "(调查员)评分",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "正常"
+                },
+                {
+                  "id": "2",
+                  "title": "正常轻微异常"
+                },
+                {
+                  "id": "3",
+                  "title": "轻度异常"
+                },
+                {
+                  "id": "4",
+                  "title": "中度异常"
+                },
+                {
+                  "id": "5",
+                  "title": "重度异常"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "questionsGroupH8",
+          "displayId": "H8",
+          "title": "柔韧性测试",
+          "questions": [
+            {
+              "id": "284",
+              "displayId": "H8.1",
+              "title": "坐姿柔韧性，手指与脚趾尖距离______厘米 (精确到小数点后一位)",
+              "type": "fill",
+              "contentType": "digit"
+            },
+            {
+              "id": "285",
+              "displayId": "H8.2",
+              "title": "抓背测试，双手中指指尖距离______厘米 (精确到小数点后一位)",
+              "type": "fill",
+              "contentType": "digit"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

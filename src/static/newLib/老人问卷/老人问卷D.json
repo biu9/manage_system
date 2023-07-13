@@ -1,0 +1,988 @@
+{
+  "id": "老人问卷D",
+  "title": "D认知和心理",
+  "questions": [
+    {
+      "id": "container",
+      "title": "",
+      "questions": [
+        {
+          "id": "55",
+          "displayId": "D1",
+          "title": "访员观察：受访者是否有回答本部分问题的能力",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "是"
+            },
+            {
+              "id": "2",
+              "title": "否",
+              "hide_qs": [
+                "56",
+                "57",
+                "58",
+                "59",
+                "60",
+                "61",
+                "62",
+                "63",
+                "64",
+                "65",
+                "66",
+                "67",
+                "68",
+                "69",
+                "70",
+                "71",
+                "72",
+                "73",
+                "74",
+                "75",
+                "76",
+                "77",
+                "78",
+                "79",
+                "80",
+                "81",
+                "82",
+                "83",
+                "84",
+                "85",
+                "86",
+                "87",
+                "88",
+                "89",
+                "90",
+                "91",
+                "92",
+                "93",
+                "94",
+                "95",
+                "96",
+                "97",
+                "98",
+                "99",
+                "100",
+                "101",
+                "102"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "56",
+          "displayId": "D2",
+          "title": "请问今天是哪一年",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "错误0分"
+            },
+            {
+              "id": "2",
+              "title": "正确1分"
+            }
+          ]
+        },
+        {
+          "id": "57",
+          "displayId": "D3",
+          "title": "现在是什么季节",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "错误0分"
+            },
+            {
+              "id": "2",
+              "title": "正确1分"
+            }
+          ]
+        },
+        {
+          "id": "58",
+          "displayId": "D4",
+          "title": "今天是几号",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "错误0分"
+            },
+            {
+              "id": "2",
+              "title": "正确1分"
+            }
+          ]
+        },
+        {
+          "id": "59",
+          "displayId": "D5",
+          "title": "今天是星期几（礼拜几）",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "错误0分"
+            },
+            {
+              "id": "2",
+              "title": "正确1分"
+            }
+          ]
+        },
+        {
+          "id": "60",
+          "displayId": "D6",
+          "title": "现在是几月份",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "错误0分"
+            },
+            {
+              "id": "2",
+              "title": "正确1分"
+            }
+          ]
+        },
+        {
+          "id": "61",
+          "displayId": "D7",
+          "title": "这里是哪个省、哪个市",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "错误0分"
+            },
+            {
+              "id": "2",
+              "title": "正确1分"
+            }
+          ]
+        },
+        {
+          "id": "62",
+          "displayId": "D8",
+          "title": "这里是哪个区（或县）",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "错误0分"
+            },
+            {
+              "id": "2",
+              "title": "正确1分"
+            }
+          ]
+        },
+        {
+          "id": "63",
+          "displayId": "D9",
+          "title": "这里是哪个街道（或村）",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "错误0分"
+            },
+            {
+              "id": "2",
+              "title": "正确1分"
+            }
+          ]
+        },
+        {
+          "id": "64",
+          "displayId": "D10",
+          "title": "我们现在在几楼",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "错误0分"
+            },
+            {
+              "id": "2",
+              "title": "正确1分"
+            }
+          ]
+        },
+        {
+          "id": "65",
+          "displayId": "D11",
+          "title": "这里是什么地方",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "错误0分"
+            },
+            {
+              "id": "2",
+              "title": "正确1分"
+            }
+          ]
+        },
+        {
+          "id": "questionsGroupD12",
+          "displayId": "D12",
+          "title": "现在我要说三个词，请您听清楚并记住，在我说完之后，请您把记住的词语告诉我。",
+          "questions": [
+            {
+              "id": "66",
+              "displayId": "D12-1",
+              "title": "皮球",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "错误0分"
+                },
+                {
+                  "id": "2",
+                  "title": "正确1分"
+                }
+              ]
+            },
+            {
+              "id": "67",
+              "displayId": "D12-2",
+              "title": "国旗",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "错误0分"
+                },
+                {
+                  "id": "2",
+                  "title": "正确1分"
+                }
+              ]
+            },
+            {
+              "id": "68",
+              "displayId": "D12-3",
+              "title": "树木",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "错误0分"
+                },
+                {
+                  "id": "2",
+                  "title": "正确1分"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "questionsGroupD13",
+          "displayId": "D13",
+          "title": "现在请您做一道计算题",
+          "questions": [
+            {
+              "id": "69",
+              "displayId": "D13-1",
+              "title": "100减7是多少",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "错误0分"
+                },
+                {
+                  "id": "2",
+                  "title": "正确1分"
+                }
+              ]
+            },
+            {
+              "id": "70",
+              "displayId": "D13-1",
+              "title": "再减7是多少",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "错误0分"
+                },
+                {
+                  "id": "2",
+                  "title": "正确1分"
+                }
+              ]
+            },
+            {
+              "id": "71",
+              "displayId": "D13-2",
+              "title": "再减7是多少",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "错误0分"
+                },
+                {
+                  "id": "2",
+                  "title": "正确1分"
+                }
+              ]
+            },
+            {
+              "id": "72",
+              "displayId": "D13-3",
+              "title": "再减7是多少",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "错误0分"
+                },
+                {
+                  "id": "2",
+                  "title": "正确1分"
+                }
+              ]
+            },
+            {
+              "id": "73",
+              "displayId": "D13-4",
+              "title": "再减7是多少",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "错误0分"
+                },
+                {
+                  "id": "2",
+                  "title": "正确1分"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "questionsGroupD15",
+          "displayId": "D15",
+          "title": "现在请您告诉我，刚才我要您记住的三样东西是什么（不用按顺序回忆）",
+          "questions": [
+            {
+              "id": "74",
+              "displayId": "D14-1",
+              "title": "皮球",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "错误0分"
+                },
+                {
+                  "id": "2",
+                  "title": "正确1分"
+                }
+              ]
+            },
+            {
+              "id": "75",
+              "displayId": "D14-2",
+              "title": "国旗",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "错误0分"
+                },
+                {
+                  "id": "2",
+                  "title": "正确1分"
+                }
+              ]
+            },
+            {
+              "id": "76",
+              "displayId": "D14-3",
+              "title": "树木",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "错误0分"
+                },
+                {
+                  "id": "2",
+                  "title": "正确1分"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "questionsGroupD15",
+          "displayId": "D15",
+          "title": "（拿出手表、铅笔），请问这是什么",
+          "questions": [
+            {
+              "id": "77",
+              "displayId": "D15-1",
+              "title": "手表",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "错误0分"
+                },
+                {
+                  "id": "2",
+                  "title": "正确1分"
+                }
+              ]
+            },
+            {
+              "id": "78",
+              "displayId": "D15-2",
+              "title": "铅笔",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "错误0分"
+                },
+                {
+                  "id": "2",
+                  "title": "正确1分"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "79",
+          "displayId": "D16",
+          "title": "现在我要说一句话，请您清楚听，在我说完之后，请您重复一遍，这句话是：“四十四只石狮子”",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "错误0分"
+            },
+            {
+              "id": "2",
+              "title": "正确1分"
+            }
+          ]
+        },
+        {
+          "id": "80",
+          "displayId": "D17",
+          "title": "（拿出写有“请闭上您的眼睛”大字的卡片）请您按照着这张卡片上的指示做动作",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "错误0分"
+            },
+            {
+              "id": "2",
+              "title": "正确1分"
+            }
+          ]
+        },
+        {
+          "id": "questionsGroupD18",
+          "displayId": "D18",
+          "title": "（给受访老人一张空白纸）下面我和您说几个动作，在我说完之后，请您按照我说的顺序一一去做：请用右手拿起这张纸，再用双手把纸对折，然后把纸放在您的大腿上。（把所有指令说完再让老人做，不要重复说明也不要示范，让老人按顺序做动作。）",
+          "questions": [
+            {
+              "id": "81",
+              "displayId": "D18-1",
+              "title": "用右手拿起纸",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "错误0分"
+                },
+                {
+                  "id": "2",
+                  "title": "正确1分"
+                }
+              ]
+            },
+            {
+              "id": "82",
+              "displayId": "D18-2",
+              "title": "把纸对折",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "错误0分"
+                },
+                {
+                  "id": "2",
+                  "title": "正确1分"
+                }
+              ]
+            },
+            {
+              "id": "83",
+              "displayId": "D18-3",
+              "title": "把纸放在大腿上",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "错误0分"
+                },
+                {
+                  "id": "2",
+                  "title": "正确1分"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "questionsGroupD19",
+          "displayId": "D19",
+          "title": "请您说一句完整的，有意义的句子。（要求句子必须有主语和动词）",
+          "questions": [
+            {
+              "id": "84",
+              "displayId": "D19-1",
+              "title": "受访者回答的句子：____",
+              "type": "fill",
+              "contentType": "text"
+            },
+            {
+              "id": "85",
+              "displayId": "D19-2",
+              "title": "正确与否",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "错误0分"
+                },
+                {
+                  "id": "2",
+                  "title": "正确1分"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "86",
+          "displayId": "D20",
+          "title": "（拿出绘图卡片，并将问卷翻至最后一页）这是一张图，请您在这里照样把它画出来",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "错误0分"
+            },
+            {
+              "id": "2",
+              "title": "正确1分"
+            }
+          ]
+        },
+        {
+          "id": "87",
+          "displayId": "D21",
+          "title": "D2-D20部分题目认知得分总计___分",
+          "type": "fill",
+          "contentType": "digit"
+        },
+        {
+          "id": "88",
+          "displayId": "D22",
+          "title": "认知能力分级",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "能力完好（30分）"
+            },
+            {
+              "id": "2",
+              "title": "轻度受损（25-29分）"
+            },
+            {
+              "id": "3",
+              "title": "中度受损（18-24分）"
+            },
+            {
+              "id": "4",
+              "title": "重度受损（0-17分）"
+            }
+          ]
+        },
+        {
+          "id": "89",
+          "displayId": "D23",
+          "title": "（将问卷翻至最后一页）请您画一个时钟，这个圆是一个钟面，先把所有的数字写在正确的位置上，然后把时针和分针画在11点10分的位置",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "总计0分 没有写出任何数字"
+            },
+            {
+              "id": "2",
+              "title": "总计1分 写出部分数字"
+            },
+            {
+              "id": "3",
+              "title": "总计2分 写出全部数字，数字的位置错误，指针指向错误"
+            },
+            {
+              "id": "4",
+              "title": "总计3分 写出全部数字并且数字位置正确，指针指向错误"
+            },
+            {
+              "id": "5",
+              "title": "总计4分 写出全部数字并且指确针指向正，数字的位置错误"
+            },
+            {
+              "id": "6",
+              "title": "总计5分 完美的时钟：数字和数字的位置正确，并且指针指向正确"
+            }
+          ]
+        },
+        {
+          "id": "questionsGroupD24",
+          "displayId": "D24",
+          "title": "下面10道问题是您可能有过或感觉到的情况或想法，请按照过去1周内你的实际情况或感觉进行选择。每道题目的答案都是一样的，包括根本没有或几乎没有（出现这类情况的日子不超过1天）、少有（有1至2天有过这类情况）、常有（有3至4天有过这类情况）、几乎一直有或大多数时间有（有5至7天有过这类情况）。",
+          "questions": [
+            {
+              "id": "90",
+              "displayId": "D24-1",
+              "title": "我因为一些小事而烦恼",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "没有/几乎没有"
+                },
+                {
+                  "id": "2",
+                  "title": "少有"
+                },
+                {
+                  "id": "3",
+                  "title": "常有"
+                },
+                {
+                  "id": "4",
+                  "title": "大多数时间"
+                }
+              ]
+            },
+            {
+              "id": "91",
+              "displayId": "D24-2",
+              "title": "我在做事时很难集中精神",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "没有/几乎没有"
+                },
+                {
+                  "id": "2",
+                  "title": "少有"
+                },
+                {
+                  "id": "3",
+                  "title": "常有"
+                },
+                {
+                  "id": "4",
+                  "title": "大多数时间"
+                }
+              ]
+            },
+            {
+              "id": "92",
+              "displayId": "D24-3",
+              "title": "我感到情绪低落",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "没有/几乎没有"
+                },
+                {
+                  "id": "2",
+                  "title": "少有"
+                },
+                {
+                  "id": "3",
+                  "title": "常有"
+                },
+                {
+                  "id": "4",
+                  "title": "大多数时间"
+                }
+              ]
+            },
+            {
+              "id": "93",
+              "displayId": "D24-4",
+              "title": "我觉得做任何事都很费劲",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "没有/几乎没有"
+                },
+                {
+                  "id": "2",
+                  "title": "少有"
+                },
+                {
+                  "id": "3",
+                  "title": "常有"
+                },
+                {
+                  "id": "4",
+                  "title": "大多数时间"
+                }
+              ]
+            },
+            {
+              "id": "94",
+              "displayId": "D24-5",
+              "title": "我对未来充满希望",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "没有/几乎没有"
+                },
+                {
+                  "id": "2",
+                  "title": "少有"
+                },
+                {
+                  "id": "3",
+                  "title": "常有"
+                },
+                {
+                  "id": "4",
+                  "title": "大多数时间"
+                }
+              ]
+            },
+            {
+              "id": "95",
+              "displayId": "D24-6",
+              "title": "我感到害怕",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "没有/几乎没有"
+                },
+                {
+                  "id": "2",
+                  "title": "少有"
+                },
+                {
+                  "id": "3",
+                  "title": "常有"
+                },
+                {
+                  "id": "4",
+                  "title": "大多数时间"
+                }
+              ]
+            },
+            {
+              "id": "96",
+              "displayId": "D24-7",
+              "title": "我的睡眠不好",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "没有/几乎没有"
+                },
+                {
+                  "id": "2",
+                  "title": "少有"
+                },
+                {
+                  "id": "3",
+                  "title": "常有"
+                },
+                {
+                  "id": "4",
+                  "title": "大多数时间"
+                }
+              ]
+            },
+            {
+              "id": "97",
+              "displayId": "D24-8",
+              "title": "我很愉快",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "没有/几乎没有"
+                },
+                {
+                  "id": "2",
+                  "title": "少有"
+                },
+                {
+                  "id": "3",
+                  "title": "常有"
+                },
+                {
+                  "id": "4",
+                  "title": "大多数时间"
+                }
+              ]
+            },
+            {
+              "id": "98",
+              "displayId": "D24-9",
+              "title": "我感到孤独",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "没有/几乎没有"
+                },
+                {
+                  "id": "2",
+                  "title": "少有"
+                },
+                {
+                  "id": "3",
+                  "title": "常有"
+                },
+                {
+                  "id": "4",
+                  "title": "大多数时间"
+                }
+              ]
+            },
+            {
+              "id": "99",
+              "displayId": "D24-10",
+              "title": "我觉得我无法继续我的生活",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "没有/几乎没有"
+                },
+                {
+                  "id": "2",
+                  "title": "少有"
+                },
+                {
+                  "id": "3",
+                  "title": "常有"
+                },
+                {
+                  "id": "4",
+                  "title": "大多数时间"
+                }
+              ]
+            },
+            {
+              "id": "100",
+              "displayId": "D24-11",
+              "title": "我觉得自己没有人陪伴",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "没有/几乎没有"
+                },
+                {
+                  "id": "2",
+                  "title": "少有"
+                },
+                {
+                  "id": "3",
+                  "title": "常有"
+                },
+                {
+                  "id": "4",
+                  "title": "大多数时间"
+                }
+              ]
+            },
+            {
+              "id": "101",
+              "displayId": "D24-12",
+              "title": "我觉得自己被别人忽略",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "没有/几乎没有"
+                },
+                {
+                  "id": "2",
+                  "title": "少有"
+                },
+                {
+                  "id": "3",
+                  "title": "常有"
+                },
+                {
+                  "id": "4",
+                  "title": "大多数时间"
+                }
+              ]
+            },
+            {
+              "id": "102",
+              "displayId": "D24-13",
+              "title": "我觉得自己被别人孤立",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "没有/几乎没有"
+                },
+                {
+                  "id": "2",
+                  "title": "少有"
+                },
+                {
+                  "id": "3",
+                  "title": "常有"
+                },
+                {
+                  "id": "4",
+                  "title": "大多数时间"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

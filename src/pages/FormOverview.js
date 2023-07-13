@@ -6,7 +6,7 @@ import processTime from "../utils/processTime";
 import processListData from "../utils/processListData";
 import { useEffect,useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { setInitData,setFormType,setCurrentFormId,setBirthMonthRight,setBirthYearRight,setGenderRight } from "../store/FormOverviewSlice";
+import { setInitData,setFormType,setCurrentFormId,setBirthMonthRight,setBirthYearRight,setGenderRight,setDetailFormType } from "../store/FormOverviewSlice";
 import useGetCurrentType from "../hooks/useGetCurrentType";
 import useGetSelectedForm from "../hooks/useGetSelectedForm";
 import { useNavigate } from "react-router";
@@ -187,15 +187,33 @@ const OneList = (data) => {
                         dispatch(setFormInfo(data.data));
                         dispatch(setCurrentView('查看'));
                         dispatch(setCurrentFormId(data.data.id));
-                        data.data.subject ? dispatch(setFormType('elder')) : dispatch(setFormType('assistant'));
-                        navigate('https://cyzz.fun/static/hca-admin/form/' + data.data.id);
+                        if(data.data.subject) {
+                            dispatch(setFormType('elder'));
+                            if(data.data.institution)  {
+                                dispatch(setDetailFormType('institution'));
+                            } else {
+                                dispatch(setDetailFormType('home'));
+                            }
+                        } else {
+                            dispatch(setFormType('assistant'));
+                        }
+                        navigate('form/' + data.data.id);
                     }}>查看</div>
                     <div onClick={() => {
                         dispatch(setFormInfo(data.data));
                         dispatch(setCurrentView('编辑'));
                         dispatch(setCurrentFormId(data.data.id));
-                        data.data.subject ? dispatch(setFormType('elder')) : dispatch(setFormType('assistant'));
-                        navigate('https://cyzz.fun/static/hca-admin/form/' + data.data.id);
+                        if(data.data.subject) {
+                            dispatch(setFormType('elder'));
+                            if(data.data.institution)  {
+                                dispatch(setDetailFormType('institution'));
+                            } else {
+                                dispatch(setDetailFormType('home'));
+                            }
+                        } else {
+                            dispatch(setFormType('assistant'));
+                        }
+                        navigate('form/' + data.data.id);
                     }}
                     className="cursor-pointer">编辑</div>
                 </div>

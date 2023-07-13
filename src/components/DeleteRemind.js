@@ -86,7 +86,7 @@ export default function DeleteRemind(props) {
                                         setSuccessDelete(true);
                                         setTimeout(() => {
                                             setSuccessDelete(false);
-                                            navigate('https://cyzz.fun/static/hca-admin/');
+                                            navigate('static/hca-admin/');
                                         },1000);
                                     } else {
                                         setDeleteFail(true);

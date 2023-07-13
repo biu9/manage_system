@@ -1,0 +1,1090 @@
+{
+  "id": "老人问卷E",
+  "title": "E健康状况评估",
+  "questions": [
+    {
+      "id": "container",
+      "title": "",
+      "questions": [
+        {
+          "id": "103",
+          "displayId": "E1",
+          "title": "您觉得您目前的健康状况如何？（与您的同龄人相比）",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "很好"
+            },
+            {
+              "id": "2",
+              "title": "比较好"
+            },
+            {
+              "id": "3",
+              "title": "一般"
+            },
+            {
+              "id": "4",
+              "title": "比较不好"
+            },
+            {
+              "id": "5",
+              "title": "很不好"
+            }
+          ]
+        },
+        {
+          "id": "104",
+          "displayId": "E2",
+          "title": "您的视力如何？",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "完全失明"
+            },
+            {
+              "id": "2",
+              "title": "只能看到光、颜色和形状（大致轮廓），眼睛可随物体移动"
+            },
+            {
+              "id": "3",
+              "title": "视力有限，看不清报纸大标题，但能辨认较大的物体"
+            },
+            {
+              "id": "4",
+              "title": "能看清楚大字体，但看不清书报上的标准字体，辨别小物体有一定困难"
+            },
+            {
+              "id": "5",
+              "title": "与日常生活能力相关的视力（如阅读书报、看电视等）基本正常"
+            }
+          ]
+        },
+        {
+          "id": "105",
+          "displayId": "E3",
+          "title": "您的听力如何？",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "完全失聪"
+            },
+            {
+              "id": "2",
+              "title": "讲话者大声说话或说话很慢，才能部分听见"
+            },
+            {
+              "id": "3",
+              "title": "正常交流有些困难，需在安静的环境大声说话才能听到"
+            },
+            {
+              "id": "4",
+              "title": "在轻声说话或说话距离超过2米时听不清"
+            },
+            {
+              "id": "5",
+              "title": "与日常生活习惯相关的听力基本正常（如能听到门铃、电视、电话等声音）"
+            }
+          ]
+        },
+        {
+          "id": "106",
+          "displayId": "E4",
+          "title": "您感觉您的沟通能力如何",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "完全不能理解他人的言语，也无法表达"
+            },
+            {
+              "id": "2",
+              "title": "不能完全理解他人的话，只能以简单的单词或手势表达大概意愿"
+            },
+            {
+              "id": "3",
+              "title": "勉强可与他人交流，谈吐内容不清楚，需频繁重复或简化口头表达"
+            },
+            {
+              "id": "4",
+              "title": "能够表达自己的需要或理解他人的话，但需要增加时间或给予帮助"
+            },
+            {
+              "id": "5",
+              "title": "无困难，能与他人正常沟通和交流"
+            }
+          ]
+        },
+        {
+          "id": "questionsGroupE5",
+          "displayId": "E5",
+          "title": "过去一年里您是否出现过下列疾病或症状？（经过医生确诊的疾病或症状）",
+          "questions": [
+            {
+              "id": "107",
+              "displayId": "E5-1-1",
+              "title": "高血压病是否患病",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": ["108"]
+                }
+              ]
+            },
+            {
+              "id": "108",
+              "displayId": "E5-1-2",
+              "title": "高血压病是否经过治疗（服药、手术等）",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否"
+                }
+              ]
+            },
+            {
+              "id": "109",
+              "displayId": "E5-2-1",
+              "title": "糖尿病是否患病",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": ["110"]
+                }
+              ]
+            },
+            {
+              "id": "110",
+              "displayId": "E5-2-2",
+              "title": "糖尿病是否经过治疗（服药、手术等）",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否"
+                }
+              ]
+            },
+            {
+              "id": "111",
+              "displayId": "E5-3-1",
+              "title": "心脏病（如心肌梗塞、冠心病、心绞痛、心力衰竭和其他心脏疾病）是否患病",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": ["112"]
+                }
+              ]
+            },
+            {
+              "id": "112",
+              "displayId": "E5-3-2",
+              "title": "心脏病（如心肌梗塞、冠心病、心绞痛、心力衰竭和其他心脏疾病）是否经过治疗（服药、手术等）",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否"
+                }
+              ]
+            },
+            {
+              "id": "113",
+              "displayId": "E5-4-1",
+              "title": "中风是否患病",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": ["114"]
+                }
+              ]
+            },
+            {
+              "id": "114",
+              "displayId": "E5-4-2",
+              "title": "中风是否经过治疗（服药、手术等）",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否"
+                }
+              ]
+            },
+            {
+              "id": "115",
+              "displayId": "E5-5-1",
+              "title": "痛风是否患病",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": ["116"]
+                }
+              ]
+            },
+            {
+              "id": "116",
+              "displayId": "E5-5-2",
+              "title": "痛风是否经过治疗（服药、手术等）",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否"
+                }
+              ]
+            },
+            {
+              "id": "117",
+              "displayId": "E5-6-1",
+              "title": "肺部疾病（不包括肿瘤或癌）是否患病",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": ["118"]
+                }
+              ]
+            },
+            {
+              "id": "118",
+              "displayId": "E5-6-2",
+              "title": "肺部疾病（不包括肿瘤或癌）是否经过治疗（服药、手术等）",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否"
+                }
+              ]
+            },
+            {
+              "id": "119",
+              "displayId": "E5-7-1",
+              "title": "肾脏疾病（不包括肿瘤或癌）是否患病",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": ["120"]
+                }
+              ]
+            },
+            {
+              "id": "120",
+              "displayId": "E5-7-2",
+              "title": "肾脏疾病（不包括肿瘤或癌）是否经过治疗（服药、手术等）",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否"
+                }
+              ]
+            },
+            {
+              "id": "121",
+              "displayId": "E5-8-1",
+              "title": "肝脏疾病（除脂肪肝、肿瘤或癌以外）是否患病",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": ["122"]
+                }
+              ]
+            },
+            {
+              "id": "122",
+              "displayId": "E5-8-2",
+              "title": "肝脏疾病（除脂肪肝、肿瘤或癌以外）是否经过治疗（服药、手术等）",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否"
+                }
+              ]
+            },
+            {
+              "id": "123",
+              "displayId": "E5-9-1",
+              "title": "胃部疾病/其它消化系统疾病（不包括肿瘤或癌）是否患病",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": ["124"]
+                }
+              ]
+            },
+            {
+              "id": "124",
+              "displayId": "E5-9-2",
+              "title": "胃部疾病/其它消化系统疾病（不包括肿瘤或癌）是否经过治疗（服药、手术等）",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否"
+                }
+              ]
+            },
+            {
+              "id": "125",
+              "displayId": "E5-10-1",
+              "title": "关节炎或风湿病是否患病",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": ["126"]
+                }
+              ]
+            },
+            {
+              "id": "126",
+              "displayId": "E5-10-2",
+              "title": "关节炎或风湿病是否经过治疗（服药、手术等）",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否"
+                }
+              ]
+            },
+            {
+              "id": "127",
+              "displayId": "E5-11-1",
+              "title": "情感及精神方面问题是否患病",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": ["128"]
+                }
+              ]
+            },
+            {
+              "id": "128",
+              "displayId": "E5-11-2",
+              "title": "情感及精神方面问题是否经过治疗（服药、手术等）",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否"
+                }
+              ]
+            },
+            {
+              "id": "129",
+              "displayId": "E5-12-1",
+              "title": "与记忆相关的疾病（如老年痴呆症、脑萎缩、帕金森症）是否患病",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": ["130"]
+                }
+              ]
+            },
+            {
+              "id": "130",
+              "displayId": "E5-12-2",
+              "title": "与记忆相关的疾病（如老年痴呆症、脑萎缩、帕金森症）是否经过治疗（服药、手术等）",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否"
+                }
+              ]
+            },
+            {
+              "id": "131",
+              "displayId": "E5-13-1",
+              "title": "恶性肿瘤是否患病",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": ["132"]
+                }
+              ]
+            },
+            {
+              "id": "132",
+              "displayId": "E5-13-2",
+              "title": "恶性肿瘤是否经过治疗（服药、手术等）",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否"
+                }
+              ]
+            },
+            {
+              "id": "133",
+              "displayId": "E5-14-1",
+              "title": "是否患其他疾病",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否",
+                  "hide_qs": ["134", "135"]
+                }
+              ]
+            },
+            {
+              "id": "134",
+              "displayId": "E5-14-2",
+              "title": "其他疾病，请注明：___",
+              "type": "fill",
+              "contentType": "text"
+            },
+            {
+              "id": "135",
+              "displayId": "E5-14-3",
+              "title": "该病是否经过治疗（服药、手术等）",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "是"
+                },
+                {
+                  "id": "2",
+                  "title": "否"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "136",
+          "displayId": "E6",
+          "title": "您现在吸烟吗",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "是"
+            },
+            {
+              "id": "2",
+              "title": "否",
+              "hide_qs": ["137"]
+            }
+          ]
+        },
+        {
+          "id": "137",
+          "displayId": "E7",
+          "title": "您现在平均一天抽_____支香烟",
+          "type": "fill",
+          "contentType": "digit"
+        },
+        {
+          "id": "138",
+          "displayId": "E8",
+          "title": "您现在喝酒吗",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "是"
+            },
+            {
+              "id": "2",
+              "title": "否",
+              "hide_qs": ["139"]
+            }
+          ]
+        },
+        {
+          "id": "139",
+          "displayId": "E9",
+          "title": "您现在平均一个月喝几次酒",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "每月一次或更少"
+            },
+            {
+              "id": "2",
+              "title": "每月2-3次"
+            },
+            {
+              "id": "3",
+              "title": "每周一次"
+            },
+            {
+              "id": "4",
+              "title": "每周2-3次"
+            },
+            {
+              "id": "5",
+              "title": "每周5-6次"
+            },
+            {
+              "id": "6",
+              "title": "每天1次"
+            },
+            {
+              "id": "7",
+              "title": "每天2次"
+            },
+            {
+              "id": "8",
+              "title": "一天超过2次"
+            }
+          ]
+        },
+        {
+          "id": "140",
+          "displayId": "E10",
+          "title": "最近1个月，您晚上上床睡觉时间通常是_______点（24小时制）",
+          "type": "fill",
+          "contentType": "digit"
+        },
+        {
+          "id": "141",
+          "displayId": "E11",
+          "title": "最近1个月，您每天早上通常是_______点起床（24小时制）",
+          "type": "fill",
+          "contentType": "digit"
+        },
+        {
+          "id": "142",
+          "displayId": "E12",
+          "title": "最近1个月，您每晚通常要多长时间才能入睡（从上床到入睡）：_______分钟",
+          "type": "fill",
+          "contentType": "digit"
+        },
+        {
+          "id": "143",
+          "displayId": "E13",
+          "title": "最近1个月，您每晚通常实际睡眠多长时间：_______小时",
+          "type": "fill",
+          "contentType": "digit"
+        },
+        {
+          "id": "144",
+          "displayId": "E14",
+          "title": "最近1个月，您的睡眠质量怎么样",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "很好"
+            },
+            {
+              "id": "2",
+              "title": "比较好"
+            },
+            {
+              "id": "3",
+              "title": "一般"
+            },
+            {
+              "id": "4",
+              "title": "比较不好"
+            },
+            {
+              "id": "5",
+              "title": "很不好"
+            }
+          ]
+        },
+        {
+          "id": "145",
+          "displayId": "E15",
+          "title": "最近1个月，您感到做事情精力不足吗",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "没有"
+            },
+            {
+              "id": "2",
+              "title": "偶尔"
+            },
+            {
+              "id": "3",
+              "title": "有时"
+            },
+            {
+              "id": "4",
+              "title": "经常"
+            }
+          ]
+        },
+        {
+          "id": "146",
+          "displayId": "E16",
+          "title": "每天总的睡眠时间：_________小时（包括午睡）",
+          "type": "fill",
+          "contentType": "digit"
+        },
+        {
+          "id": "147",
+          "displayId": "E17",
+          "title": "您睡觉时是否会打呼噜",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "是，经常打呼噜"
+            },
+            {
+              "id": "2",
+              "title": "是，偶尔打呼噜"
+            },
+            {
+              "id": "3",
+              "title": "不打呼噜或不知道"
+            }
+          ]
+        },
+        {
+          "id": "questionsGroupE18",
+          "displayId": "E18",
+          "title": "请回想最近30天发生下列状况的频率，并在最合适的答案代码上打“√”",
+          "questions": [
+            {
+              "id": "148",
+              "displayId": "E18-1",
+              "title": "入睡困难(30分钟内不能入睡)",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "没有"
+                },
+                {
+                  "id": "2",
+                  "title": "<1次/周"
+                },
+                {
+                  "id": "3",
+                  "title": "1-2次/周"
+                },
+                {
+                  "id": "4",
+                  "title": "≥3次/周"
+                }
+              ]
+            },
+            {
+              "id": "149",
+              "displayId": "E18-2",
+              "title": "夜间易醒或早醒",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "没有"
+                },
+                {
+                  "id": "2",
+                  "title": "<1次/周"
+                },
+                {
+                  "id": "3",
+                  "title": "1-2次/周"
+                },
+                {
+                  "id": "4",
+                  "title": "≥3次/周"
+                }
+              ]
+            },
+            {
+              "id": "150",
+              "displayId": "E18-3",
+              "title": "夜间去厕所",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "没有"
+                },
+                {
+                  "id": "2",
+                  "title": "<1次/周"
+                },
+                {
+                  "id": "3",
+                  "title": "1-2次/周"
+                },
+                {
+                  "id": "4",
+                  "title": "≥3次/周"
+                }
+              ]
+            },
+            {
+              "id": "151",
+              "displayId": "E18-4",
+              "title": "夜间呼吸不畅",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "没有"
+                },
+                {
+                  "id": "2",
+                  "title": "<1次/周"
+                },
+                {
+                  "id": "3",
+                  "title": "1-2次/周"
+                },
+                {
+                  "id": "4",
+                  "title": "≥3次/周"
+                }
+              ]
+            },
+            {
+              "id": "152",
+              "displayId": "E18-5",
+              "title": "咳嗽或鼾声高",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "没有"
+                },
+                {
+                  "id": "2",
+                  "title": "<1次/周"
+                },
+                {
+                  "id": "3",
+                  "title": "1-2次/周"
+                },
+                {
+                  "id": "4",
+                  "title": "≥3次/周"
+                }
+              ]
+            },
+            {
+              "id": "153",
+              "displayId": "E18-6",
+              "title": "夜间感觉冷",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "没有"
+                },
+                {
+                  "id": "2",
+                  "title": "<1次/周"
+                },
+                {
+                  "id": "3",
+                  "title": "1-2次/周"
+                },
+                {
+                  "id": "4",
+                  "title": "≥3次/周"
+                }
+              ]
+            },
+            {
+              "id": "154",
+              "displayId": "E18-7",
+              "title": "夜间感觉热",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "没有"
+                },
+                {
+                  "id": "2",
+                  "title": "<1次/周"
+                },
+                {
+                  "id": "3",
+                  "title": "1-2次/周"
+                },
+                {
+                  "id": "4",
+                  "title": "≥3次/周"
+                }
+              ]
+            },
+            {
+              "id": "155",
+              "displayId": "E18-8",
+              "title": "做噩梦",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "没有"
+                },
+                {
+                  "id": "2",
+                  "title": "<1次/周"
+                },
+                {
+                  "id": "3",
+                  "title": "1-2次/周"
+                },
+                {
+                  "id": "4",
+                  "title": "≥3次/周"
+                }
+              ]
+            },
+            {
+              "id": "156",
+              "displayId": "E18-9",
+              "title": "疼痛不适",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "没有"
+                },
+                {
+                  "id": "2",
+                  "title": "<1次/周"
+                },
+                {
+                  "id": "3",
+                  "title": "1-2次/周"
+                },
+                {
+                  "id": "4",
+                  "title": "≥3次/周"
+                }
+              ]
+            },
+            {
+              "id": "157",
+              "displayId": "E18-10-1",
+              "title": "其它影响睡眠的事：_________",
+              "type": "fill",
+              "contentType": "text"
+            },
+            {
+              "id": "158",
+              "displayId": "E18-10-2",
+              "title": "该事发生的频率",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "没有"
+                },
+                {
+                  "id": "2",
+                  "title": "<1次/周"
+                },
+                {
+                  "id": "3",
+                  "title": "1-2次/周"
+                },
+                {
+                  "id": "4",
+                  "title": "≥3次/周"
+                }
+              ]
+            },
+            {
+              "id": "159",
+              "displayId": "E18-11",
+              "title": "服用药物帮助睡眠",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "没有"
+                },
+                {
+                  "id": "2",
+                  "title": "<1次/周"
+                },
+                {
+                  "id": "3",
+                  "title": "1-2次/周"
+                },
+                {
+                  "id": "4",
+                  "title": "≥3次/周"
+                }
+              ]
+            },
+            {
+              "id": "160",
+              "displayId": "E18-12",
+              "title": "白天感到困倦",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "没有"
+                },
+                {
+                  "id": "2",
+                  "title": "<1次/周"
+                },
+                {
+                  "id": "3",
+                  "title": "1-2次/周"
+                },
+                {
+                  "id": "4",
+                  "title": "≥3次/周"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -229,9 +229,17 @@ const FormDetailLeft = () => {
 
 const FormDetailMid = () => {
     const currentFormType = useSelector(state => state.formOverview.currentFormType);
-    let modules = ['基本信息','A.个人信息','B.家庭信息','C1.工作信息1','C2.工作信息2','D.健康信息','E.老年人信息'];
-    if(currentFormType === 'elder')
-        modules = ['基本信息','A.个人信息','B.身体功能能力评论','C.认知能力评估','D.感知觉和沟通能力评估','E.居家护理需求','F.医疗与养老服务情况调查','居家照料者信息'];
+    const currentDetailFormType = useSelector(state => state.formOverview.formTypeDetail);
+    let modules = ['A个人信息','B健康信息','B.家庭信息','C工作信息','D知情书上传'];
+    if(currentFormType === 'elder') {
+        if(currentDetailFormType === 'institution') {
+            modules = ['A个人信息','B机构情况','B.身体功能能力评论','C身体功能能力评估','D认知和心理','E健康状况评估','F护理需求评估','G护理员情况','H体检','I访员观察'];
+        } else if(currentDetailFormType === 'home') {
+            modules = ['A个人信息','B机构情况','B.身体功能能力评论','C身体功能能力评估','D认知和心理','E健康状况评估','F医疗与养老服务情况调查','G居家照料者信息','H适老化环境设施需求调查','I体检','J居家照料者信息'];
+        } else {
+            alert('error, currentDetailFormType既不是institution也不是home')
+        }
+    }
     const currentMoudleIndex = useSelector(state => state.formOverview.currentMoudleIndex);
     const dispatch = useDispatch();
     return (
@@ -259,9 +267,24 @@ const FormDetailMid = () => {
 
 const FormDetailRight = (props) => {
     const currentFormType = useSelector(state => state.formOverview.currentFormType);
-    let formArray = ['basicInfo.json','new-caring-questions1.json','new-caring-questions2.json','new-caring-questions3-1.json','new-caring-questions3-2.json','new-caring-questions4.json','new-caring-questions5.json'];
-    if(currentFormType === 'elder')
-        formArray = ['basicInfo.json','newqnnA.json','newqnnB.json','newqnnC.json','newqnnD.json','newqnnE.json','newqnnF.json','newqnnG.json'];
+    const currentDetailFormType = useSelector(state => state.formOverview.formTypeDetail);
+    let formArray = ['护理员问卷A.json','护理员问卷B.json','护理员问卷C.json','护理员问卷D.json'];
+    // 为formArray增加'./护理员问卷'前缀
+    formArray = formArray.map(item => '护理员问卷/' + item);
+    if(currentFormType === 'elder') {
+        if(currentDetailFormType === 'home') {
+            formArray = ['newqnnA.json','newqnnB.json','newqnnC.json','newqnnD.json','newqnnE.json','newqnnF.json','newqnnG.json','newqnnH.json','newqnnI.json','newqnnJ.json'];
+            // 为formArray增加'./居家问卷'前缀
+            formArray = formArray.map(item => '居家问卷/' + item);
+        } else if(currentDetailFormType === 'institution') {
+            formArray=['老人问卷A.json','老人问卷B.json','老人问卷C.json','老人问卷D.json','老人问卷E.json','老人问卷F.json','老人问卷G.json','老人问卷H.json','老人问卷I.json']
+            // 为formArray增加'./老人问卷'前缀
+            formArray = formArray.map(item => '老人问卷/' + item);
+        } else {
+            alert('error, currentDetailFormType既不是institution也不是home')
+        }
+        
+    }
     const currentMoudleIndex = useSelector(state => state.formOverview.currentMoudleIndex);
     const selectState = [false,true,false,false,false,false];
     selectState.fill(false);
@@ -270,27 +293,21 @@ const FormDetailRight = (props) => {
     return (
         <div className="bg-white p-6 rounded-xl border-2 border-purple-200">
             {selectState.map((item,index) => {
-            if(item === true && index !== 0)
+            if(item === true)
                 return (
                 <div key={index} className="flex justify-center">
                     <CommonFormContent moduleName={formArray[index]}/>
                 </div>
                 )
-            else if(item === true && index === 0)
-                return (
-                    <div>
-                        <BasicFormInfo/>
-                    </div>
-                )
-                else 
-                    return null;
+            else 
+                return null;
             })}
         </div>
     )
 }
 
 const CommonFormContent = (props) => {
-    const staticForm = require('../static/lib/'+props.moduleName);
+    const staticForm = require('../static/newLib/'+props.moduleName);
     const answerSheet = useSelector(state => state.formInfo.answerSheet);
     return (
         <div className="w-80 whitespace-normal">
@@ -304,8 +321,8 @@ const CommonFormContent = (props) => {
 
 function getTotal(questionModule,answerSheet) {
     let res = [];
-    //console.log("questionModule in getTotal : ",questionModule);
-    //console.log("answerSheet in getTotal : ",answerSheet);
+    console.log("questionModule in getTotal : ",questionModule);
+    console.log("answerSheet in getTotal : ",answerSheet);
     if(questionModule.questions) {
         questionModule.questions.forEach(item => {
             if(item.questions) {
@@ -314,12 +331,9 @@ function getTotal(questionModule,answerSheet) {
                 if (item.title !== '总分') {
                     let answer = '未填';
                     let choices = [];
-                    //console.log('item : ',item);
                     if(item.type === 'multiple') {
                         if(answerSheet[item.id].answer[0]-1 >= 0 && answerSheet[item.id].answer[0]-1 < item.choices.length) {
-                        //answer = item.choices[answerSheet[item.id].answer.toString()-1].id;
                             answer = answerSheet[item.id].answer;
-                        //console.log("answer : ",answer);
                         }
                         else
                             answer = '未填';
@@ -328,11 +342,9 @@ function getTotal(questionModule,answerSheet) {
                             res.push(<QA title={item.title} id={item.id} answer={answer} choices={choices}/>);
                     } else if(item.type === 'fill') {
                         answer = answerSheet[item.id].remark;
-                        //console.log('answer : ',answer);
                         if(answerSheet[item.id].disabled !== true)
                         res.push(<QAFill title={item.title} id={item.id} answer={answer} choices={choices}/>);
                     }              
-                    //console.log('answer in answerSheet : ',answerSheet[item.id]);
                 }
             }
         });
@@ -368,9 +380,7 @@ const BasicFormInfo = () => {
 }
 
 export default function FormDetail() {
-    //const {id} = useParams();
     const id = useSelector(state => state.formOverview.currentFormId);
-    //console.log('currentFormId : ',id);
     const dispatch = useDispatch();
     dispatch(popAllFormId());
     const basicInfo =  useGetBasicInfoById(id);
@@ -395,6 +405,10 @@ export default function FormDetail() {
     dispatch(setBirthYearRight(false));
     dispatch(setGenderRight(false)); 
     useJudgeResidentId();
+
+    const currentFormType = useSelector(state => state.formOverview.currentFormType);
+    console.log('debug, currentFormType : ',currentFormType)
+
     return (
         <div className="">
             <FormDetailContainer id={id}/>

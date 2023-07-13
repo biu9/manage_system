@@ -1,0 +1,879 @@
+{
+  "id": "caring-questionnaire1",
+  "title": "养老机构护理员调查问卷",
+  "questions": [
+    {
+      "id": "questionsA",
+      "title": "A个人信息",
+      "description": "下面询问您的个人信息，请直接填写答案或在最符合您实际情况的答案代码上打“√”",
+      "questions": [
+        {
+          "id": "0",
+          "displayId": "1",
+          "title": "访员编号",
+          "type": "fill",
+          "contentType": "digit"
+        },
+        {
+          "id": "1",
+          "displayId": "2",
+          "title": "访员姓名",
+          "type": "fill",
+          "contentType": "digit"
+        },
+        {
+          "id": "2",
+          "displayId": "3",
+          "title": "问卷编号",
+          "type": "fill",
+          "contentType": "digit"
+        },
+        {
+          "id": "3",
+          "displayId": "A-1",
+          "title": "您的性别",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "男"
+            },
+            {
+              "id": "2",
+              "title": "女"
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "displayId": "A-2-1",
+          "title": "您的出生年份：(请输入四位数年份，如 1949)",
+          "type": "fill",
+          "contentType": "digit",
+          "range_validation": "true",
+          "range_min": "1900",
+          "range_max": "2022"
+        },
+        {
+          "id": "5",
+          "displayId": "A-2-2",
+          "title": "您的出生月份：",
+          "type": "fill",
+          "contentType": "digit"
+        },
+        {
+          "id": "6",
+          "displayId": "A-3",
+          "title": "您目前的户口状况",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "非农业"
+            },
+            {
+              "id": "2",
+              "title": "农业"
+            },
+            {
+              "id": "3",
+              "title": "统一居民（以前是农业）"
+            },
+            {
+              "id": "4",
+              "title": "统一居民（以前是非农业）"
+            }
+          ]
+        },
+        {
+          "id": "7",
+          "displayId": "A-4",
+          "title": "您目前的婚姻状况",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "已婚"
+            },
+            {
+              "id": "2",
+              "title": "未婚",
+              "hide_qs": [
+                "8",
+                "9"
+              ]
+            },
+            {
+              "id": "3",
+              "title": "离异或丧偶",
+              "hide_qs": [
+                "8",
+                "9"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "8",
+          "displayId": "A-4-1",
+          "title": "您的配偶主要从事什么工作",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "政府、事业单位工作人员"
+            },
+            {
+              "id": "2",
+              "title": "企业、服务行业工作人员"
+            },
+            {
+              "id": "3",
+              "title": "机构的护理员工"
+            },
+            {
+              "id": "4",
+              "title": "个体户、自由职业者"
+            },
+            {
+              "id": "5",
+              "title": "农民"
+            },
+            {
+              "id": "6",
+              "title": "不工作（包括退休）"
+            },
+            {
+              "id": "7",
+              "title": "其它__",
+              "input": "true"
+            }
+          ]
+        },
+        {
+          "id": "9",
+          "displayId": "A-4-2",
+          "title": "您的配偶支持您做护理员工作吗",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "非常不支持"
+            },
+            {
+              "id": "2",
+              "title": "不支持"
+            },
+            {
+              "id": "3",
+              "title": "中立"
+            },
+            {
+              "id": "4",
+              "title": "支持"
+            },
+            {
+              "id": "5",
+              "title": "非常支持"
+            }
+          ]
+        },
+        {
+          "id": "10",
+          "displayId": "A-5",
+          "title": "您的居住情况是（指已满半年的居住方式）",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "独居",
+              "hide_qs": [
+                "11",
+                "12"
+              ]
+            },
+            {
+              "id": "2",
+              "title": "住在机构中",
+              "hide_qs": [
+                "11",
+                "12"
+              ]
+            },
+            {
+              "id": "3",
+              "title": "与家人同住"
+            },
+            {
+              "id": "4",
+              "title": "与其他人（不是家人）同住",
+              "hide_qs": [
+                "11",
+                "12"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "11",
+          "displayId": "A-5-1",
+          "title": "与您同住家人的人数（包括您自己） __人",
+          "type": "fill",
+          "contentType": "digit",
+          "range_validation": "true",
+          "range_min": "1",
+          "range_max": "100"
+        },
+        {
+          "id": "12",
+          "displayId": "A-5-2",
+          "title": "与您同住的家人包括（可多选）",
+          "type": "multiple",
+          "max": 6,
+          "min": 1,
+          "choices": [
+            {
+              "id": "1",
+              "title": "配偶"
+            },
+            {
+              "id": "2",
+              "title": "子女或子女配偶"
+            },
+            {
+              "id": "3",
+              "title": "父母或岳父母"
+            },
+            {
+              "id": "4",
+              "title": "孙子女"
+            },
+            {
+              "id": "5",
+              "title": "兄弟姐妹"
+            },
+            {
+              "id": "6",
+              "title": "其他亲戚",
+              "input": "true"
+            }
+          ]
+        },
+        {
+          "id": "13",
+          "displayId": "A-6",
+          "title": "您的文化程度",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "文盲及半文盲"
+            },
+            {
+              "id": "2",
+              "title": "小学"
+            },
+            {
+              "id": "3",
+              "title": "初中"
+            },
+            {
+              "id": "4",
+              "title": "高中/中专/职高"
+            },
+            {
+              "id": "5",
+              "title": "大学专科"
+            },
+            {
+              "id": "6",
+              "title": "大学本科及以上"
+            }
+          ]
+        },
+        {
+          "id": "14",
+          "displayId": "A-7",
+          "title": "您参加社会医疗保险的类型（可多选）",
+          "type": "multiple",
+          "max": 6,
+          "min": 1,
+          "choices": [
+            {
+              "id": "1",
+              "title": "职工基本医疗保险（含公费医疗）"
+            },
+            {
+              "id": "2",
+              "title": "城乡居民基本医疗保险（包括原城镇居民基本医疗保险和新型农村合作医疗）"
+            },
+            {
+              "id": "3",
+              "title": "公费医疗"
+            },
+            {
+              "id": "4",
+              "title": "政策性补充医疗保险（如惠民保）"
+            },
+            {
+              "id": "5",
+              "title": "商业医疗保险"
+            },
+            {
+              "id": "6",
+              "title": "其他医疗保险（请注明）",
+              "input": "true"
+            },
+            {
+              "id": "7",
+              "title": "没有医疗保险"
+            }
+          ]
+        },
+        {
+          "id": "15",
+          "displayId": "A-8",
+          "title": "参加社会养老保险的类型",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "职工基本养老保险/机关事业单位养老保险"
+            },
+            {
+              "id": "2",
+              "title": "城乡居民养老保险"
+            },
+            {
+              "id": "3",
+              "title": "未参加养老保险"
+            },
+            {
+              "id": "4",
+              "title": "其他，请注明",
+              "input": "true"
+            }
+          ]
+        },
+        {
+          "id": "16",
+          "displayId": "A-9",
+          "title": "您当前家庭去年的总收入为（同住家人收入总和）多少元？",
+          "type": "fill",
+          "contentType": "digit"
+        },
+        {
+          "id": "17",
+          "displayId": "A-10",
+          "title": "您当前家庭去年的总支出为（同住家人支出总和）  _元",
+          "type": "fill",
+          "contentType": "digit"
+        },
+        {
+          "id": "18",
+          "displayId": "A-11",
+          "title": "整体来说，您对当前的生活感到满意吗？",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "非常不满意"
+            },
+            {
+              "id": "2",
+              "title": "不满意"
+            },
+            {
+              "id": "3",
+              "title": "一般"
+            },
+            {
+              "id": "4",
+              "title": "满意"
+            },
+            {
+              "id": "5",
+              "title": "非常满意"
+            }
+          ]
+        },
+        {
+          "id": "19",
+          "displayId": "A-12-1",
+          "title": "最近半个月，您是否因为工作太过繁忙而影响到您原本的家庭生活",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "从不"
+            },
+            {
+              "id": "2",
+              "title": "偶尔"
+            },
+            {
+              "id": "3",
+              "title": "有时"
+            },
+            {
+              "id": "4",
+              "title": "经常"
+            }
+          ]
+        },
+        {
+          "id": "20",
+          "displayId": "A-12-2",
+          "title": "最近半个月，您是否因为家庭的一些事情而影响到您在工作上的投入",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "从不"
+            },
+            {
+              "id": "2",
+              "title": "偶尔"
+            },
+            {
+              "id": "3",
+              "title": "有时"
+            },
+            {
+              "id": "4",
+              "title": "经常"
+            }
+          ]
+        },
+        {
+          "id": "21",
+          "displayId": "A-13",
+          "title": "您现在健在的子女数为多少人？",
+          "type": "fill",
+          "contentType": "digit"
+        },
+        {
+          "id": "22",
+          "displayId": "A-14",
+          "title": "整体而言，您的子女支持您做护理员工作吗？",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "非常不支持"
+            },
+            {
+              "id": "2",
+              "title": "不支持"
+            },
+            {
+              "id": "3",
+              "title": "中立"
+            },
+            {
+              "id": "4",
+              "title": "支持"
+            },
+            {
+              "id": "5",
+              "title": "非常支持"
+            }
+          ]
+        },
+        {
+          "id": "23",
+          "displayId": "A-15",
+          "title": "过去12个月,您多久与子女见一次面?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "几乎天天"
+            },
+            {
+              "id": "2",
+              "title": "每周至少一次"
+            },
+            {
+              "id": "3",
+              "title": "每月至少一次"
+            },
+            {
+              "id": "4",
+              "title": "一年几次"
+            },
+            {
+              "id": "5",
+              "title": "几乎没有"
+            }
+          ]
+        },
+        {
+          "id": "24",
+          "displayId": "A-16",
+          "title": "您觉得您和您的子女在感情上亲近吗?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "非常不亲近"
+            },
+            {
+              "id": "2",
+              "title": "不亲近"
+            },
+            {
+              "id": "3",
+              "title": "一般"
+            },
+            {
+              "id": "4",
+              "title": "亲近"
+            },
+            {
+              "id": "5",
+              "title": "非常亲近"
+            }
+          ]
+        },
+        {
+          "id": "25",
+          "displayId": "A-17",
+          "title": "您家中有16岁以下的小孩（自己的孩子、子女的孩子等）需照顾吗？（可多选）",
+          "type": "multiple",
+          "min": "1",
+          "max": "3",
+          "choices": [
+            {
+              "id": "1",
+              "title": "有（是我自己的孩子）"
+            },
+            {
+              "id": "2",
+              "title": "有（是我子女的孩子）",
+              "hide_qs": [
+                "26"
+              ]
+            },
+            {
+              "id": "3",
+              "title": "没有",
+              "hide_qs": [
+                "26",
+                "27"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "26",
+          "displayId": "A-17-1",
+          "title": "您自己的这些孩子主要由谁来照顾",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "我自己"
+            },
+            {
+              "id": "2",
+              "title": "我的配偶"
+            },
+            {
+              "id": "3",
+              "title": "我（或配偶）的父母"
+            },
+            {
+              "id": "4",
+              "title": "我（或者配偶）的兄弟姐妹"
+            }
+          ]
+        },
+        {
+          "id": "27",
+          "displayId": "A-17-2",
+          "title": "您子女的这些孩子主要由谁来照顾",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "我自己"
+            },
+            {
+              "id": "2",
+              "title": "我的配偶"
+            },
+            {
+              "id": "3",
+              "title": "我（或配偶）的父母"
+            },
+            {
+              "id": "4",
+              "title": "我（或者配偶）的兄弟姐妹"
+            },
+            {
+              "id": "5",
+              "title": "我的子女自己照顾"
+            },
+            {
+              "id": "6",
+              "title": "其他，请注明________",
+              "input": "true"
+            }
+          ]
+        },
+        {
+          "id": "28",
+          "displayId": "A-18",
+          "title": "您(和您配偶)现在健在的父母有多少人?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "0人",
+              "hide_qs": [
+                "29"
+              ]
+            },
+            {
+              "id": "2",
+              "title": "有，个数__",
+              "input": "true"
+            }
+          ]
+        },
+        {
+          "id": "29",
+          "displayId": "A-18-1",
+          "title": "您(和您配偶)的父母主要由谁来照顾?",
+          "type": "multiple",
+          "choices": [
+            {
+              "id": "1",
+              "title": "无人照顾"
+            },
+            {
+              "id": "2",
+              "title": "我自己"
+            },
+            {
+              "id": "3",
+              "title": "我的配偶"
+            },
+            {
+              "id": "4",
+              "title": "我（或者配偶）的兄弟姐妹"
+            },
+            {
+              "id": "5",
+              "title": "我（或者配偶）的子女"
+            },
+            {
+              "id": "6",
+              "title": "机构护理员"
+            }
+          ]
+        },
+        {
+          "id": "questionsB_partA19",
+          "title": "A19",
+          "description": "请在最符合您实际情况的答案代码上打“√”",
+          "questions": [
+            {
+              "id": "30",
+              "displayId": "A-19-1",
+              "title": "您一个月至少能与几个家人/亲戚见面或联系?",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "没有"
+                },
+                {
+                  "id": "2",
+                  "title": "1个"
+                },
+                {
+                  "id": "3",
+                  "title": "2个"
+                },
+                {
+                  "id": "4",
+                  "title": "3-4个"
+                },
+                {
+                  "id": "5",
+                  "title": "5-8个"
+                },
+                {
+                  "id": "6",
+                  "title": "9个及以上"
+                }
+              ]
+            },
+            {
+              "id": "31",
+              "displayId": "A-19-2",
+              "title": "您能和几个家人/亲戚放心地谈您的私事?",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "没有"
+                },
+                {
+                  "id": "2",
+                  "title": "1个"
+                },
+                {
+                  "id": "3",
+                  "title": "2个"
+                },
+                {
+                  "id": "4",
+                  "title": "3-4个"
+                },
+                {
+                  "id": "5",
+                  "title": "5-8个"
+                },
+                {
+                  "id": "6",
+                  "title": "9个及以上"
+                }
+              ]
+            },
+            {
+              "id": "32",
+              "displayId": "A-19-3",
+              "title": "当您需要时,有几个家人/亲戚可以给您提供帮助?",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "没有"
+                },
+                {
+                  "id": "2",
+                  "title": "1个"
+                },
+                {
+                  "id": "3",
+                  "title": "2个"
+                },
+                {
+                  "id": "4",
+                  "title": "3-4个"
+                },
+                {
+                  "id": "5",
+                  "title": "5-8个"
+                },
+                {
+                  "id": "6",
+                  "title": "9个及以上"
+                }
+              ]
+            },
+            {
+              "id": "33",
+              "displayId": "A-19-4",
+              "title": "您一个月至少能与几个朋友见面或联系?",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "没有"
+                },
+                {
+                  "id": "2",
+                  "title": "1个"
+                },
+                {
+                  "id": "3",
+                  "title": "2个"
+                },
+                {
+                  "id": "4",
+                  "title": "3-4个"
+                },
+                {
+                  "id": "5",
+                  "title": "5-8个"
+                },
+                {
+                  "id": "6",
+                  "title": "9个及以上"
+                }
+              ]
+            },
+            {
+              "id": "34",
+              "displayId": "A-19-5",
+              "title": "您能和几个朋友放心地谈您的私事?",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "没有"
+                },
+                {
+                  "id": "2",
+                  "title": "1个"
+                },
+                {
+                  "id": "3",
+                  "title": "2个"
+                },
+                {
+                  "id": "4",
+                  "title": "3-4个"
+                },
+                {
+                  "id": "5",
+                  "title": "5-8个"
+                },
+                {
+                  "id": "6",
+                  "title": "9个及以上"
+                }
+              ]
+            },
+            {
+              "id": "35",
+              "displayId": "A-19-6",
+              "title": "当您有需要时,有几个朋友可以给您提供帮助?",
+              "type": "multiple",
+              "choices": [
+                {
+                  "id": "1",
+                  "title": "没有"
+                },
+                {
+                  "id": "2",
+                  "title": "1个"
+                },
+                {
+                  "id": "3",
+                  "title": "2个"
+                },
+                {
+                  "id": "4",
+                  "title": "3-4个"
+                },
+                {
+                  "id": "5",
+                  "title": "5-8个"
+                },
+                {
+                  "id": "6",
+                  "title": "9个及以上"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

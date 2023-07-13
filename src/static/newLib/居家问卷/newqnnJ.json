@@ -1,0 +1,26 @@
+{
+  "id": "old-questionnaire1",
+  "title": "居家照料者信息",
+  "questions": [
+    {
+      "id": "questionsJ",
+      "title": "图片上传",
+      "questions": [
+        {
+          "id": "322",
+          "displayId": "J-1",
+          "title": "知情同意签名页",
+          "type": "upload",
+          "contentType": "image"
+        },
+        {
+          "id": "323",
+          "displayId": "J-2",
+          "title": "画钟试验",
+          "type": "upload",
+          "contentType": "image"
+        }
+      ]
+    }
+  ]
+}

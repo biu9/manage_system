@@ -1,0 +1,40 @@
+{
+  "id": "old-questionnaire1",
+  "title": "",
+  "questions": [
+    {
+      "id": "questionsJ",
+      "title": "图片上传",
+      "questions": [
+        {
+          "id": "293",
+          "displayId": "J-1",
+          "title": "画钟试验",
+          "type": "upload",
+          "contentType": "image"
+        },
+        {
+          "id": "294",
+          "displayId": "J-2",
+          "title": "绘图",
+          "type": "upload",
+          "contentType": "image"
+        },
+        {
+          "id": "295",
+          "displayId": "J-3",
+          "title": "知情同意签名页",
+          "type": "upload",
+          "contentType": "image"
+        },
+        {
+          "id": "296",
+          "displayId": "J-4",
+          "title": "体检同意声明",
+          "type": "upload",
+          "contentType": "image"
+        }
+      ]
+    }
+  ]
+}
