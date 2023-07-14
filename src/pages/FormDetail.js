@@ -22,7 +22,7 @@ import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 import Link from '@material-ui/core/Link';
 import { setFormInfo } from "../store/FormContentSlice";
 import SelectBtn from "../components/SelectBtn";
-import { setCurrentFormId, setCurrentMoudleIndex,setBirthMonthRight,setBirthYearRight,setGenderRight } from "../store/FormOverviewSlice";
+import { setCurrentFormId, setCurrentMoudleIndex,setBirthMonthRight,setBirthYearRight,setGenderRight,setDetailFormType } from "../store/FormOverviewSlice";
 import { setDeleteRemindStatus,setSaveRemindState } from "../store/RemindSlice";
 import SaveRemind from "../components/SaveRemind";
 import { popAllFormId,pushSelectedFormId } from "../store/RemindSlice";
@@ -218,6 +218,10 @@ const FormDetailLeft = () => {
                     return (
                         <div onClick={() => {
                             dispatch(setCurrentFormId(item.id));
+                            if(item.institution)
+                                dispatch(setDetailFormType('institution'));
+                            else 
+                                dispatch(setDetailFormType('home'));
                         }}>
                             <LeftList data={tmpData} institution={item.institution} time={item.submitTime} selected={false}/>
                         </div>
@@ -237,7 +241,7 @@ const FormDetailMid = () => {
         } else if(currentDetailFormType === 'home') {
             modules = ['A个人信息','B机构情况','B.身体功能能力评论','C身体功能能力评估','D认知和心理','E健康状况评估','F医疗与养老服务情况调查','G居家照料者信息','H适老化环境设施需求调查','I体检','J居家照料者信息'];
         } else {
-            alert('error, currentDetailFormType既不是institution也不是home')
+            console.error('error, currentDetailFormType既不是institution也不是home')
         }
     }
     const currentMoudleIndex = useSelector(state => state.formOverview.currentMoudleIndex);
@@ -281,7 +285,7 @@ const FormDetailRight = (props) => {
             // 为formArray增加'./老人问卷'前缀
             formArray = formArray.map(item => '老人问卷/' + item);
         } else {
-            alert('error, currentDetailFormType既不是institution也不是home')
+            console.error('error, currentDetailFormType既不是institution也不是home')
         }
         
     }

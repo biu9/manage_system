@@ -18,6 +18,7 @@ import useJudgeIfChecked from "../hooks/useJudgeIfChecked";
 import useGetAllCurrentId from "../hooks/useGetAllCurrentId"; 
 import { setSelectInfo } from "../store/formSelectSlice";
 import SeniorSearchModal from "../components/SeniorSearchModal";
+import { PRD_URL } from "../conf";
 
 import Typography from '@material-ui/core/Typography';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
@@ -57,8 +58,6 @@ const OverviewContent = () => {
     const formIds = useGetAllCurrentId();
     const [ifPush,setIfPush] = useState(true);
     const [queryName,setQueryName] = useState('');
-    //console.log('all selected form ids : ',formIds);
-    //console.log('form data : ',data);
     return (
         <div className="bg-purple-50 w-full p-6 space-y-3 px-16 min-h-screen">
             <ExportRemind/>
@@ -197,13 +196,13 @@ const OneList = (data) => {
                         } else {
                             dispatch(setFormType('assistant'));
                         }
-                        navigate('form/' + data.data.id);
+                        navigate(PRD_URL+'form/' + data.data.id);
                     }}>查看</div>
                     <div onClick={() => {
                         dispatch(setFormInfo(data.data));
                         dispatch(setCurrentView('编辑'));
                         dispatch(setCurrentFormId(data.data.id));
-                        if(data.data.subject) {
+                        if(data.data.subject.id) {
                             dispatch(setFormType('elder'));
                             if(data.data.institution)  {
                                 dispatch(setDetailFormType('institution'));
@@ -213,7 +212,7 @@ const OneList = (data) => {
                         } else {
                             dispatch(setFormType('assistant'));
                         }
-                        navigate('form/' + data.data.id);
+                        navigate(PRD_URL+'form/' + data.data.id);
                     }}
                     className="cursor-pointer">编辑</div>
                 </div>

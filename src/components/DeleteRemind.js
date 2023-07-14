@@ -6,6 +6,7 @@ import { setDeleteRemindStatus } from '../store/RemindSlice';
 import { useDispatch,useSelector } from 'react-redux';
 import { useState } from 'react';
 import { useNavigate } from 'react-router';
+import { PRD_URL } from '../conf';
 
 const server = 'https://cyzz.fun/HealthCareAssessment/';
 
@@ -86,7 +87,7 @@ export default function DeleteRemind(props) {
                                         setSuccessDelete(true);
                                         setTimeout(() => {
                                             setSuccessDelete(false);
-                                            navigate('static/hca-admin/');
+                                            navigate(PRD_URL+'static/hca-admin/');
                                         },1000);
                                     } else {
                                         setDeleteFail(true);
