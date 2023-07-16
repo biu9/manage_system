@@ -1,4 +1,4 @@
-const PRD_URL = 'https://cyzz.fun/';
+const PRD_URL = '';
 
 export {
     PRD_URL

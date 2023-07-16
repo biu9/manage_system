@@ -5,9 +5,7 @@ export default function useGetSelectedForm() {
     const selectParams = useSelector(state => state.queryInfo);
     const resData = [];
     console.log('init data : ',initData)
-    //console.log('use get selected form refresh');
     const seniorSearchData = useSelector(state => state.queryInfo.seniorSearchRes);
-    //console.log('senior search data : ',seniorSearchData);
     if(seniorSearchData.length > 0) 
         return seniorSearchData;
     initData.forEach(item => {

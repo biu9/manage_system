@@ -74,7 +74,7 @@ const OverviewContent = () => {
                     }}
                     placeholder="请输入姓名搜索" 
                     className="ouline-none rounded-l-lg p-1 border-2 border-purple-200 px-2 h-full outline-none"/>
-                    <div className="bg-purple-200 h-full w-10 rounded-r-lg p-2 flex">
+                    <div className="bg-purple-200 w-10 h-10 rounded-r-lg p-2 flex">
                         <div 
                         onClick={() => {
                             dispatch(setSelectInfo({
@@ -83,13 +83,16 @@ const OverviewContent = () => {
                         }}
                         className="bg-search w-5 h-3/4 bg-cover justify-center items-center relative top-0.5 cursor-pointer"></div>
                     </div>
+                    {/*
                     <div className="px-6" onClick={() => {
                         dispatch(setOpenSeniorSearchModal(true));
                     }}>
                         <FunctionBtn type="seniorSearch" text="高级筛选"/>
                     </div>
+                    */}
                 </div>
                 <div className="flex space-x-6">
+                    {/*
                     <div onClick={() => {
                         console.log('要导出的form id : ',selectedFormId);
                         dispatch(setExportRemindStatus({
@@ -98,6 +101,8 @@ const OverviewContent = () => {
                     }}>
                         <FunctionBtn text="导出表格" type="export"/>
                     </div>
+                    */}
+                    {/*
                     <div onClick={() => {
                         dispatch(setDeleteRemindStatus({
                             deleteRemindStatus: true,
@@ -105,6 +110,7 @@ const OverviewContent = () => {
                     }}>
                         <FunctionBtn text="批量删除" type="delete"/>
                     </div>
+                    */}
                 </div>
             </div>
             <div>
@@ -130,10 +136,10 @@ const OverviewContent = () => {
                                 <th className="">创建日期</th>
                                 <th className="">访问员</th>
                                 <th className="">姓名</th>
-                                <th className="w-48">身份证号</th>
-                                <th className="w-20">所在机构</th>
+                                <th className="w-64">身份证号</th>
+                                <th className="w-80">所在机构</th>
                                 <th className="">联系方式</th>
-                                <th className="w-56">地址</th>
+                                <th className="w-80">地址</th>
                                 <th>
                                     操作
                                 </th>
@@ -196,7 +202,7 @@ const OneList = (data) => {
                         } else {
                             dispatch(setFormType('assistant'));
                         }
-                        navigate(PRD_URL+'form/' + data.data.id);
+                        navigate('form/' + data.data.id);
                     }}>查看</div>
                     <div onClick={() => {
                         dispatch(setFormInfo(data.data));
@@ -212,7 +218,7 @@ const OneList = (data) => {
                         } else {
                             dispatch(setFormType('assistant'));
                         }
-                        navigate(PRD_URL+'form/' + data.data.id);
+                        navigate('form/' + data.data.id);
                     }}
                     className="cursor-pointer">编辑</div>
                 </div>

@@ -1,6 +1,5 @@
 import SideBar from "../components/SideBar"
 import TopBar from "../components/TopBar"
-//import { useParams } from "react-router"
 import { useState,useEffect } from "react";
 import useGetCurrentType from "../hooks/useGetCurrentType";
 import FunctionBtn from "../components/FunctionBtn";
@@ -10,12 +9,11 @@ import CommonInput from "../components/CommonInput";
 import QA from "../components/QA";
 import QAFill from "../components/QA_fill";
 import processTime from "../utils/processTime";
-//import replaceForm from "../utils/replaceForm";
 import SuccessAlert from "../components/SuccessAlert";
 import useGetSelectedForm from "../hooks/useGetSelectedForm";
 import useGetBasicInfoById from "../hooks/useGetBasicInfoById";
-//import saveRemind from "../components/SaveRemind";
 import useJudgeResidentId from "../hooks/useJudgeResidentId";
+import ChangeInstitutionRemind from "../components/changeInstitutionRemind";
 
 import Typography from '@material-ui/core/Typography';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
@@ -23,7 +21,7 @@ import Link from '@material-ui/core/Link';
 import { setFormInfo } from "../store/FormContentSlice";
 import SelectBtn from "../components/SelectBtn";
 import { setCurrentFormId, setCurrentMoudleIndex,setBirthMonthRight,setBirthYearRight,setGenderRight,setDetailFormType } from "../store/FormOverviewSlice";
-import { setDeleteRemindStatus,setSaveRemindState } from "../store/RemindSlice";
+import { setDeleteRemindStatus,setSaveRemindState,setChangeInstitutionRemindState } from "../store/RemindSlice";
 import SaveRemind from "../components/SaveRemind";
 import { popAllFormId,pushSelectedFormId } from "../store/RemindSlice";
 import DeleteRemind from "../components/DeleteRemind";
@@ -88,6 +86,7 @@ const FormContent = () => {
             {saveRemindState ? <SaveRemind/> : null}
             {saveSuccess ? <SuccessAlert text="保存成功"/> : null}
             <DeleteRemind/>
+            <ChangeInstitutionRemind/>
             <div>
                 <SimpleBreadcrumbs text={currentView+"视图"}/>
             </div>
@@ -124,6 +123,13 @@ const FormContent = () => {
                         }));
                     }}>
                         <FunctionBtn text="删除" type="delete"/>
+                    </div>
+                    <div
+                        onClick={() => {
+                            dispatch(setChangeInstitutionRemindState(true));
+                        }}
+                    >
+                        <FunctionBtn text="修改机构" type="export"/>
                     </div>
                 </div>
             </div>
